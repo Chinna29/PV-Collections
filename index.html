@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PV Collection — A personal showcase of coins and currencies from around the world. Browse by type, theme, continent, and country.">
+  <meta name="robots" content="index, follow">
+  <title>PV Collection — Coins & Currencies of the World</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PV Collection">
+  <meta property="og:description" content="A curated showcase of coins and currencies from around the world.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/filters.css">
+
+  <style>
+    /* Inline critical style: prevent FOUC on theme toggle */
+    html[data-theme="light"] body { background-color: #f5f5f8; color: #1a2040; }
+  </style>
+</head>
+<body>
+
+<!-- ── Page Loader ─────────────────────────────────────────── -->
+<div id="loader" class="loader">
+  <div class="loader__coin">🪙</div>
+  <p class="loader__text">Loading Collection…</p>
+</div>
+
+<!-- ── Site Header ─────────────────────────────────────────── -->
+<header id="site-header" class="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="site-logo" aria-label="PV Collection Home">
+        <span class="site-logo__icon" aria-hidden="true">🪙</span>
+        <span class="site-logo__text">
+          <span class="site-logo__text--primary">PV</span> Collection
+        </span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="site-nav__link active" aria-current="page">Gallery</a>
+        <a href="#about-modal" class="site-nav__link" id="about-link">About</a>
+        <a href="admin.html" class="site-nav__link site-nav__link--admin">🔐 Admin</a>
+      </nav>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+
+      <!-- Mobile menu -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Stats Bar ───────────────────────────────────────────── -->
+<section class="stats-bar" id="stats-bar" aria-label="Collection statistics">
+  <div class="container">
+    <div class="stats-bar__grid">
+      <div class="stat-card">
+        <span class="stat-card__number" id="stat-total">—</span>
+        <span class="stat-card__label">Total Items</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__number" id="stat-coins">—</span>
+        <span class="stat-card__label">Coins</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__number" id="stat-notes">—</span>
+        <span class="stat-card__label">Banknotes</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__number" id="stat-countries">—</span>
+        <span class="stat-card__label">Countries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Main Content ─────────────────────────────────────────── -->
+<main class="site-main" id="main-content">
+  <div class="container">
+
+    <!-- Type Tab Switcher -->
+    <div class="type-tabs" id="type-tabs" role="tablist" aria-label="Filter by item type">
+      <button class="type-tab active" data-type="all" role="tab" aria-selected="true" id="tab-all">
+        🗂️ All
+      </button>
+      <button class="type-tab" data-type="coin" role="tab" aria-selected="false" id="tab-coin">
+        🪙 Coins
+      </button>
+      <button class="type-tab" data-type="currency" role="tab" aria-selected="false" id="tab-currency">
+        💵 Currency
+      </button>
+    </div>
+
+    <!-- Content Area: Sidebar + Gallery -->
+    <div class="content-area">
+
+      <!-- ── Filter Sidebar ────────────────────────────────── -->
+      <aside class="filter-sidebar" id="filter-sidebar" aria-label="Filter options">
+
+        <!-- Header -->
+        <div class="filter-sidebar__header">
+          <h2 class="filter-sidebar__title">Filters</h2>
+          <button class="btn-clear-filters" id="btn-clear-filters" aria-label="Clear all filters">Clear All</button>
+        </div>
+
+        <!-- Search -->
+        <div class="filter-search">
+          <input
+            type="search"
+            id="filter-search"
+            class="filter-search__input"
+            placeholder="Search items…"
+            aria-label="Search collection"
+            autocomplete="off"
+          >
+          <span class="filter-search__icon" aria-hidden="true">🔍</span>
+        </div>
+
+        <!-- Active filter chips -->
+        <div class="active-filters" id="active-filters" aria-live="polite"></div>
+
+        <!-- ── Type ─────────────────────────────────────────── -->
+        <div class="filter-group" id="fg-type">
+          <button class="filter-group__header"
+                  aria-expanded="true"
+                  data-target="fg-type-body"
+                  id="fg-type-btn">
+            <span class="filter-group__title">Type</span>
+            <span class="filter-group__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="filter-group__body" id="fg-type-body" role="group" aria-labelledby="fg-type-btn">
+            <label class="filter-checkbox">
+              <input type="checkbox" value="coin" class="filter-cb-type" id="cb-coin">
+              <span class="filter-checkbox__mark"></span>
+              🪙 Coin
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="paper" class="filter-cb-type" id="cb-paper">
+              <span class="filter-checkbox__mark"></span>
+              📄 Paper Currency
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="polymer" class="filter-cb-type" id="cb-polymer">
+              <span class="filter-checkbox__mark"></span>
+              🧪 Polymer Currency
+            </label>
+          </div>
+        </div>
+
+        <!-- ── Theme ─────────────────────────────────────────── -->
+        <div class="filter-group" id="fg-theme">
+          <button class="filter-group__header"
+                  aria-expanded="true"
+                  data-target="fg-theme-body"
+                  id="fg-theme-btn">
+            <span class="filter-group__title">Theme</span>
+            <span class="filter-group__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="filter-group__body" id="fg-theme-body" role="group" aria-labelledby="fg-theme-btn">
+            <label class="filter-checkbox">
+              <input type="checkbox" value="animal-theme" class="filter-cb-theme" id="cb-animal">
+              <span class="filter-checkbox__mark"></span>
+              🦁 Animal Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="bird-theme" class="filter-cb-theme" id="cb-bird">
+              <span class="filter-checkbox__mark"></span>
+              🦅 Bird Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="aquatic-theme" class="filter-cb-theme" id="cb-aquatic">
+              <span class="filter-checkbox__mark"></span>
+              🐠 Aquatic Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="building-theme" class="filter-cb-theme" id="cb-building">
+              <span class="filter-checkbox__mark"></span>
+              🏛️ Buildings Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="nature-theme" class="filter-cb-theme" id="cb-nature">
+              <span class="filter-checkbox__mark"></span>
+              🌿 Nature Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="sports-theme" class="filter-cb-theme" id="cb-sports">
+              <span class="filter-checkbox__mark"></span>
+              🏅 Sports Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="person-theme" class="filter-cb-theme" id="cb-person">
+              <span class="filter-checkbox__mark"></span>
+              👤 Person Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="history-theme" class="filter-cb-theme" id="cb-history">
+              <span class="filter-checkbox__mark"></span>
+              📜 History Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="space-theme" class="filter-cb-theme" id="cb-space">
+              <span class="filter-checkbox__mark"></span>
+              🚀 Space Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="transport-theme" class="filter-cb-theme" id="cb-transport">
+              <span class="filter-checkbox__mark"></span>
+              🚆 Transport Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="art-theme" class="filter-cb-theme" id="cb-art">
+              <span class="filter-checkbox__mark"></span>
+              🎨 Art Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="flora-theme" class="filter-cb-theme" id="cb-flora">
+              <span class="filter-checkbox__mark"></span>
+              🌻 Flora Theme
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" value="science-theme" class="filter-cb-theme" id="cb-science">
+              <span class="filter-checkbox__mark"></span>
+              🧬 Science Theme
+            </label>
+          </div>
+        </div>
+
+        <!-- ── Continent ──────────────────────────────────────── -->
+        <div class="filter-group" id="fg-continent">
+          <button class="filter-group__header"
+                  aria-expanded="true"
+                  data-target="fg-continent-body"
+                  id="fg-continent-btn">
+            <span class="filter-group__title">Continent</span>
+            <span class="filter-group__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="filter-group__body" id="fg-continent-body" role="group" aria-labelledby="fg-continent-btn">
+            <!-- Dynamically populated from collection data -->
+            <div id="continent-options"></div>
+          </div>
+        </div>
+
+        <!-- ── Country ───────────────────────────────────────── -->
+        <div class="filter-group" id="fg-country">
+          <button class="filter-group__header"
+                  aria-expanded="true"
+                  data-target="fg-country-body"
+                  id="fg-country-btn">
+            <span class="filter-group__title">Country</span>
+            <span class="filter-group__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="filter-group__body" id="fg-country-body" role="group" aria-labelledby="fg-country-btn">
+            <div class="country-search-wrap">
+              <input
+                type="search"
+                id="country-search"
+                class="country-search-input"
+                placeholder="Search country…"
+                aria-label="Search countries"
+                autocomplete="off"
+              >
+            </div>
+            <!-- Dynamically populated -->
+            <div id="country-options" class="country-options" role="group"></div>
+          </div>
+        </div>
+
+      </aside>
+      <!-- end filter-sidebar -->
+
+      <!-- ── Gallery Area ───────────────────────────────────── -->
+      <section class="gallery-area" id="gallery-area" aria-label="Collection gallery">
+
+        <!-- Toolbar -->
+        <div class="gallery-toolbar">
+          <span class="results-count" id="results-count" aria-live="polite"></span>
+          <div class="sort-controls">
+            <label for="sort-select" class="sr-only">Sort by</label>
+            <select id="sort-select" class="sort-select" aria-label="Sort collection">
+              <option value="default">Sort: Default</option>
+              <option value="year-asc">Year: Oldest First</option>
+              <option value="year-desc">Year: Newest First</option>
+              <option value="country">Country A–Z</option>
+              <option value="title">Title A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid" role="list" aria-label="Collection items"></div>
+
+        <!-- Empty State -->
+        <div class="gallery-empty hidden" id="gallery-empty">
+          <div class="gallery-empty__icon" aria-hidden="true">🔍</div>
+          <h3 class="gallery-empty__title">No items found</h3>
+          <p class="gallery-empty__text">Try adjusting or clearing your filters.</p>
+          <button class="btn-primary" onclick="PVCollection.clearFilters()" id="btn-clear-empty">
+            Clear All Filters
+          </button>
+        </div>
+
+      </section>
+      <!-- end gallery-area -->
+    </div>
+    <!-- end content-area -->
+
+  </div>
+</main>
+
+<!-- ── Mobile Filter FAB ─────────────────────────────────────── -->
+<button class="filter-fab" id="filter-fab" aria-label="Open filters">
+  <span aria-hidden="true">⚙️</span>
+  <span class="filter-fab__text">Filter</span>
+  <span class="filter-fab__badge hidden" id="filter-badge" aria-label="Active filters">0</span>
+</button>
+
+<!-- Mobile Filter Overlay -->
+<div class="filter-overlay" id="filter-overlay" aria-hidden="true"></div>
+
+<!-- ── Lightbox ───────────────────────────────────────────────── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Item details">
+
+  <div class="lightbox__backdrop" id="lb-backdrop"></div>
+
+  <div class="lightbox__container">
+
+    <!-- Close -->
+    <button class="lightbox__close" id="lb-close" aria-label="Close detail view">✕</button>
+
+    <div class="lightbox__content">
+
+      <!-- Image panel -->
+      <div class="lightbox__image-panel">
+        <img class="lightbox__img" id="lb-img" src="" alt="" loading="lazy">
+        <div class="lightbox__image-nav">
+          <button class="lb-nav-btn" id="lb-prev" aria-label="Previous image">‹</button>
+          <span class="lb-img-counter" id="lb-counter"></span>
+          <button class="lb-nav-btn" id="lb-next" aria-label="Next image">›</button>
+        </div>
+      </div>
+
+      <!-- Info panel -->
+      <div class="lightbox__info-panel">
+        <div class="lightbox__badges" id="lb-badges"></div>
+        <h2 class="lightbox__title" id="lb-title"></h2>
+        <div class="lightbox__meta" id="lb-meta"></div>
+        <p class="lightbox__description" id="lb-description"></p>
+        <div class="lightbox__tags" id="lb-tags"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── About Modal (simple inline) ──────────────────────────── -->
+<div id="about-modal" style="display:none;position:fixed;inset:0;z-index:800;background:rgba(4,6,16,0.92);backdrop-filter:blur(10px);align-items:center;justify-content:center;padding:24px" role="dialog" aria-modal="true" aria-label="About PV Collection">
+  <div style="max-width:560px;width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:40px;position:relative;box-shadow:var(--shadow-lg)">
+    <button onclick="document.getElementById('about-modal').style.display='none'" aria-label="Close"
+      style="position:absolute;top:16px;right:16px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--surface-2);border:1px solid var(--border);border-radius:50%;cursor:pointer;color:var(--text);font-size:1rem;transition:all 0.2s">✕</button>
+    <div style="font-size:3rem;margin-bottom:16px;text-align:center">🪙</div>
+    <h2 style="font-family:var(--font-heading);font-size:1.4rem;text-align:center;margin-bottom:12px;background:linear-gradient(135deg,var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">PV Collection</h2>
+    <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.75;text-align:center">
+      A personal numismatic collection spanning coins and banknotes from across the globe.
+      Each piece tells a story of history, culture, and the artistry of currency design.
+    </p>
+    <p style="color:var(--text-dim);font-size:0.8rem;text-align:center;margin-top:20px">
+      Browse by type, filter by theme or country, and explore the full details of each item.
+    </p>
+  </div>
+</div>
+
+<!-- ── Scripts ────────────────────────────────────────────────── -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/lightbox.js"></script>
+
+<script>
+  // ── Bootstrap ──────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function() {
+    PVCollection.init();
+
+    // About modal link
+    document.getElementById('about-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      const m = document.getElementById('about-modal');
+      m.style.display = 'flex';
+    });
+    document.getElementById('about-modal').addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') document.getElementById('about-modal').style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

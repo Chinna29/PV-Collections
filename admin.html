@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PV Collection — Admin Dashboard</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/filters.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body class="admin-page-body">
+
+<!-- ══════════════════════════════════════════════════════════
+     AUTH GATE — shown until password is verified
+════════════════════════════════════════════════════════════ -->
+<div class="auth-gate" id="auth-gate" role="dialog" aria-modal="true" aria-label="Admin login">
+
+  <div class="auth-gate__card">
+
+    <!-- Logo -->
+    <div class="auth-gate__logo">
+      <span class="lock-icon" aria-hidden="true">🔐</span>
+      <h1>Admin Access</h1>
+      <p>PV Collection Dashboard</p>
+    </div>
+
+    <!-- Login Form -->
+    <form class="auth-gate__form" id="auth-form" novalidate>
+      <div class="form-group">
+        <label for="admin-password">Password</label>
+        <input
+          type="password"
+          id="admin-password"
+          class="form-control"
+          placeholder="Enter password…"
+          autocomplete="current-password"
+          required
+        >
+      </div>
+      <button type="submit" class="btn-primary btn-full" id="btn-login">
+        Enter Dashboard
+      </button>
+      <p class="auth-gate__error" id="auth-error" aria-live="polite"></p>
+    </form>
+
+    <!-- Back link -->
+    <a href="index.html" class="auth-gate__back">← Back to Gallery</a>
+
+    <!-- First-time setup panel (shown if no hash stored) -->
+    <div class="auth-gate__setup" id="auth-setup" style="display:none">
+      <p>🚀 First time? Set your admin password to get started.</p>
+      <form id="setup-form" novalidate>
+        <div class="form-group">
+          <label for="setup-password">New Password <small style="color:var(--text-dim)">(min. 6 chars)</small></label>
+          <input type="password" id="setup-password" class="form-control" placeholder="New password…" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label for="setup-confirm">Confirm Password</label>
+          <input type="password" id="setup-confirm" class="form-control" placeholder="Confirm password…" autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn-primary btn-full">Set Password & Enter</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     ADMIN APP — revealed after successful auth
+════════════════════════════════════════════════════════════ -->
+<div class="admin-app hidden" id="admin-app">
+
+  <!-- ── Admin Header ───────────────────────────────────────── -->
+  <header class="admin-header">
+    <div class="admin-header__inner">
+
+      <div class="admin-header__left">
+        <a href="index.html" class="site-logo" aria-label="Back to gallery">
+          <span class="site-logo__icon" aria-hidden="true">🪙</span>
+          <span class="site-logo__text">
+            <span class="site-logo__text--primary">PV</span> Collection
+          </span>
+        </a>
+        <span class="admin-badge">Admin Dashboard</span>
+      </div>
+
+      <div class="admin-header__right">
+        <span class="admin-user">Welcome, Admin</span>
+        <a href="index.html" class="btn-secondary" style="text-decoration:none">← View Gallery</a>
+        <button class="btn-secondary" id="btn-logout">🚪 Logout</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── Admin Main ──────────────────────────────────────────── -->
+  <main class="admin-main">
+    <div class="admin-container">
+
+
+      <!-- ════════════════════════════════════════════════════
+           SECTION 1 — Collection Overview Stats
+      ════════════════════════════════════════════════════ -->
+      <section class="admin-section" aria-labelledby="section-stats-title">
+        <h2 class="section-title" id="section-stats-title">Collection Overview</h2>
+        <div class="admin-stats-grid" id="admin-stats">
+          <!-- Stat cards rendered by admin.js -->
+          <div class="admin-stat-card">
+            <div class="admin-stat-card__icon">⏳</div>
+            <span class="admin-stat-card__number">—</span>
+            <span class="admin-stat-card__label">Loading…</span>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ════════════════════════════════════════════════════
+           SECTION 2 — Add / Edit Item
+      ════════════════════════════════════════════════════ -->
+      <section class="admin-section" id="upload-section" aria-labelledby="form-section-title">
+        <h2 class="section-title" id="form-section-title">Add New Item</h2>
+
+        <div class="upload-layout">
+
+          <!-- ── Left: Image Upload ───────────────────────── -->
+          <div class="upload-panel">
+
+            <!-- Drop Zone -->
+            <div class="drop-zone" id="drop-zone" role="button" tabindex="0"
+                 aria-label="Upload images — drag and drop or click to browse">
+              <!-- Hidden file input -->
+              <input type="file" id="img-input" accept="image/*" multiple
+                     style="display:none" aria-hidden="true">
+              <div class="drop-zone__content">
+                <div class="drop-zone__icon" aria-hidden="true">📸</div>
+                <p class="drop-zone__text">Drag &amp; drop images here</p>
+                <p class="drop-zone__sub">— or —</p>
+                <button type="button" class="btn-secondary"
+                        onclick="document.getElementById('img-input').click()">
+                  Browse Files
+                </button>
+                <p class="drop-zone__hint">JPG · PNG · WebP · up to 4 images</p>
+              </div>
+            </div>
+
+            <!-- Image Previews -->
+            <div class="image-previews" id="image-previews" aria-label="Uploaded image previews"></div>
+
+            <!-- Upload tips -->
+            <div style="margin-top:16px;padding:14px;background:var(--surface-2);border-radius:var(--r-md);border:1px solid var(--border)">
+              <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.6">
+                <strong style="color:var(--gold);display:block;margin-bottom:4px">💡 Image Tips</strong>
+                Upload the front (obverse) image first, then back (reverse) if available.
+                Square crops work best for coins. Landscape for banknotes.
+                Recommended: ≥ 800px wide, JPG or WebP format.
+              </p>
+            </div>
+
+          </div>
+          <!-- end upload-panel -->
+
+          <!-- ── Right: Metadata Form ──────────────────────── -->
+          <div class="meta-panel">
+            <form class="item-form" id="item-form" novalidate>
+
+              <!-- Hidden edit ID -->
+              <input type="hidden" id="edit-id">
+
+              <!-- Row: Type + Year -->
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="f-type">Type <span style="color:var(--red)">*</span></label>
+                  <select id="f-type" class="form-control" required>
+                    <option value="">Select type…</option>
+                    <option value="coin">🪙 Coin</option>
+                    <option value="paper">📄 Paper Currency</option>
+                    <option value="polymer">🧪 Polymer Currency</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="f-year">Year <span style="color:var(--red)">*</span></label>
+                  <input type="number" id="f-year" class="form-control"
+                         placeholder="e.g. 1975" min="1600" max="2099" required>
+                </div>
+              </div>
+
+              <!-- Title -->
+              <div class="form-group">
+                <label for="f-title">Title <span style="color:var(--red)">*</span></label>
+                <input type="text" id="f-title" class="form-control"
+                       placeholder="e.g. 1 Rupee — Rhinoceros" required>
+              </div>
+
+              <!-- Row: Country + Continent -->
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="f-country">Country <span style="color:var(--red)">*</span></label>
+                  <input type="text" id="f-country" class="form-control"
+                         placeholder="e.g. India" required
+                         list="country-datalist" autocomplete="off">
+                  <datalist id="country-datalist"></datalist>
+                </div>
+                <div class="form-group">
+                  <label for="f-continent">Continent <span style="color:var(--red)">*</span></label>
+                  <select id="f-continent" class="form-control" required>
+                    <option value="">Select…</option>
+                    <option value="Africa">🌍 Africa</option>
+                    <option value="Asia">🌏 Asia</option>
+                    <option value="Europe">🌍 Europe</option>
+                    <option value="North America">🌎 North America</option>
+                    <option value="South America">🌎 South America</option>
+                    <option value="Oceania">🌏 Oceania</option>
+                    <option value="Antarctica">🧊 Antarctica</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row: Denomination + Material -->
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="f-denomination">Denomination</label>
+                  <input type="text" id="f-denomination" class="form-control"
+                         placeholder="e.g. 1 Rupee">
+                </div>
+                <div class="form-group">
+                  <label for="f-material">Material</label>
+                  <input type="text" id="f-material" class="form-control"
+                         placeholder="e.g. Copper-Nickel">
+                </div>
+              </div>
+
+              <!-- Description -->
+              <div class="form-group">
+                <label for="f-description">Description</label>
+                <textarea id="f-description" class="form-control" rows="3"
+                          placeholder="Brief history or details about this item…"></textarea>
+              </div>
+
+              <!-- Themes -->
+              <div class="form-group">
+                <label>Themes</label>
+                <div class="theme-checkboxes">
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="animal-theme" id="th-animal">
+                    <span class="filter-checkbox__mark"></span>
+                    🦁 Animal Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="bird-theme" id="th-bird">
+                    <span class="filter-checkbox__mark"></span>
+                    🦅 Bird Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="aquatic-theme" id="th-aquatic">
+                    <span class="filter-checkbox__mark"></span>
+                    🐠 Aquatic Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="building-theme" id="th-building">
+                    <span class="filter-checkbox__mark"></span>
+                    🏛️ Buildings Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="nature-theme" id="th-nature">
+                    <span class="filter-checkbox__mark"></span>
+                    🌿 Nature Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="sports-theme" id="th-sports">
+                    <span class="filter-checkbox__mark"></span>
+                    🏅 Sports Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="person-theme" id="th-person">
+                    <span class="filter-checkbox__mark"></span>
+                    👤 Person Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="history-theme" id="th-history">
+                    <span class="filter-checkbox__mark"></span>
+                    📜 History Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="space-theme" id="th-space">
+                    <span class="filter-checkbox__mark"></span>
+                    🚀 Space Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="transport-theme" id="th-transport">
+                    <span class="filter-checkbox__mark"></span>
+                    🚆 Transport Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="art-theme" id="th-art">
+                    <span class="filter-checkbox__mark"></span>
+                    🎨 Art Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="flora-theme" id="th-flora">
+                    <span class="filter-checkbox__mark"></span>
+                    🌻 Flora Theme
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox" name="theme" value="science-theme" id="th-science">
+                    <span class="filter-checkbox__mark"></span>
+                    🧬 Science Theme
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tags -->
+              <div class="form-group">
+                <label for="f-tag-input">
+                  Custom Tags
+                  <span style="font-weight:400;color:var(--text-dim);font-size:0.75rem;text-transform:none;letter-spacing:0">
+                    — press Enter or comma to add
+                  </span>
+                </label>
+                <div class="tag-input-wrap" id="tag-input-wrap">
+                  <div class="tag-chips" id="tag-chips"></div>
+                  <input type="text" id="f-tag-input"
+                         placeholder="Type a tag…"
+                         autocomplete="off"
+                         aria-label="Add custom tag">
+                </div>
+                <span style="font-size:0.75rem;color:var(--text-dim)">
+                  Type tags like: <em>commemorative, bi-colour, error-coin, rare, 1st-series</em>
+                </span>
+              </div>
+
+              <!-- Form Actions -->
+              <div class="form-actions">
+                <button type="button" class="btn-secondary" id="btn-reset-form">
+                  🔄 Reset
+                </button>
+                <button type="submit" class="btn-primary" id="btn-generate">
+                  ✨ Generate Entry
+                </button>
+              </div>
+
+            </form>
+          </div>
+          <!-- end meta-panel -->
+
+        </div>
+        <!-- end upload-layout -->
+
+        <!-- ── Generated Output ────────────────────────────── -->
+        <div class="output-section hidden" id="output-section" aria-live="polite">
+          <h3>📋 Generated JSON Entry</h3>
+          <p class="output-instructions">
+            Copy this JSON snippet and add it inside the <code>"items": [...]</code> array
+            in <code>data/collection.json</code>. Then commit both the JSON and image file(s) to your repository.
+          </p>
+          <div class="code-output">
+            <button class="btn-copy" id="btn-copy-json" aria-label="Copy JSON to clipboard">Copy JSON</button>
+            <pre><code id="output-json"></code></pre>
+          </div>
+          <div id="file-instructions"></div>
+          <div class="commit-instructions">
+            <h4>Next Steps to Publish:</h4>
+            <ol>
+              <li>Save the image file(s) to the appropriate <code>assets/images/coins/</code> or <code>assets/images/currency/</code> folder.</li>
+              <li>Open <code>data/collection.json</code> and paste the JSON entry inside the <code>"items"</code> array.</li>
+              <li>Run: <code>git add . &amp;&amp; git commit -m "Add: [item name]" &amp;&amp; git push</code></li>
+              <li>GitHub Pages will update automatically within ~60 seconds. 🚀</li>
+            </ol>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ════════════════════════════════════════════════════
+           SECTION 3 — Current Collection Manager
+      ════════════════════════════════════════════════════ -->
+      <section class="admin-section" aria-labelledby="section-collection-title">
+        <div class="section-header-row">
+          <h2 class="section-title" id="section-collection-title">Current Collection</h2>
+          <input type="search" id="admin-search" class="form-control"
+                 placeholder="🔍 Search by title or country…"
+                 aria-label="Search collection table"
+                 style="max-width:280px">
+        </div>
+
+        <div class="collection-table-wrap">
+          <table class="collection-table" id="collection-table">
+            <thead>
+              <tr>
+                <th scope="col">Preview</th>
+                <th scope="col">Title</th>
+                <th scope="col">Type</th>
+                <th scope="col">Country</th>
+                <th scope="col">Year</th>
+                <th scope="col">Themes</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="collection-tbody">
+              <tr class="table-empty-row">
+                <td colspan="7">Loading collection…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Export All tip -->
+        <div style="margin-top:16px;padding:14px;background:var(--surface-2);border-radius:var(--r-md);border:1px solid var(--border)">
+          <p style="font-size:0.8rem;color:var(--text-muted);line-height:1.6">
+            <strong style="color:var(--gold)">📌 Note:</strong>
+            Edits and deletions above are previewed in-browser only.
+            After making changes, use the <em>Generate Entry</em> button to get the updated JSON,
+            then commit <code>data/collection.json</code> to your repository to publish permanently.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- ════════════════════════════════════════════════════
+           SECTION 4 — Password Management
+      ════════════════════════════════════════════════════ -->
+      <section class="admin-section" aria-labelledby="section-pw-title">
+        <h2 class="section-title" id="section-pw-title">Change Password</h2>
+        <form id="change-pw-form" novalidate style="max-width:420px;margin-top:20px;display:flex;flex-direction:column;gap:16px">
+          <div class="form-group">
+            <label for="pw-current">Current Password</label>
+            <input type="password" id="pw-current" class="form-control" placeholder="Current password…">
+          </div>
+          <div class="form-group">
+            <label for="pw-new">New Password</label>
+            <input type="password" id="pw-new" class="form-control" placeholder="New password (min. 6 chars)…">
+          </div>
+          <div class="form-group">
+            <label for="pw-confirm">Confirm New Password</label>
+            <input type="password" id="pw-confirm" class="form-control" placeholder="Confirm new password…">
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <button type="submit" class="btn-primary" id="btn-change-pw">Update Password</button>
+            <p id="pw-message" style="font-size:0.82rem;color:var(--text-muted)"></p>
+          </div>
+        </form>
+      </section>
+
+
+    </div>
+    <!-- end admin-container -->
+  </main>
+
+</div>
+<!-- end admin-app -->
+
+
+<!-- ── Scripts ────────────────────────────────────────────────── -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/admin.js"></script>
+
+<!-- Inline: Change Password form (thin, self-contained) -->
+<script>
+(function() {
+  document.getElementById('change-pw-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const msgEl  = document.getElementById('pw-message');
+    const cur    = document.getElementById('pw-current').value.trim();
+    const nw     = document.getElementById('pw-new').value.trim();
+    const conf   = document.getElementById('pw-confirm').value.trim();
+
+    if (!cur || !nw || !conf) {
+      showMsg(msgEl, '❌ All fields are required.', 'var(--red)'); return;
+    }
+    if (nw.length < 6) {
+      showMsg(msgEl, '❌ New password must be at least 6 characters.', 'var(--red)'); return;
+    }
+    if (nw !== conf) {
+      showMsg(msgEl, '❌ New passwords do not match.', 'var(--red)'); return;
+    }
+
+    // Verify current password
+    const storedHash = localStorage.getItem('pvc_admin_hash');
+    const curHash = await sha256hex(cur);
+    if (curHash !== storedHash) {
+      showMsg(msgEl, '❌ Current password is incorrect.', 'var(--red)'); return;
+    }
+
+    // Store new password hash
+    const newHash = await sha256hex(nw);
+    localStorage.setItem('pvc_admin_hash', newHash);
+    this.reset();
+    showMsg(msgEl, '✅ Password updated successfully.', 'var(--green)');
+  });
+
+  async function sha256hex(str) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
+
+  function showMsg(el, msg, color) {
+    if (!el) return;
+    el.textContent = msg;
+    el.style.color = color;
+    setTimeout(() => { el.textContent = ''; }, 4000);
+  }
+})();
+</script>
+
+</body>
+</html>
