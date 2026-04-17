@@ -52,7 +52,10 @@
       <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
         <a href="index.html" class="site-nav__link active" aria-current="page">Gallery</a>
         <a href="#about-modal" class="site-nav__link" id="about-link">About</a>
-        <a href="admin.html" class="site-nav__link site-nav__link--admin">🔐 Admin</a>
+        <!-- Admin link is only shown on local dev environments. Hidden on
+             public hosts (e.g. GitHub Pages) since a static admin gate is
+             not real security; see boot script below. -->
+        <a href="admin.html" class="site-nav__link site-nav__link--admin" id="admin-link" hidden>🔐 Admin</a>
       </nav>
 
       <!-- Theme Toggle -->
@@ -347,12 +350,17 @@
 
       <!-- Image panel -->
       <div class="lightbox__image-panel">
-        <img class="lightbox__img" id="lb-img" src="" alt="" loading="lazy">
+        <div class="lightbox__img-wrap">
+          <img class="lightbox__img" id="lb-img" src="" alt="" loading="lazy">
+          <div class="lb-magnifier" id="lb-lens" aria-hidden="true"></div>
+          <span class="lb-zoom-hint" aria-hidden="true">🔍 Hover / tap to magnify</span>
+        </div>
         <div class="lightbox__image-nav">
           <button class="lb-nav-btn" id="lb-prev" aria-label="Previous image">‹</button>
           <span class="lb-img-counter" id="lb-counter"></span>
           <button class="lb-nav-btn" id="lb-next" aria-label="Next image">›</button>
         </div>
+        <div class="lb-thumbs" id="lb-thumbs" role="tablist" aria-label="Image views"></div>
       </div>
 
       <!-- Info panel -->
@@ -386,6 +394,7 @@
 </div>
 
 <!-- ── Scripts ────────────────────────────────────────────────── -->
+<script src="assets/js/image-store.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/filters.js"></script>
 <script src="assets/js/gallery.js"></script>
@@ -395,6 +404,14 @@
   // ── Bootstrap ──────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function() {
     PVCollection.init();
+
+    // Reveal the Admin link only on local dev — on public hosts
+    // (e.g. GitHub Pages) the admin gate is not real security, so
+    // we keep it completely out of the UI.
+    if (PVCollection.isLocalEnv && PVCollection.isLocalEnv()) {
+      const adminLink = document.getElementById('admin-link');
+      if (adminLink) adminLink.hidden = false;
+    }
 
     // About modal link
     document.getElementById('about-link').addEventListener('click', function(e) {

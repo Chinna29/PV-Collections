@@ -364,6 +364,22 @@
 }
 .preview-item__remove:hover { background: var(--red); transform: scale(1.1); }
 
+.preview-item__side {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 2px 8px;
+  background: rgba(7,9,26,0.85);
+  border: 1px solid var(--gold-muted-2);
+  color: var(--gold);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: var(--r-full);
+  backdrop-filter: blur(6px);
+}
+
 /* ── Item Form ─────────────────────────────────────────────── */
 .item-form { display: flex; flex-direction: column; gap: 16px; }
 

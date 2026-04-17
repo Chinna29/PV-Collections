@@ -6,6 +6,23 @@
   <meta name="robots" content="noindex, nofollow">
   <title>PV Collection — Admin Dashboard</title>
 
+  <!-- Public-host guard.
+       A static client-side password gate is NOT real security — anyone
+       hitting this URL can read the JS, the stored hash, and the collection
+       data. So on any non-local host (e.g. GitHub Pages, custom domain)
+       we redirect to the gallery before rendering anything. Admin is
+       intended for local editing only; commit the generated JSON to publish. -->
+  <script>
+    (function() {
+      var p = location.protocol, h = location.hostname;
+      var local = p === 'file:' || h === 'localhost' || h === '127.0.0.1'
+               || h === '::1'   || h.endsWith('.local');
+      if (!local) {
+        location.replace('index.html');
+      }
+    })();
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,7 +111,11 @@
       </div>
 
       <div class="admin-header__right">
-        <span class="admin-user">Welcome, Admin</span>
+        <!-- Folder connection status -->
+        <div id="folder-status" style="display:flex;align-items:center;gap:8px;padding:6px 14px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-full);font-size:0.78rem;cursor:pointer;transition:all 0.25s" title="Click to connect your project folder for auto-save">
+          <span id="folder-status-dot" style="width:8px;height:8px;border-radius:50%;background:#e05252;flex-shrink:0"></span>
+          <span id="folder-status-text" style="color:var(--text-muted);white-space:nowrap">Not connected</span>
+        </div>
         <a href="index.html" class="btn-secondary" style="text-decoration:none">← View Gallery</a>
         <button class="btn-secondary" id="btn-logout">🚪 Logout</button>
       </div>
@@ -137,18 +158,25 @@
             <!-- Drop Zone -->
             <div class="drop-zone" id="drop-zone" role="button" tabindex="0"
                  aria-label="Upload images — drag and drop or click to browse">
-              <!-- Hidden file input -->
-              <input type="file" id="img-input" accept="image/*" multiple
+              <!-- Hidden file input. Explicit extension list in addition
+                   to image/* because some copies (e.g. WhatsApp exports on
+                   Windows) arrive without a recognized MIME type, which
+                   would otherwise be greyed out in the picker. -->
+              <input type="file" id="img-input"
+                     accept="image/*,.jpg,.jpeg,.png,.webp,.gif,.bmp,.avif,.heic,.heif,.tif,.tiff"
+                     multiple
                      style="display:none" aria-hidden="true">
               <div class="drop-zone__content">
                 <div class="drop-zone__icon" aria-hidden="true">📸</div>
                 <p class="drop-zone__text">Drag &amp; drop images here</p>
                 <p class="drop-zone__sub">— or —</p>
-                <button type="button" class="btn-secondary"
-                        onclick="document.getElementById('img-input').click()">
+                <!-- Click handler is bound in JS so it can stopPropagation
+                     and avoid double-firing the drop-zone's click handler,
+                     which otherwise cancels the file picker on some browsers. -->
+                <button type="button" class="btn-secondary" id="btn-browse-files">
                   Browse Files
                 </button>
-                <p class="drop-zone__hint">JPG · PNG · WebP · up to 4 images</p>
+                <p class="drop-zone__hint">JPG · PNG · WebP · HEIC · up to 4 images</p>
               </div>
             </div>
 
@@ -158,10 +186,14 @@
             <!-- Upload tips -->
             <div style="margin-top:16px;padding:14px;background:var(--surface-2);border-radius:var(--r-md);border:1px solid var(--border)">
               <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.6">
-                <strong style="color:var(--gold);display:block;margin-bottom:4px">💡 Image Tips</strong>
-                Upload the front (obverse) image first, then back (reverse) if available.
-                Square crops work best for coins. Landscape for banknotes.
-                Recommended: ≥ 800px wide, JPG or WebP format.
+                <strong style="color:var(--gold);display:block;margin-bottom:4px">💡 Image Tips — Order matters</strong>
+                <strong style="color:var(--text)">1st</strong> image = <em>Front (Obverse)</em>,
+                <strong style="color:var(--text)">2nd</strong> = <em>Back (Reverse)</em>,
+                extras follow. Filenames will be generated as
+                <code style="color:var(--gold)">&lt;id&gt;.jpg</code>,
+                <code style="color:var(--gold)">&lt;id&gt;_back.jpg</code>, etc.
+                Square crops work best for coins, landscape for banknotes.
+                Recommended: ≥ 800px wide, JPG or WebP.
               </p>
             </div>
 
@@ -413,14 +445,26 @@
           </table>
         </div>
 
-        <!-- Export All tip -->
+        <!-- Save / Export Actions -->
         <div style="margin-top:16px;padding:14px;background:var(--surface-2);border-radius:var(--r-md);border:1px solid var(--border)">
-          <p style="font-size:0.8rem;color:var(--text-muted);line-height:1.6">
-            <strong style="color:var(--gold)">📌 Note:</strong>
-            Edits and deletions above are previewed in-browser only.
-            After making changes, use the <em>Generate Entry</em> button to get the updated JSON,
-            then commit <code>data/collection.json</code> to your repository to publish permanently.
-          </p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+            <p id="save-status-msg" style="font-size:0.8rem;color:var(--text-muted);line-height:1.6;margin:0;flex:1;min-width:200px">
+              <strong style="color:var(--gold)">📌 Tip:</strong>
+              Connect your project folder (top-right) to auto-save changes directly to <code>collection.json</code>.
+              Or download manually below.
+            </p>
+            <div style="display:flex;gap:8px;flex-shrink:0;flex-wrap:wrap">
+              <button class="btn-primary" id="btn-connect-folder" title="Pick your PV-Collection project folder — auto-saves on every change">
+                📂 Connect Project Folder
+              </button>
+              <button class="btn-secondary" id="btn-export-json" title="Download the complete collection.json file">
+                📥 Download collection.json
+              </button>
+              <button class="btn-secondary" id="btn-clear-local" title="Remove locally-saved changes and revert to the committed collection.json">
+                🗑️ Clear Local Changes
+              </button>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -460,6 +504,7 @@
 
 
 <!-- ── Scripts ────────────────────────────────────────────────── -->
+<script src="assets/js/image-store.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/admin.js"></script>
 
@@ -483,8 +528,9 @@
       showMsg(msgEl, '❌ New passwords do not match.', 'var(--red)'); return;
     }
 
-    // Verify current password
-    const storedHash = localStorage.getItem('pvc_admin_hash');
+    // Verify current password against user-set hash or shipped default
+    const DEFAULT_HASH = '2bcf817b9eb43327412bcc48ca82a1fca0af8f2aedcd22b2838079a3b32ef0f5';
+    const storedHash = localStorage.getItem('pvc_admin_hash') || DEFAULT_HASH;
     const curHash = await sha256hex(cur);
     if (curHash !== storedHash) {
       showMsg(msgEl, '❌ Current password is incorrect.', 'var(--red)'); return;

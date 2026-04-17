@@ -11,10 +11,31 @@ window.PVCollection = window.PVCollection || {};
   // ── Internal state ──────────────────────────────────────────
   let _cache = null;
 
-  // ── Load collection.json ────────────────────────────────────
+  // ── Load collection data ────────────────────────────────────
+  // Priority: localStorage (locally-edited collection via admin)
+  //           → data/collection.json (committed static file)
+  // This lets items added/edited via the admin panel show up in
+  // the gallery immediately, without needing a git commit first.
+  const LOCAL_COLLECTION_KEY = 'pvc_local_collection';
+
   PVC.loadData = async function() {
     if (_cache) return _cache;
 
+    // 1. Check localStorage for locally-saved collection
+    try {
+      const local = localStorage.getItem(LOCAL_COLLECTION_KEY);
+      if (local) {
+        const parsed = JSON.parse(local);
+        if (parsed && Array.isArray(parsed.items) && parsed.items.length) {
+          _cache = parsed;
+          return _cache;
+        }
+      }
+    } catch (e) {
+      console.warn('[PV-Collection] Bad localStorage data, falling back to file:', e);
+    }
+
+    // 2. Fetch the committed collection.json
     try {
       const resp = await fetch('data/collection.json');
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -128,6 +149,82 @@ window.PVCollection = window.PVCollection || {};
     if (item.type === 'coin') return 'coin';
     if (item.subtype === 'polymer') return 'polymer';
     return 'paper';
+  };
+
+  // ── Resolve images for an item (front / back / extras) ─────
+  // Returns { url, label, probe } candidates. Two modes:
+  //   A) Explicit `images: [...]` array on the item — trusted,
+  //      used verbatim (probe=false).
+  //   B) Legacy single `image: "path.jpg"` — we also generate
+  //      convention-based candidates `<base>_back.ext`,
+  //      `<base>_3.ext`, `<base>_4.ext`. These are marked
+  //      probe=true so the caller can HEAD-check them before
+  //      rendering and silently drop missing ones.
+  PVC.getItemImages = function(item) {
+    const SIDE_LABELS = ['Front (Obverse)', 'Back (Reverse)'];
+
+    // Mode A — explicit array
+    if (Array.isArray(item.images) && item.images.length) {
+      return item.images.map((entry, i) => {
+        if (entry && typeof entry === 'object' && entry.url) {
+          return { url: entry.url, label: entry.label || SIDE_LABELS[i] || `View ${i + 1}`, probe: false };
+        }
+        return { url: entry, label: SIDE_LABELS[i] || `View ${i + 1}`, probe: false };
+      });
+    }
+
+    // Mode B — single image with auto-probed back/extra variants
+    // Guard: if `image` is accidentally an array, treat it like
+    // an explicit `images` list (Mode A) to avoid a crash.
+    if (Array.isArray(item.image)) {
+      return item.image.map((url, i) => ({
+        url, label: SIDE_LABELS[i] || `View ${i + 1}`, probe: false
+      }));
+    }
+    if (!item.image) return [];
+    const m    = item.image.match(/^(.*?)(\.[^./]+)?$/);
+    const base = m ? m[1] : item.image;
+    const ext  = (m && m[2]) || '.jpg';
+
+    return [
+      { url: item.image,               label: SIDE_LABELS[0], probe: false },
+      { url: `${base}_back${ext}`,     label: SIDE_LABELS[1], probe: true  },
+      { url: `${base}_3${ext}`,        label: 'View 3',       probe: true  },
+      { url: `${base}_4${ext}`,        label: 'View 4',       probe: true  },
+    ];
+  };
+
+  // Resolve a candidate list asynchronously — HEAD-check each
+  // `probe: true` entry and drop ones whose image fails to load.
+  // Returns a Promise<{url,label}[]>.
+  PVC.resolveImages = function(candidates) {
+    const probeOne = async (c) => {
+      if (!c.probe) return true;
+      // Check locally-uploaded blobs first; if present we know
+      // the image exists even if the HTTP path doesn't resolve.
+      if (PVC.imageStore && await PVC.imageStore.has(c.url)) return true;
+      return new Promise(resolve => {
+        const img = new Image();
+        img.onload  = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = c.url;
+      });
+    };
+
+    return Promise.all(candidates.map(probeOne))
+      .then(results => candidates.filter((_, i) => results[i])
+                                 .map(({ url, label }) => ({ url, label })));
+  };
+
+  // ── Detect if we're running on a local/dev environment ─────
+  // Used to conditionally hide admin UI on public hosts
+  // (e.g. GitHub Pages) where the admin gate offers no real
+  // security — the files are publicly fetchable.
+  PVC.isLocalEnv = function() {
+    if (typeof location === 'undefined') return true;
+    if (location.protocol === 'file:') return true;
+    const h = location.hostname;
+    return h === 'localhost' || h === '127.0.0.1' || h === '::1' || h.endsWith('.local');
   };
 
   // ── Generate a placeholder SVG (coin or note) ───────────────

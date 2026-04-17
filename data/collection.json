@@ -377,6 +377,10 @@
       "tags": ["paper-currency", "space-theme", "india", "asia", "science"],
       "theme": ["space-theme", "science-theme"],
       "image": "assets/images/currency/note_2000.jpg",
+      "images": [
+        "assets/images/currency/note_2000.jpg",
+        "assets/images/currency/note_2000_front.png"
+      ],
       "thumbnail": "assets/images/currency/note_2000.jpg",
       "addedOn": "2026-04-14"
     },
@@ -414,16 +418,50 @@
       "thumbnail": "assets/images/currency/note_100.jpg",
       "addedOn": "2026-04-14"
     },
+{
+  "id": "note_india_1965",
+  "type": "currency",
+  "subtype": "paper",
+  "title": "10 Rupees — Black Boat (Fafda Note)",
+  "country": "India",
+  "continent": "Asia",
+  "year": 1965,
+  "denomination": "10 Rupees",
+  "material": "Cotton Paper",
+  "description": "Vintage Indian 10 rupee banknote featuring a dhow (sailing boat) on the reverse. Known colloquially as the 'Fafda Note' for its distinctive dark colour. Issued by the Reserve Bank of India during the post-independence era.",
+  "tags": [
+    "paper-currency",
+    "aquatic-theme",
+    "nature-theme",
+    "transport-theme",
+    "india",
+    "asia"
+  ],
+  "theme": [
+    "aquatic-theme",
+    "nature-theme",
+    "transport-theme"
+  ],
+  "image": "assets/images/currency/note_india_1965.jpg",
+  "images": [
+    "assets/images/currency/note_india_1965.jpg",
+    "assets/images/currency/note_india_1965_back.jpg",
+    "assets/images/currency/note_india_1965_3.jpg"
+  ],
+  "thumbnail": "assets/images/currency/note_india_1965.jpg",
+  "addedOn": "2026-04-17"
+},
     {
   "id": "note_india_2015",
   "type": "currency",
   "subtype": "paper",
-  "title": "2000 India",
+  "title": "2000 Rupees — Mangalyaan (Pink Note)",
   "country": "India",
   "continent": "Asia",
-  "year": 2015,
-  "denomination": "2000",
-  "material": "cotton paper",
+  "year": 2016,
+  "denomination": "2000 Rupees",
+  "material": "Cotton Paper",
+  "description": "The iconic pink 2000 rupee banknote introduced during India's demonetisation in 2016. The reverse features the Mangalyaan (Mars Orbiter Mission), celebrating India's space achievements.",
   "tags": [
     "paper-currency",
     "space-theme",
@@ -433,10 +471,9 @@
   "theme": [
     "space-theme"
   ],
-  "image": "assets/images/currency/note_india_2015.jpg",
-  "thumbnail": "assets/images/currency/note_india_2015.jpg",
+  "image": "",
+  "thumbnail": "",
   "addedOn": "2026-04-14"
 }
   ]
-  
 }

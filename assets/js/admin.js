@@ -13,12 +13,217 @@
   const SESSION_KEY  = 'pvc_admin_auth';
   const HASH_KEY     = 'pvc_admin_hash';
 
+  // Default password shipped with the app so the admin screen
+  // works out of the box without running the setup flow.
+  //   Default password: PVCadmin2026   (change via "Change Password")
+  // Only the SHA-256 hash is embedded. Once the user sets a new
+  // password via the UI, it replaces this in localStorage.
+  const DEFAULT_HASH = '2bcf817b9eb43327412bcc48ca82a1fca0af8f2aedcd22b2838079a3b32ef0f5';
+
   // ── State ───────────────────────────────────────────────────
   let _collection  = [];   // loaded items
   let _editingId   = null; // id of item being edited
   let _tags        = [];   // current tag list in form
   let _imageFiles  = [];   // uploaded File objects
+  let _existingImages = { image: '', images: [], thumbnail: '' }; // preserved during edit
   let _adminSearch = '';   // search in table
+
+  // ============================================================
+  //  PROJECT FOLDER — Auto-save via File System Access API
+  //  Stores directory handle in IndexedDB so it persists across
+  //  sessions. Every add/edit/delete writes collection.json and
+  //  uploaded images directly to the project folder.
+  // ============================================================
+
+  const FS_DB_NAME = 'pvc-folder';
+  const FS_STORE   = 'handles';
+  const FS_KEY     = 'projectRoot';
+  let _rootHandle  = null;  // FileSystemDirectoryHandle or null
+
+  /** Does this browser support the File System Access API? */
+  function hasFSAccess() {
+    return typeof window.showDirectoryPicker === 'function';
+  }
+
+  /** Open a small IndexedDB to persist the directory handle */
+  function openFSDB() {
+    return new Promise((resolve, reject) => {
+      const req = indexedDB.open(FS_DB_NAME, 1);
+      req.onupgradeneeded = e => {
+        const db = e.target.result;
+        if (!db.objectStoreNames.contains(FS_STORE)) db.createObjectStore(FS_STORE);
+      };
+      req.onsuccess = e => resolve(e.target.result);
+      req.onerror   = e => reject(e.target.error);
+    });
+  }
+
+  /** Save the directory handle to IndexedDB */
+  async function saveDirHandle(handle) {
+    const db = await openFSDB();
+    return new Promise((resolve, reject) => {
+      const tx  = db.transaction(FS_STORE, 'readwrite');
+      const st  = tx.objectStore(FS_STORE);
+      st.put(handle, FS_KEY);
+      tx.oncomplete = () => resolve();
+      tx.onerror    = () => reject(tx.error);
+    });
+  }
+
+  /** Load the previously-saved directory handle from IndexedDB */
+  async function loadDirHandle() {
+    try {
+      const db = await openFSDB();
+      return new Promise((resolve, reject) => {
+        const tx  = db.transaction(FS_STORE, 'readonly');
+        const st  = tx.objectStore(FS_STORE);
+        const req = st.get(FS_KEY);
+        req.onsuccess = () => resolve(req.result || null);
+        req.onerror   = () => reject(req.error);
+      });
+    } catch { return null; }
+  }
+
+  /** Prompt user to pick the project folder */
+  async function connectProjectFolder() {
+    if (!hasFSAccess()) {
+      alert('Your browser does not support direct folder access.\n'
+          + 'Use Chrome or Edge for auto-save, or use the\n'
+          + '"Download collection.json" button instead.');
+      return false;
+    }
+    try {
+      _rootHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+      await saveDirHandle(_rootHandle);
+      updateFolderUI(true);
+      // Immediately save current state to the folder
+      await autoSaveCollection();
+      return true;
+    } catch (err) {
+      if (err.name === 'AbortError') return false; // user cancelled
+      alert('Could not connect folder: ' + (err.message || err));
+      return false;
+    }
+  }
+
+  /** Try to reconnect a previously-saved handle (needs user gesture to re-verify permission) */
+  async function tryReconnectFolder() {
+    if (!hasFSAccess()) return;
+    const handle = await loadDirHandle();
+    if (!handle) return;
+    // queryPermission returns 'granted' if still allowed, 'prompt' if needs re-ask
+    try {
+      const perm = await handle.queryPermission({ mode: 'readwrite' });
+      if (perm === 'granted') {
+        _rootHandle = handle;
+        updateFolderUI(true);
+        return;
+      }
+      // Permission expired — try requesting on next user gesture
+      // Store the handle so the "Connect" click can re-request
+      _rootHandle = handle;
+      updateFolderUI(false, 'Click to reconnect');
+    } catch { /* ignore — stale handle */ }
+  }
+
+  /** Re-request permission on an existing handle (needs user gesture) */
+  async function reRequestPermission() {
+    if (!_rootHandle) return connectProjectFolder();
+    try {
+      const perm = await _rootHandle.requestPermission({ mode: 'readwrite' });
+      if (perm === 'granted') {
+        updateFolderUI(true);
+        await autoSaveCollection();
+        return true;
+      }
+    } catch { /* fall through */ }
+    // Permission denied — ask for a new folder
+    return connectProjectFolder();
+  }
+
+  /** Write collection.json to the project folder */
+  async function autoSaveCollection() {
+    if (!_rootHandle) return false;
+    try {
+      // Verify permission is still valid
+      const perm = await _rootHandle.queryPermission({ mode: 'readwrite' });
+      if (perm !== 'granted') {
+        updateFolderUI(false, 'Permission lost');
+        return false;
+      }
+
+      const payload = buildExportJSON();
+      const dataDir = await _rootHandle.getDirectoryHandle('data', { create: true });
+      const fileH   = await dataDir.getFileHandle('collection.json', { create: true });
+      const writer  = await fileH.createWritable();
+      await writer.write(JSON.stringify(payload, null, 2) + '\n');
+      await writer.close();
+
+      flashSaveStatus('✅ collection.json saved');
+      return true;
+    } catch (err) {
+      console.warn('[admin] autoSaveCollection failed:', err);
+      flashSaveStatus('❌ Save failed — ' + (err.message || err));
+      return false;
+    }
+  }
+
+  /** Write uploaded image files to the correct assets/images subfolder */
+  async function autoSaveImages(uploads) {
+    if (!_rootHandle || !uploads.length) return;
+    try {
+      const perm = await _rootHandle.queryPermission({ mode: 'readwrite' });
+      if (perm !== 'granted') return;
+
+      for (const u of uploads) {
+        const parts = u.path.split('/'); // e.g. ["assets","images","coins","file.jpg"]
+        let dir = _rootHandle;
+        for (let i = 0; i < parts.length - 1; i++) {
+          dir = await dir.getDirectoryHandle(parts[i], { create: true });
+        }
+        const fh     = await dir.getFileHandle(parts[parts.length - 1], { create: true });
+        const writer = await fh.createWritable();
+        await writer.write(u.file);
+        await writer.close();
+      }
+      flashSaveStatus(`✅ ${uploads.length} image(s) + collection.json saved`);
+    } catch (err) {
+      console.warn('[admin] autoSaveImages failed:', err);
+    }
+  }
+
+  /** Update the folder connection indicator in the header */
+  function updateFolderUI(connected, customText) {
+    const dot  = document.getElementById('folder-status-dot');
+    const text = document.getElementById('folder-status-text');
+    const wrap = document.getElementById('folder-status');
+    if (!dot || !text) return;
+
+    if (connected) {
+      dot.style.background  = '#28b06d';
+      text.style.color      = 'var(--green)';
+      text.textContent      = _rootHandle ? (_rootHandle.name + ' — auto-saving') : 'Connected';
+      if (wrap) wrap.title   = 'Project folder connected — changes auto-save to disk';
+    } else {
+      dot.style.background  = customText ? '#e8a827' : '#e05252';
+      text.style.color      = customText ? 'var(--gold)' : 'var(--text-muted)';
+      text.textContent      = customText || 'Not connected';
+      if (wrap) wrap.title   = 'Click to connect your project folder for auto-save';
+    }
+  }
+
+  /** Flash a brief save-status message */
+  function flashSaveStatus(msg) {
+    const el = document.getElementById('save-status-msg');
+    if (!el) return;
+    el.innerHTML = `<strong style="color:var(--green)">${msg}</strong>`;
+    clearTimeout(flashSaveStatus._t);
+    flashSaveStatus._t = setTimeout(() => {
+      el.innerHTML = _rootHandle
+        ? '<strong style="color:var(--green)">✅ Auto-save active</strong> — changes write directly to <code>collection.json</code>.'
+        : '<strong style="color:var(--gold)">📌 Tip:</strong> Connect your project folder (above) to auto-save, or download manually.';
+    }, 4000);
+  }
 
   // ============================================================
   //  AUTHENTICATION
@@ -30,17 +235,20 @@
     return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
   }
 
-  /** Check if a password hash is stored */
-  function hasStoredHash() {
-    return !!localStorage.getItem(HASH_KEY);
+  /** Current active hash — user-set (localStorage) or shipped default */
+  function activeHash() {
+    return localStorage.getItem(HASH_KEY) || DEFAULT_HASH;
   }
 
-  /** Verify entered password against stored hash */
+  /** Always true now — a default hash is always available */
+  function hasStoredHash() {
+    return true;
+  }
+
+  /** Verify entered password against active hash */
   async function verifyPassword(password) {
-    const stored = localStorage.getItem(HASH_KEY);
-    if (!stored) return false;
     const entered = await sha256(password);
-    return entered === stored;
+    return entered === activeHash();
   }
 
   /** Store a new password hash */
@@ -184,6 +392,21 @@
     renderCollectionTable(_collection);
     bindDashboardEvents();
     populateCountryDatalist();
+
+    // Try to reconnect a previously-saved project folder handle
+    tryReconnectFolder();
+
+    // Hide folder-related UI if browser doesn't support File System Access
+    if (!hasFSAccess()) {
+      const folderStatus = document.getElementById('folder-status');
+      if (folderStatus) folderStatus.style.display = 'none';
+      const connectBtn = document.getElementById('btn-connect-folder');
+      if (connectBtn) {
+        connectBtn.textContent = '📂 Not supported in this browser';
+        connectBtn.disabled = true;
+        connectBtn.style.opacity = '0.5';
+      }
+    }
   }
 
   function renderAdminStats() {
@@ -244,8 +467,12 @@
       const dtype   = PVC.getDisplayType(item);
       const typeCfg = PVC.TYPE_CONFIG[dtype];
       const flag    = PVC.getFlag(item.country);
-      const preview = item.image
-        ? `<img class="table-preview" src="${item.image}"
+      // src is resolved asynchronously below so we can hit
+      // IndexedDB first (uploaded-not-yet-committed images).
+      // Guard: resolve primary image safely (may be array)
+      const imgSrc = Array.isArray(item.image) ? (item.image[0] || '') : (item.image || '');
+      const preview = imgSrc
+        ? `<img class="table-preview" data-src="${imgSrc}"
                 alt="${item.title}"
                 onerror="this.parentElement.innerHTML='<div class=\\'table-preview-placeholder\\'>${typeCfg.icon}</div>'">`
         : `<div class="table-preview-placeholder">${typeCfg.icon}</div>`;
@@ -279,20 +506,37 @@
     tbody.querySelectorAll('.btn-action--delete').forEach(btn => {
       btn.addEventListener('click', () => deleteItem(btn.dataset.id));
     });
+
+    // Resolve table previews via IndexedDB store → falls through
+    // to the data-src path for the network if not uploaded.
+    tbody.querySelectorAll('.table-preview[data-src]').forEach(img => {
+      const src = img.getAttribute('data-src');
+      const resolver = PVC.resolveImageSrc ? PVC.resolveImageSrc(src) : Promise.resolve(src);
+      resolver.then(real => { img.src = real; });
+    });
   }
 
   // ── Delete item (with confirm) ──────────────────────────────
   function deleteItem(id) {
     const item = _collection.find(i => i.id === id);
     if (!item) return;
-    if (!confirm(`Delete "${item.title}"?\n\nThis only updates the preview. You still need to commit the updated collection.json to your repo.`)) return;
+
+    const msg = _rootHandle
+      ? `Delete "${item.title}"?\n\nThis will auto-save the updated collection.json to your project folder.`
+      : `Delete "${item.title}"?\n\nRemember to download or export collection.json afterwards.`;
+    if (!confirm(msg)) return;
 
     _collection = _collection.filter(i => i.id !== id);
+    saveCollectionToStorage();
+
+    // Auto-save to project folder if connected
+    if (_rootHandle) autoSaveCollection();
+
     renderCollectionTable(_collection);
     renderAdminStats();
 
-    // Show the JSON for the updated collection
-    showDeletedJSON();
+    // Show the JSON for the updated collection (if not auto-saving)
+    if (!_rootHandle) showDeletedJSON();
   }
 
   function showDeletedJSON() {
@@ -316,6 +560,20 @@
   function bindDashboardEvents() {
     // Logout
     document.getElementById('btn-logout')?.addEventListener('click', logout);
+
+    // Connect project folder — header status badge (click to connect/reconnect)
+    document.getElementById('folder-status')?.addEventListener('click', () => {
+      if (_rootHandle) {
+        reRequestPermission();
+      } else {
+        connectProjectFolder();
+      }
+    });
+
+    // Connect project folder — main button in export section
+    document.getElementById('btn-connect-folder')?.addEventListener('click', () => {
+      connectProjectFolder();
+    });
 
     // Admin search
     document.getElementById('admin-search')?.addEventListener('input', e => {
@@ -356,6 +614,30 @@
     // Copy JSON button
     document.getElementById('btn-copy-json')?.addEventListener('click', copyJSON);
 
+    // Export full collection.json
+    document.getElementById('btn-export-json')?.addEventListener('click', () => {
+      const payload = buildExportJSON();
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = 'collection.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    });
+
+    // Clear local changes
+    document.getElementById('btn-clear-local')?.addEventListener('click', async () => {
+      if (!confirm('Clear all locally-saved changes?\n\nThis will revert to the committed collection.json on next reload.')) return;
+      localStorage.removeItem(LOCAL_COLLECTION_KEY);
+      if (PVC.imageStore) {
+        try { await PVC.imageStore.clear(); } catch (e) { /* ignore */ }
+      }
+      location.reload();
+    });
+
     // Country auto-fill continent
     document.getElementById('f-country')?.addEventListener('input', e => {
       const map = PVC.getCountryMap();
@@ -369,27 +651,133 @@
 
   // ── Drop zone ───────────────────────────────────────────────
   function bindDropZone() {
-    const zone = document.getElementById('drop-zone');
-    if (!zone) return;
+    const zone  = document.getElementById('drop-zone');
+    const input = document.getElementById('img-input');
+    const btn   = document.getElementById('btn-browse-files');
+    if (!zone || !input) return;
 
-    zone.addEventListener('dragover', e => {
-      e.preventDefault();
-      zone.classList.add('drag-over');
-    });
-    zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+    // Clear .value before opening so picking the same file(s)
+    // twice still emits a `change` event (browsers suppress it
+    // if the value hasn't actually changed).
+    const openPicker = () => { input.value = ''; input.click(); };
+
+    // Drag events: preventDefault on both dragenter and dragover
+    // is required for the drop event to fire.
+    const onDragEnter = (e) => { e.preventDefault(); zone.classList.add('drag-over'); };
+    const onDragOver  = (e) => { e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; };
+    const onDragLeave = (e) => {
+      // Only clear state when leaving the zone (not a child).
+      if (e.target === zone) zone.classList.remove('drag-over');
+    };
+    zone.addEventListener('dragenter', onDragEnter);
+    zone.addEventListener('dragover',  onDragOver);
+    zone.addEventListener('dragleave', onDragLeave);
+
     zone.addEventListener('drop', e => {
       e.preventDefault();
       zone.classList.remove('drag-over');
-      handleFiles(Array.from(e.dataTransfer.files));
+
+      // Prefer the DataTransferItemList API so folder drops work too
+      // (WhatsApp export folder → iterate children).
+      const dt = e.dataTransfer;
+      if (dt.items && dt.items.length && dt.items[0].webkitGetAsEntry) {
+        collectFilesFromItems(dt.items).then(files => handleFiles(files));
+      } else {
+        handleFiles(Array.from(dt.files || []));
+      }
     });
-    zone.addEventListener('click', () => document.getElementById('img-input')?.click());
+
+    // Zone-level click — only opens picker when the click
+    // *originated* on the zone itself (not on the Browse button,
+    // which has its own handler). Without this guard, clicking
+    // the button triggers the picker twice.
+    zone.addEventListener('click', (e) => {
+      if (btn && (e.target === btn || btn.contains(e.target))) return;
+      openPicker();
+    });
+
+    // Dedicated Browse-Files handler, stops bubbling to the zone.
+    btn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openPicker();
+    });
+
+    // Keyboard accessibility (Enter / Space on the zone).
+    zone.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPicker(); }
+    });
+  }
+
+  // Recursively collect File objects from a DataTransferItemList.
+  // Supports dropping a folder (e.g. the whole WhatsApp export).
+  function collectFilesFromItems(items) {
+    const out = [];
+    const walk = (entry) => new Promise(resolve => {
+      if (!entry) return resolve();
+      if (entry.isFile) {
+        entry.file(f => { out.push(f); resolve(); }, () => resolve());
+      } else if (entry.isDirectory) {
+        const reader = entry.createReader();
+        reader.readEntries(entries => {
+          Promise.all(entries.map(walk)).then(() => resolve());
+        }, () => resolve());
+      } else {
+        resolve();
+      }
+    });
+
+    const entries = Array.from(items)
+      .map(it => it.webkitGetAsEntry && it.webkitGetAsEntry())
+      .filter(Boolean);
+    return Promise.all(entries.map(walk)).then(() => out);
+  }
+
+  // Accept images by MIME *or* extension — WhatsApp exports and
+  // some Windows copies arrive with an empty/unknown MIME type,
+  // so relying solely on f.type silently drops them.
+  const IMG_EXT_RE = /\.(jpe?g|png|webp|gif|bmp|avif|heic|heif|tiff?)$/i;
+
+  function isImageFile(f) {
+    if (f.type && f.type.startsWith('image/')) return true;
+    return IMG_EXT_RE.test(f.name || '');
   }
 
   function handleFiles(files) {
-    const imgFiles = files.filter(f => f.type.startsWith('image/'));
-    if (!imgFiles.length) return;
+    const imgFiles = files.filter(isImageFile);
+    const rejected = files.length - imgFiles.length;
+
+    if (!imgFiles.length) {
+      flashDropZone(`No image files found${files.length ? ' in the ' + files.length + ' selected item(s).' : '.'} Supported: JPG, PNG, WebP, GIF, HEIC.`);
+      return;
+    }
+
+    const before = _imageFiles.length;
     _imageFiles = [..._imageFiles, ...imgFiles].slice(0, 4); // max 4
     renderImagePreviews();
+
+    const added   = _imageFiles.length - before;
+    const dropped = imgFiles.length - added;
+    const bits    = [];
+    if (added)    bits.push(`✅ Added ${added} image${added > 1 ? 's' : ''}.`);
+    if (dropped)  bits.push(`⚠️ ${dropped} skipped — max is 4.`);
+    if (rejected) bits.push(`⚠️ ${rejected} non-image file${rejected > 1 ? 's' : ''} ignored.`);
+    if (bits.length) flashDropZone(bits.join(' '));
+  }
+
+  // Show a transient message below the drop zone so the user
+  // actually sees why a file didn't get picked up.
+  function flashDropZone(msg) {
+    let note = document.getElementById('drop-zone-note');
+    if (!note) {
+      note = document.createElement('p');
+      note.id = 'drop-zone-note';
+      note.style.cssText = 'margin-top:10px;padding:10px 12px;border-radius:var(--r-sm);font-size:0.82rem;line-height:1.5;background:var(--surface-3);border:1px solid var(--border);color:var(--text-muted)';
+      const zone = document.getElementById('drop-zone');
+      zone?.parentElement?.insertBefore(note, zone.nextSibling);
+    }
+    note.textContent = msg;
+    clearTimeout(flashDropZone._t);
+    flashDropZone._t = setTimeout(() => { if (note) note.textContent = ''; }, 6000);
   }
 
   function renderImagePreviews() {
@@ -397,11 +785,13 @@
     if (!container) return;
     container.innerHTML = '';
 
+    const SIDE = ['Front (Obverse)', 'Back (Reverse)', 'View 3', 'View 4'];
     _imageFiles.forEach((file, idx) => {
       const url  = URL.createObjectURL(file);
       const item = document.createElement('div');
       item.className = 'preview-item';
       item.innerHTML = `
+        <div class="preview-item__side">${SIDE[idx] || ('View ' + (idx+1))}</div>
         <img src="${url}" alt="Preview ${idx + 1}">
         <div class="preview-item__label">${file.name}</div>
         <button class="preview-item__remove" data-idx="${idx}">✕</button>
@@ -449,6 +839,13 @@
     _editingId = id;
     _tags = [...(item.tags || [])];
     _imageFiles = [];
+    // Preserve existing image paths so editing doesn't lose them
+    const existImg = Array.isArray(item.image) ? (item.image[0] || '') : (item.image || '');
+    _existingImages = {
+      image:     existImg,
+      images:    Array.isArray(item.images) ? [...item.images] : (existImg ? [existImg] : []),
+      thumbnail: item.thumbnail || existImg
+    };
 
     const dtype = PVC.getDisplayType(item);
 
@@ -504,7 +901,16 @@
     const baseId  = _editingId || generateId(type, country, year);
     const imgSlug = baseId.replace(/_/g, '_');
     const imgDir  = type === 'coin' ? 'coins' : 'currency';
-    const imgPath = _imageFiles.length ? `assets/images/${imgDir}/${imgSlug}.jpg` : '';
+
+    // Build per-image paths: first image is the primary (front),
+    // second becomes _back, further images get numeric suffixes.
+    const suffixFor = (i) => i === 0 ? '' : (i === 1 ? '_back' : `_${i + 1}`);
+    const imgPaths  = _imageFiles.length
+      ? _imageFiles.map((_, i) =>
+          `assets/images/${imgDir}/${imgSlug}${suffixFor(i)}.jpg`)
+      : (_editingId ? _existingImages.images : []);
+
+    const primaryPath = imgPaths[0] || (_editingId ? _existingImages.image : '');
 
     const entry = {
       id:           baseId,
@@ -519,8 +925,9 @@
       description:  getValue('f-description').trim()  || undefined,
       tags:         allTags,
       theme:        themes,
-      image:        imgPath || undefined,
-      thumbnail:    imgPath || undefined,
+      image:        primaryPath || undefined,
+      images:       imgPaths.length > 1 ? imgPaths : undefined,
+      thumbnail:    primaryPath || undefined,
       addedOn:      new Date().toISOString().split('T')[0],
     };
 
@@ -535,12 +942,32 @@
       _collection.push(entry);
     }
 
+    // Persist the full collection to localStorage so items survive
+    // page reloads and are visible on the gallery page too.
+    saveCollectionToStorage();
+
+    // Save uploaded blobs to the local IndexedDB store at the
+    // target repo paths. This lets the gallery render them
+    // immediately without waiting for a commit to disk.
+    const uploads = _imageFiles.length
+      ? _imageFiles.map((file, i) => ({ file, path: imgPaths[i] }))
+      : [];
+    if (PVC.imageStore && uploads.length) {
+      Promise.all(uploads.map(u => PVC.imageStore.put(u.path, u.file)))
+             .catch(err => console.warn('[admin] imageStore.put failed', err));
+    }
+
+    // Auto-save to project folder (collection.json + images) if connected
+    if (_rootHandle) {
+      autoSaveImages(uploads).then(() => autoSaveCollection());
+    }
+
     renderAdminStats();
     renderCollectionTable(_collection);
-    showOutput(entry, imgDir, imgSlug);
+    showOutput(entry, imgDir, imgSlug, uploads);
   }
 
-  function showOutput(entry, imgDir, imgSlug) {
+  function showOutput(entry, imgDir, imgSlug, uploads) {
     const out   = document.getElementById('output-section');
     const jsonEl = document.getElementById('output-json');
     if (!out || !jsonEl) return;
@@ -549,27 +976,126 @@
 
     const fileInstr = document.getElementById('file-instructions');
     if (fileInstr) {
-      if (_imageFiles.length) {
+      if (uploads && uploads.length) {
+        const SIDE = ['Front', 'Back', 'View 3', 'View 4'];
         fileInstr.innerHTML = `
           <div style="margin:12px 0;padding:12px;background:var(--surface-3);border-radius:var(--r-md)">
-            <strong style="font-size:0.85rem;color:var(--text)">📁 Image File${_imageFiles.length > 1 ? 's' : ''} to save:</strong>
-            ${_imageFiles.map((f, i) => `
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px">
+              <strong style="font-size:0.85rem;color:var(--text)">
+                📁 Image File${uploads.length > 1 ? 's' : ''} — previewed locally
+              </strong>
+              <div style="display:flex;gap:8px">
+                <button type="button" class="btn-secondary" id="btn-save-fs"
+                        title="Write images directly into assets/images/ (Chrome/Edge)">
+                  💾 Save to project folder
+                </button>
+                <button type="button" class="btn-secondary" id="btn-download-imgs">
+                  ⬇️ Download renamed
+                </button>
+              </div>
+            </div>
+            ${uploads.map((u, i) => `
               <div style="margin-top:8px;font-size:0.82rem;color:var(--text-muted)">
-                Save <code style="color:var(--gold)">${f.name}</code> →
-                <code style="color:var(--gold)">assets/images/${imgDir}/${imgSlug}${_imageFiles.length > 1 ? '_' + (i+1) : ''}.jpg</code>
+                <strong style="color:var(--text)">${SIDE[i] || ('View ' + (i+1))}:</strong>
+                <code style="color:var(--gold)">${u.file.name}</code>
+                → <code style="color:var(--gold)">${u.path}</code>
               </div>`).join('')}
+            <p style="margin-top:10px;font-size:0.76rem;color:var(--text-dim);line-height:1.6">
+              ℹ️ Images are already visible in the gallery on this browser
+              (stored locally). To publish them, click <em>Save to project folder</em>
+              — or <em>Download renamed</em> and drop the files into the
+              correct folder manually.
+            </p>
           </div>`;
+
+        document.getElementById('btn-save-fs')
+          ?.addEventListener('click', () => saveUploadsToProject(uploads));
+        document.getElementById('btn-download-imgs')
+          ?.addEventListener('click', () => downloadUploadsRenamed(uploads));
       } else {
         fileInstr.innerHTML = `<p style="font-size:0.82rem;color:var(--text-muted);margin-top:8px">ℹ️ No image uploaded. You can add one later and update the <code style="color:var(--gold)">image</code> field.</p>`;
       }
     }
 
-    // Update commit instructions title dynamically
     const commitTitle = out.querySelector('.commit-instructions h4');
     if (commitTitle) commitTitle.textContent = `Next Steps to Publish "${entry.title}":`;
 
     out.classList.remove('hidden');
     out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── Publish helpers ─────────────────────────────────────────
+  // File System Access API: Chrome/Edge. Writes images AND the
+  // updated data/collection.json directly into the project root,
+  // so the user only needs to `git add . && git push`.
+  async function saveUploadsToProject(uploads) {
+    if (!window.showDirectoryPicker) {
+      alert('Your browser does not support direct folder writes.\n'
+          + 'Falling back to per-file download — drop them into the\n'
+          + 'matching folder manually.\n\n'
+          + '(Chrome or Edge supports one-click save.)');
+      return downloadUploadsRenamed(uploads);
+    }
+    let rootHandle;
+    try {
+      rootHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+    } catch (err) {
+      if (err && err.name === 'AbortError') return;
+      alert('Could not open folder: ' + (err.message || err));
+      return;
+    }
+
+    try {
+      // 1) Write each image file to assets/images/<dir>/<slug>.jpg
+      for (const u of uploads) {
+        const parts = u.path.split('/');
+        let dir = rootHandle;
+        for (let i = 0; i < parts.length - 1; i++) {
+          dir = await dir.getDirectoryHandle(parts[i], { create: true });
+        }
+        const fh     = await dir.getFileHandle(parts[parts.length - 1], { create: true });
+        const writer = await fh.createWritable();
+        await writer.write(u.file);
+        await writer.close();
+      }
+
+      // 2) Write data/collection.json with the full current list
+      const dataDir = await rootHandle.getDirectoryHandle('data', { create: true });
+      const jsonH   = await dataDir.getFileHandle('collection.json', { create: true });
+      const jsonW   = await jsonH.createWritable();
+      const payload = {
+        meta: {
+          title: 'PV Collection',
+          description: 'A personal coin and currency collection spanning the world',
+          lastUpdated: new Date().toISOString().split('T')[0],
+          version: '1.0.0'
+        },
+        items: _collection
+      };
+      await jsonW.write(JSON.stringify(payload, null, 2));
+      await jsonW.close();
+
+      alert(`✅ Saved ${uploads.length} image(s) + collection.json to the project folder.\n\n`
+          + 'Next: `git add . && git commit -m "add: ' + (uploads[0]?.file.name || 'new item') + '" && git push`');
+    } catch (err) {
+      alert('Save failed: ' + (err.message || err));
+    }
+  }
+
+  // Universal fallback: trigger one download per upload, with
+  // the filename the site expects. User drops them into the
+  // matching folder and commits.
+  function downloadUploadsRenamed(uploads) {
+    uploads.forEach((u, i) => {
+      const targetName = u.path.split('/').pop();
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(u.file);
+      link.download = targetName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(() => URL.revokeObjectURL(link.href), 10000);
+    });
   }
 
   function copyJSON() {
@@ -602,6 +1128,7 @@
     _editingId  = null;
     _tags       = [];
     _imageFiles = [];
+    _existingImages = { image: '', images: [], thumbnail: '' };
     document.getElementById('item-form')?.reset();
     renderTags();
     renderImagePreviews();
@@ -612,10 +1139,37 @@
     document.getElementById('output-section')?.classList.add('hidden');
   }
 
+  // ── Persist collection to localStorage ───────────────────────
+  // Both the admin page and gallery page read from this key.
+  // The gallery merges these items with the static collection.json.
+  const LOCAL_COLLECTION_KEY = 'pvc_local_collection';
+
+  function saveCollectionToStorage() {
+    try {
+      const payload = {
+        meta: {
+          title: 'PV Collection',
+          description: 'A personal coin and currency collection spanning the world',
+          lastUpdated: new Date().toISOString().split('T')[0],
+          version: '1.0.0'
+        },
+        items: _collection
+      };
+      localStorage.setItem(LOCAL_COLLECTION_KEY, JSON.stringify(payload));
+    } catch (err) {
+      console.warn('[admin] Failed to save collection to localStorage:', err);
+    }
+  }
+
   // ── Build full export JSON (all items) ──────────────────────
   function buildExportJSON() {
     return {
-      meta: { lastUpdated: new Date().toISOString().split('T')[0] },
+      meta: {
+        title: 'PV Collection',
+        description: 'A personal coin and currency collection spanning the world',
+        lastUpdated: new Date().toISOString().split('T')[0],
+        version: '1.0.0'
+      },
       items: _collection
     };
   }

@@ -67,6 +67,8 @@
     const flag      = PVC.getFlag(item.country);
     const isCoin    = item.type === 'coin';
     const placeholder = PVC.getPlaceholderSVG(item);
+    // Safely resolve primary image path (guard against array values)
+    const primaryImage = Array.isArray(item.image) ? (item.image[0] || '') : (item.image || '');
 
     const card = document.createElement('div');
     card.className = 'collection-card';
@@ -80,7 +82,7 @@
         <img
           class="card-img"
           src="${placeholder}"
-          data-real="${item.image || ''}"
+          data-real="${primaryImage}"
           alt="${item.title}"
           loading="lazy"
         >
@@ -101,7 +103,7 @@
     `;
 
     // Load real image if path exists
-    tryLoadRealImage(card.querySelector('.card-img'), item.image, placeholder);
+    tryLoadRealImage(card.querySelector('.card-img'), primaryImage, placeholder);
 
     // Click → lightbox
     card.addEventListener('click', () => PVC.openLightbox(item));
@@ -110,12 +112,18 @@
   }
 
   // ── Try loading the real image, fallback to placeholder ─────
+  // First resolves through PVC.resolveImageSrc (IndexedDB) so any
+  // image that was uploaded via the admin panel but not yet committed
+  // to the repo still renders in the gallery for the local user.
   function tryLoadRealImage(imgEl, src, placeholder) {
     if (!src) return;
-    const testImg = new Image();
-    testImg.onload = () => { imgEl.src = src; };
-    testImg.onerror = () => { imgEl.src = placeholder; };
-    testImg.src = src;
+    const resolved = PVC.resolveImageSrc ? PVC.resolveImageSrc(src) : Promise.resolve(src);
+    resolved.then(realSrc => {
+      const testImg = new Image();
+      testImg.onload  = () => { imgEl.src = realSrc; };
+      testImg.onerror = () => { imgEl.src = placeholder; };
+      testImg.src = realSrc;
+    });
   }
 
   // ── Build theme badge HTML ───────────────────────────────────
