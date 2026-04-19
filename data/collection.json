@@ -383,6 +383,180 @@
       ],
       "thumbnail": "assets/images/currency/polymer_north-ireland_2018.jpg",
       "addedOn": "2026-04-19"
+    },
+    {
+      "id": "note_south-carolina_2014",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "South Carolina State Fantasy Commerative Note",
+      "country": "South Carolina",
+      "continent": "North America",
+      "year": 2014,
+      "denomination": "50",
+      "material": "Linen Note",
+      "description": "This note is not official government currency; it is a commemorative polymer souvenir note produced by a private company called Applied Currency Concepts.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "south-carolina",
+        "north-america"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_south-carolina_2014.jpg",
+      "images": [
+        "assets/images/currency/note_south-carolina_2014.jpg",
+        "assets/images/currency/note_south-carolina_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_south-carolina_2014.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "note_british_1972",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "British Armed Force 10 New Pence",
+      "country": "British",
+      "continent": "Europe",
+      "year": 1972,
+      "denomination": "10",
+      "material": "Cotton paper",
+      "description": "British Armed Forces currency consisted of special vouchers and banknotes issued between 1946 and 1972 (1st–6th series) for use in NAAFI canteens and by personnel in occupied zones to prevent black market activity. These notes ranged from 3 pence up to 5 pounds, with later series in 1972 introducing decimal 'New Pence'",
+      "tags": [
+        "paper-currency",
+        "british",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_british_1972.jpg",
+      "images": [
+        "assets/images/currency/note_british_1972.jpg",
+        "assets/images/currency/note_british_1972_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_british_1972.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_aldabra-island_1079",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Aldabra Island",
+      "country": "Aldabra Island",
+      "continent": "Africa",
+      "year": null,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Aldabra Island, part of the Seychelles, uses the Seychellois Rupee (SCR) as its official currency. As a remote, uninhabited UNESCO World Heritage site managed by the Seychelles Islands Foundation, there are no banks, so visitors—usually on specialized expedition cruises—should carry Euros or USD. Note that \"Aldabra Islands\" currency notes often listed online are collector/novelty items.",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "person-theme",
+        "aldabra-island",
+        "africa"
+      ],
+      "theme": [
+        "bird-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_aldabra-island_1079.jpg",
+      "images": [
+        "assets/images/currency/polymer_aldabra-island_1079.jpg",
+        "assets/images/currency/polymer_aldabra-island_1079_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_aldabra-island_1079.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_antarctica_2011",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Antarctica 1 Dollar",
+      "country": "Antarctica",
+      "continent": "Antarctica",
+      "year": 2011,
+      "denomination": "1",
+      "material": "Polymer",
+      "description": "Antarctic dollar, or Antarctician dollar, that's used throughout the Federated States of Antarctica. It's also known as an Emp (or buck) in honor of the Emperor Penguins that call Antarctica home",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "antarctica"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_antarctica_2011.jpg",
+      "images": [
+        "assets/images/currency/polymer_antarctica_2011.jpg",
+        "assets/images/currency/polymer_antarctica_2011_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_antarctica_2011.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_artic-territories_6882",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Artic Territories 1 Dollar",
+      "country": "Artic Territories",
+      "continent": "Antarctica",
+      "year": null,
+      "denomination": "1",
+      "material": "Polymer",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "nature-theme",
+        "artic-territories",
+        "antarctica"
+      ],
+      "theme": [
+        "animal-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_artic-territories_6882.jpg",
+      "images": [
+        "assets/images/currency/polymer_artic-territories_6882.jpg",
+        "assets/images/currency/polymer_artic-territories_6882_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_artic-territories_6882.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_artic-territories_4399",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Artic Territories 5Dollar",
+      "country": "Artic Territories",
+      "continent": "Antarctica",
+      "year": null,
+      "denomination": "5",
+      "material": "Polymer",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "nature-theme",
+        "artic-territories",
+        "antarctica"
+      ],
+      "theme": [
+        "animal-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_artic-territories_4399.jpg",
+      "images": [
+        "assets/images/currency/polymer_artic-territories_4399.jpg",
+        "assets/images/currency/polymer_artic-territories_4399_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_artic-territories_4399.jpg",
+      "addedOn": "2026-04-19"
     }
   ]
 }
