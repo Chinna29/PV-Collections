@@ -295,6 +295,94 @@
       ],
       "thumbnail": "assets/images/currency/polymer_solmon-island-sovereign-country_2019.jpg",
       "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_cook-island_2021",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Cook Island Commerative",
+      "country": "Cook Island",
+      "continent": "Oceania",
+      "year": 2021,
+      "denomination": "3",
+      "material": "Polymer",
+      "description": "The Cook Islands are a self-governing nation in the South Pacific, in free association with New Zealand, comprised of 15 islands known for turquoise lagoons, beaches, and volcanic peaks",
+      "tags": [
+        "polymer-currency",
+        "aquatic-theme",
+        "cook-island",
+        "oceania"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/currency/polymer_cook-island_2021.jpg",
+      "images": [
+        "assets/images/currency/polymer_cook-island_2021.jpg",
+        "assets/images/currency/polymer_cook-island_2021_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_cook-island_2021.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_costa-rica_2018",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Costa Rica 2MIL",
+      "country": "Costa Rica",
+      "continent": "North America",
+      "year": 2018,
+      "denomination": "2 Colones",
+      "material": "Polymer",
+      "description": "2 MIL Colones",
+      "tags": [
+        "polymer-currency",
+        "aquatic-theme",
+        "person-theme",
+        "costa-rica",
+        "north-america"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_costa-rica_2018.jpg",
+      "images": [
+        "assets/images/currency/polymer_costa-rica_2018.jpg",
+        "assets/images/currency/polymer_costa-rica_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_costa-rica_2018.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_north-ireland_2018",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "North Ireland 10Pound",
+      "country": "North Ireland",
+      "continent": "Europe",
+      "year": 2018,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Vertical Note, Issue by Ulster Bank",
+      "tags": [
+        "polymer-currency",
+        "history-theme",
+        "flora-theme",
+        "north-ireland",
+        "europe"
+      ],
+      "theme": [
+        "history-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/polymer_north-ireland_2018.jpg",
+      "images": [
+        "assets/images/currency/polymer_north-ireland_2018.jpg",
+        "assets/images/currency/polymer_north-ireland_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_north-ireland_2018.jpg",
+      "addedOn": "2026-04-19"
     }
   ]
 }
