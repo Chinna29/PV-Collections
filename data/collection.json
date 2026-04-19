@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-04-14",
+    "lastUpdated": "2026-04-19",
     "version": "1.0.0"
   },
   "items": [
@@ -25,7 +25,9 @@
         "wildlife",
         "rhinoceros"
       ],
-      "theme": ["animal-theme"],
+      "theme": [
+        "animal-theme"
+      ],
       "image": "assets/images/coins/coin_001.jpg",
       "thumbnail": "assets/images/coins/coin_001.jpg",
       "addedOn": "2024-01-10"
@@ -41,8 +43,16 @@
       "denomination": "1 Dollar",
       "material": "Aluminium Bronze",
       "description": "The iconic Australian dollar coin featuring a mob of five kangaroos in motion. First year of issue for the Australian dollar coin.",
-      "tags": ["coin", "animal-theme", "australia", "oceania", "kangaroo"],
-      "theme": ["animal-theme"],
+      "tags": [
+        "coin",
+        "animal-theme",
+        "australia",
+        "oceania",
+        "kangaroo"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
       "image": "assets/images/coins/coin_002.jpg",
       "thumbnail": "assets/images/coins/coin_002.jpg",
       "addedOn": "2024-01-15"
@@ -58,8 +68,16 @@
       "denomination": "1 Dollar",
       "material": "Aluminium Bronze",
       "description": "New Zealand one dollar coin featuring the iconic Kiwi bird, the national symbol of New Zealand. Commemorating 150 years of New Zealand.",
-      "tags": ["coin", "bird-theme", "new-zealand", "oceania", "kiwi"],
-      "theme": ["bird-theme"],
+      "tags": [
+        "coin",
+        "bird-theme",
+        "new-zealand",
+        "oceania",
+        "kiwi"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
       "image": "assets/images/coins/coin_003.jpg",
       "thumbnail": "assets/images/coins/coin_003.jpg",
       "addedOn": "2024-01-20"
@@ -84,7 +102,10 @@
         "state-quarter",
         "california"
       ],
-      "theme": ["aquatic-theme", "bird-theme"],
+      "theme": [
+        "aquatic-theme",
+        "bird-theme"
+      ],
       "image": "assets/images/coins/coin_004.jpg",
       "thumbnail": "assets/images/coins/coin_004.jpg",
       "addedOn": "2024-02-01"
@@ -100,7 +121,12 @@
       "denomination": "5 Rupees",
       "material": "Stainless Steel",
       "description": "Indian five rupee stainless steel coin from the post-liberalization era featuring the Lion Capital of Ashoka on the obverse.",
-      "tags": ["coin", "india", "asia", "ashoka"],
+      "tags": [
+        "coin",
+        "india",
+        "asia",
+        "ashoka"
+      ],
       "theme": [],
       "image": "assets/images/coins/coin_005.jpg",
       "thumbnail": "assets/images/coins/coin_005.jpg",
@@ -117,7 +143,13 @@
       "denomination": "50 Pence",
       "material": "Cupro-Nickel",
       "description": "Commemorative 50 pence coin celebrating the London 2012 Olympic Games. Features an abstract athletics design inspired by Olympic movement.",
-      "tags": ["coin", "uk", "europe", "olympics", "commemorative"],
+      "tags": [
+        "coin",
+        "uk",
+        "europe",
+        "olympics",
+        "commemorative"
+      ],
       "theme": [],
       "image": "assets/images/coins/coin_006.jpg",
       "thumbnail": "assets/images/coins/coin_006.jpg",
@@ -142,7 +174,9 @@
         "buffalo",
         "big-five"
       ],
-      "theme": ["animal-theme"],
+      "theme": [
+        "animal-theme"
+      ],
       "image": "assets/images/coins/coin_007.jpg",
       "thumbnail": "assets/images/coins/coin_007.jpg",
       "addedOn": "2024-02-15"
@@ -158,8 +192,16 @@
       "denomination": "500 Yen",
       "material": "Bi-colour Clad",
       "description": "New-generation Japanese 500 yen bi-colour clad coin featuring advanced clad-core and micro-letter edge inscription anti-counterfeiting measures.",
-      "tags": ["coin", "bird-theme", "japan", "asia", "mandarin-duck"],
-      "theme": ["bird-theme"],
+      "tags": [
+        "coin",
+        "bird-theme",
+        "japan",
+        "asia",
+        "mandarin-duck"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
       "image": "assets/images/coins/coin_008.jpg",
       "thumbnail": "assets/images/coins/coin_008.jpg",
       "addedOn": "2024-03-01"
@@ -183,7 +225,11 @@
         "india",
         "asia"
       ],
-      "theme": ["aquatic-theme", "nature-theme", "transport-theme"],
+      "theme": [
+        "aquatic-theme",
+        "nature-theme",
+        "transport-theme"
+      ],
       "image": "assets/images/currency/note_india_1965.jpg",
       "images": [
         "assets/images/currency/note_india_1965.jpg",
@@ -192,6 +238,63 @@
       ],
       "thumbnail": "assets/images/currency/note_india_1965.jpg",
       "addedOn": "2026-04-17"
+    },
+    {
+      "id": "polymer_malaysia_2011",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Malaysia Polymer 5 RM",
+      "country": "Malaysia",
+      "continent": "Asia",
+      "year": 2011,
+      "denomination": "5",
+      "material": "Polymer",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "flora-theme",
+        "malaysia",
+        "asia"
+      ],
+      "theme": [
+        "bird-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/polymer_malaysia_2011.jpg",
+      "images": [
+        "assets/images/currency/polymer_malaysia_2011.jpg",
+        "assets/images/currency/polymer_malaysia_2011_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_malaysia_2011.jpg",
+      "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_solmon-island-sovereign-country_2019",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Solmon Island 5 Dollar",
+      "country": "Solmon Island  [sovereign country]",
+      "continent": "Oceania",
+      "year": 2019,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "The Solomon Islands is a sovereign archipelagic nation in Melanesia, South Pacific, consisting of over 900 islands east of Papua New Guinea. Its capital, Honiara, is on Guadalcanal Island. Known for its WWII, history, diving, and rich culture, the nation features volcanic, forested terrain. The economy relies on agriculture, fishing, and forestry, with English as the official language",
+      "tags": [
+        "polymer-currency",
+        "aquatic-theme",
+        "solmon-island-[sovereign-country]",
+        "oceania"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/currency/polymer_solmon-island-sovereign-country_2019.jpg",
+      "images": [
+        "assets/images/currency/polymer_solmon-island-sovereign-country_2019.jpg",
+        "assets/images/currency/polymer_solmon-island-sovereign-country_2019_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_solmon-island-sovereign-country_2019.jpg",
+      "addedOn": "2026-04-19"
     }
   ]
 }
