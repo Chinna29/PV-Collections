@@ -7,206 +7,6 @@
   },
   "items": [
     {
-      "id": "coin_001",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "1 Rupee — Rhinoceros",
-      "country": "India",
-      "continent": "Asia",
-      "year": 1975,
-      "denomination": "1 Rupee",
-      "material": "Copper-Nickel",
-      "description": "Commemorative Indian one rupee coin featuring the Indian one-horned rhinoceros, issued in celebration of wildlife conservation.",
-      "tags": [
-        "coin",
-        "animal-theme",
-        "india",
-        "asia",
-        "wildlife",
-        "rhinoceros"
-      ],
-      "theme": [
-        "animal-theme"
-      ],
-      "image": "assets/images/coins/coin_001.jpg",
-      "thumbnail": "assets/images/coins/coin_001.jpg",
-      "addedOn": "2024-01-10"
-    },
-    {
-      "id": "coin_002",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "1 Dollar — Mob of Kangaroos",
-      "country": "Australia",
-      "continent": "Oceania",
-      "year": 1984,
-      "denomination": "1 Dollar",
-      "material": "Aluminium Bronze",
-      "description": "The iconic Australian dollar coin featuring a mob of five kangaroos in motion. First year of issue for the Australian dollar coin.",
-      "tags": [
-        "coin",
-        "animal-theme",
-        "australia",
-        "oceania",
-        "kangaroo"
-      ],
-      "theme": [
-        "animal-theme"
-      ],
-      "image": "assets/images/coins/coin_002.jpg",
-      "thumbnail": "assets/images/coins/coin_002.jpg",
-      "addedOn": "2024-01-15"
-    },
-    {
-      "id": "coin_003",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "1 Dollar — Kiwi",
-      "country": "New Zealand",
-      "continent": "Oceania",
-      "year": 1990,
-      "denomination": "1 Dollar",
-      "material": "Aluminium Bronze",
-      "description": "New Zealand one dollar coin featuring the iconic Kiwi bird, the national symbol of New Zealand. Commemorating 150 years of New Zealand.",
-      "tags": [
-        "coin",
-        "bird-theme",
-        "new-zealand",
-        "oceania",
-        "kiwi"
-      ],
-      "theme": [
-        "bird-theme"
-      ],
-      "image": "assets/images/coins/coin_003.jpg",
-      "thumbnail": "assets/images/coins/coin_003.jpg",
-      "addedOn": "2024-01-20"
-    },
-    {
-      "id": "coin_004",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "25 Cents — California Ocean",
-      "country": "USA",
-      "continent": "North America",
-      "year": 2005,
-      "denomination": "25 Cents",
-      "material": "Copper-Nickel Clad",
-      "description": "California state quarter featuring the naturalist John Muir, Yosemite Valley, and the California Condor soaring above the Pacific coastline.",
-      "tags": [
-        "coin",
-        "aquatic-theme",
-        "bird-theme",
-        "usa",
-        "north-america",
-        "state-quarter",
-        "california"
-      ],
-      "theme": [
-        "aquatic-theme",
-        "bird-theme"
-      ],
-      "image": "assets/images/coins/coin_004.jpg",
-      "thumbnail": "assets/images/coins/coin_004.jpg",
-      "addedOn": "2024-02-01"
-    },
-    {
-      "id": "coin_005",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "5 Rupees — Republic India",
-      "country": "India",
-      "continent": "Asia",
-      "year": 1994,
-      "denomination": "5 Rupees",
-      "material": "Stainless Steel",
-      "description": "Indian five rupee stainless steel coin from the post-liberalization era featuring the Lion Capital of Ashoka on the obverse.",
-      "tags": [
-        "coin",
-        "india",
-        "asia",
-        "ashoka"
-      ],
-      "theme": [],
-      "image": "assets/images/coins/coin_005.jpg",
-      "thumbnail": "assets/images/coins/coin_005.jpg",
-      "addedOn": "2024-02-05"
-    },
-    {
-      "id": "coin_006",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "50 Pence — London Olympics",
-      "country": "United Kingdom",
-      "continent": "Europe",
-      "year": 2012,
-      "denomination": "50 Pence",
-      "material": "Cupro-Nickel",
-      "description": "Commemorative 50 pence coin celebrating the London 2012 Olympic Games. Features an abstract athletics design inspired by Olympic movement.",
-      "tags": [
-        "coin",
-        "uk",
-        "europe",
-        "olympics",
-        "commemorative"
-      ],
-      "theme": [],
-      "image": "assets/images/coins/coin_006.jpg",
-      "thumbnail": "assets/images/coins/coin_006.jpg",
-      "addedOn": "2024-02-10"
-    },
-    {
-      "id": "coin_007",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "5 Rand — Big Five",
-      "country": "South Africa",
-      "continent": "Africa",
-      "year": 2000,
-      "denomination": "5 Rand",
-      "material": "Nickel-Brass",
-      "description": "South African five rand coin featuring the African Buffalo (Cape Buffalo), one of the famous Big Five animals of Africa.",
-      "tags": [
-        "coin",
-        "animal-theme",
-        "south-africa",
-        "africa",
-        "buffalo",
-        "big-five"
-      ],
-      "theme": [
-        "animal-theme"
-      ],
-      "image": "assets/images/coins/coin_007.jpg",
-      "thumbnail": "assets/images/coins/coin_007.jpg",
-      "addedOn": "2024-02-15"
-    },
-    {
-      "id": "coin_008",
-      "type": "coin",
-      "subtype": "coin",
-      "title": "500 Yen — Mandarin Duck",
-      "country": "Japan",
-      "continent": "Asia",
-      "year": 2021,
-      "denomination": "500 Yen",
-      "material": "Bi-colour Clad",
-      "description": "New-generation Japanese 500 yen bi-colour clad coin featuring advanced clad-core and micro-letter edge inscription anti-counterfeiting measures.",
-      "tags": [
-        "coin",
-        "bird-theme",
-        "japan",
-        "asia",
-        "mandarin-duck"
-      ],
-      "theme": [
-        "bird-theme"
-      ],
-      "image": "assets/images/coins/coin_008.jpg",
-      "thumbnail": "assets/images/coins/coin_008.jpg",
-      "addedOn": "2024-03-01"
-    },
-    {
       "id": "note_india_1965",
       "type": "currency",
       "subtype": "paper",
@@ -1073,6 +873,59 @@
         "assets/images/currency/note_abkhazia_2024_back.jpg"
       ],
       "thumbnail": "assets/images/currency/note_abkhazia_2024.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "coin_transnistria_2014",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Transnistria Plastic Coin Set",
+      "country": "Transnistria",
+      "continent": "Europe",
+      "year": 2014,
+      "denomination": "1, 3, 5, 10 Rubes",
+      "material": "Plastic",
+      "description": "Transnistria is an unrecognized, self-proclaimed breakaway state located between the Dniester River and the Ukrainian border, internationally recognized as part of Moldova. It functions as a de facto independent entity with its own government, military, currency, and police force, heavily supported by Russia, which maintains peacekeepers in the region",
+      "tags": [
+        "coin",
+        "person-theme",
+        "transnistria",
+        "europe",
+        "plastic"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/coins/coin_transnistria_2014.jpg",
+      "thumbnail": "assets/images/coins/coin_transnistria_2014.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "coin_iceland_1995",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Iceland Kronr",
+      "country": "Iceland",
+      "continent": "Europe",
+      "year": 1995,
+      "denomination": "5 Kr",
+      "description": "Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, which runs on geothermal power and is home to the National and Saga museums, tracing Iceland’s Viking history.",
+      "tags": [
+        "coin",
+        "aquatic-theme",
+        "iceland",
+        "europe",
+        "dolphin"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/coins/coin_iceland_1995.jpg",
+      "images": [
+        "assets/images/coins/coin_iceland_1995.jpg",
+        "assets/images/coins/coin_iceland_1995_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_iceland_1995.jpg",
       "addedOn": "2026-04-23"
     }
   ]
