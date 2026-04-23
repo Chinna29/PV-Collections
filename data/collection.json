@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-04-19",
+    "lastUpdated": "2026-04-23",
     "version": "1.0.0"
   },
   "items": [
@@ -557,6 +557,523 @@
       ],
       "thumbnail": "assets/images/currency/polymer_artic-territories_4399.jpg",
       "addedOn": "2026-04-19"
+    },
+    {
+      "id": "polymer_scotland_2016",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Scoland 5 Pound",
+      "country": "Scotland",
+      "continent": "Europe",
+      "year": 2016,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Scotland is a country that is part of the United Kingdom. It contains nearly one-third of the United Kingdom's land area, consisting of the northern part of the island of Great Britain and more than 790 adjacent islands, principally in the archipelagos of the Hebrides and the Northern Isles. The official currency of Scotland is the Pound Sterling (£/GBP), which is the same currency used throughout the rest of the United Kingdom",
+      "tags": [
+        "polymer-currency",
+        "aquatic-theme",
+        "scotland",
+        "europe"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/currency/polymer_scotland_2016.jpg",
+      "images": [
+        "assets/images/currency/polymer_scotland_2016.jpg",
+        "assets/images/currency/polymer_scotland_2016_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_scotland_2016.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_tatarstan_1990",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Tatarstan 100 Ruble",
+      "country": "Tatarstan",
+      "continent": "Europe",
+      "year": 1990,
+      "denomination": "100",
+      "material": "Cotton Paper",
+      "description": "Tatarstan, officially the Republic of Tatarstan, sometimes also called Tataria, is a republic of Russia located in Eastern Europe. It is a part of the Volga Federal District; and its capital and largest city is Kazan, an important cultural centre in Russia. Tatarstan is a republic within the Russian Federation and uses the Russian ruble (RUB) as its official legal tender. While the republic issued temporary \"currency checks\" or social coupons between 1991 and 1994 to manage shortages, these are no longer in use, and all transactions are conducted in rubles.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "tatarstan",
+        "europe",
+        "russia",
+        "rubble"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_tatarstan_1990.jpg",
+      "thumbnail": "assets/images/currency/note_tatarstan_1990.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "polymer_hong-kong_5459",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "10 Hong Kong Dollar",
+      "country": "Hong Kong",
+      "continent": "Asia",
+      "year": null,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "The Hong Kong dollar is the official currency of Hong Kong. It is divided into 100 cents. Historically, it was also divided into 1000 mils. The Hong Kong Monetary Authority is the monetary authority of Hong Kong and the Hong Kong dollar.",
+      "tags": [
+        "polymer-currency",
+        "hong-kong",
+        "asia"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/polymer_hong-kong_5459.jpg",
+      "images": [
+        "assets/images/currency/polymer_hong-kong_5459.jpg",
+        "assets/images/currency/polymer_hong-kong_5459_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_hong-kong_5459.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_hong-kong_1505",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "1 Hong Kong Cent",
+      "country": "Hong Kong",
+      "continent": "Asia",
+      "year": null,
+      "denomination": "1 Cent",
+      "material": "Polymer",
+      "description": "The Hong Kong dollar is the official currency of Hong Kong. It is divided into 100 cents. Historically, it was also divided into 1000 mils. The Hong Kong Monetary Authority is the monetary authority of Hong Kong and the Hong Kong dollar.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "hong-kong",
+        "asia"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_hong-kong_1505.jpg",
+      "thumbnail": "assets/images/currency/note_hong-kong_1505.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_hong-kong_2018",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "50 Hong Kong Dollar",
+      "country": "Hong Kong",
+      "continent": "Asia",
+      "year": 2018,
+      "denomination": "50",
+      "material": "Cotton Paper",
+      "description": "The Hong Kong dollar is the official currency of Hong Kong. It is divided into 100 cents. Historically, it was also divided into 1000 mils. The Hong Kong Monetary Authority is the monetary authority of Hong Kong and the Hong Kong dollar.",
+      "tags": [
+        "paper-currency",
+        "flora-theme",
+        "hong-kong",
+        "asia",
+        "butterfly",
+        "china"
+      ],
+      "theme": [
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/note_hong-kong_2018.jpg",
+      "images": [
+        "assets/images/currency/note_hong-kong_2018.jpg",
+        "assets/images/currency/note_hong-kong_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_hong-kong_2018.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_yugoslavia_1993",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Yugoslavia 5 Billion Dinara",
+      "country": "Yugoslavia",
+      "continent": "Europe",
+      "year": 1993,
+      "denomination": "5000000000",
+      "material": "Paper",
+      "description": "Yugoslavia was a Balkan country (1918–1992) created as a union of South Slavic peoples, evolving from a monarchy into a socialist federal republic under Josip Broz Tito. Comprising six republics—Bosnia-Herzegovina, Croatia, Macedonia, Montenegro, Serbia, and Slovenia—it was known for its independent, non-aligned stance during the Cold War. Following Tito's death in 1980, rising nationalism and economic crisis led to its violent dissolution",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "yugoslavia",
+        "europe",
+        "flora-theme",
+        "serbia",
+        "croatia",
+        "slovenia",
+        "bosnia-and-herzegovina",
+        "montenegro",
+        "macedonia"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_yugoslavia_1993.jpg",
+      "images": [
+        "assets/images/currency/note_yugoslavia_1993.jpg",
+        "assets/images/currency/note_yugoslavia_1993_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_yugoslavia_1993.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_yugoslavia_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Yugoslavia 50 Dinara",
+      "country": "Yugoslavia",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "500",
+      "material": "paper",
+      "description": "Yugoslavia was a Balkan country (1918–1992) created as a union of South Slavic peoples, evolving from a monarchy into a socialist federal republic under Josip Broz Tito. Comprising six republics—Bosnia-Herzegovina, Croatia, Macedonia, Montenegro, Serbia, and Slovenia—it was known for its independent, non-aligned stance during the Cold War. Following Tito's death in 1980, rising nationalism and economic crisis led to its violent dissolution",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "yugoslavia",
+        "europe"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_yugoslavia_1992.jpg",
+      "images": [
+        "assets/images/currency/note_yugoslavia_1992.jpg",
+        "assets/images/currency/note_yugoslavia_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_yugoslavia_1992.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_biafra_1968",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Biafra 1 Pound",
+      "country": "Biafra",
+      "continent": "Africa",
+      "year": 1968,
+      "denomination": "1 Pound",
+      "material": "Linen Paper",
+      "description": "The Republic of Biafra was a short-lived secessionist state in southeastern Nigeria that existed from May 30, 1967, to January 1970. Led by Lieutenant Colonel Odumegwu Ojukwu, it declared independence due to ethnic tensions, violence against Igbos, and political disagreements, triggering the brutal Nigerian Civil War. Following a strict blockade, the war caused severe famine, killing an estimated 500,000 to 3 million people",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "history-theme",
+        "biafra",
+        "africa",
+        "deadcountry"
+      ],
+      "theme": [
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_biafra_1968.jpg",
+      "images": [
+        "assets/images/currency/note_biafra_1968.jpg",
+        "assets/images/currency/note_biafra_1968_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_biafra_1968.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_transnistria_2005",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Transnistria 1 Ruble",
+      "country": "Transnistria",
+      "continent": "Europe",
+      "year": 2005,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Transnistria is an unrecognized, self-proclaimed breakaway state located between the Dniester River and the Ukrainian border, internationally recognized as part of Moldova. It functions as a de facto independent entity with its own government, military, currency, and police force, heavily supported by Russia, which maintains peacekeepers in the region",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "transnistria",
+        "europe"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_transnistria_2005.jpg",
+      "images": [
+        "assets/images/currency/note_transnistria_2005.jpg",
+        "assets/images/currency/note_transnistria_2005_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_transnistria_2005.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "polymer_new-zealand_4670",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "New Zealand 5 Dollar",
+      "country": "New Zealand",
+      "continent": "Oceania",
+      "year": null,
+      "denomination": "5 Dollar",
+      "material": "Polymer",
+      "description": "New Zealand is an island country in the southwestern Pacific Ocean. It consists of two main landmasses—the North Island and the South Island —and over 600 smaller islands",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme",
+        "flora-theme",
+        "new-zealand",
+        "oceania"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/polymer_new-zealand_4670.jpg",
+      "images": [
+        "assets/images/currency/polymer_new-zealand_4670.jpg",
+        "assets/images/currency/polymer_new-zealand_4670_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_new-zealand_4670.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "polymer_vanuatu_2454",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Vanuatu 200 Vatu",
+      "country": "Vanuatu",
+      "continent": "Oceania",
+      "year": null,
+      "denomination": "200 Vatu",
+      "material": "Polymer",
+      "description": "Vanuatu, officially the Republic of Vanuatu, is an island country in Melanesia located in the South Pacific Ocean. The archipelago, which is of volcanic origin, is 1,750 km east of northern Australia, 540 km northeast of New Caledonia, east of New Guinea, southeast of Solomon Islands, and west of Fiji",
+      "tags": [
+        "polymer-currency",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme",
+        "vanuatu",
+        "oceania"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_vanuatu_2454.jpg",
+      "images": [
+        "assets/images/currency/polymer_vanuatu_2454.jpg",
+        "assets/images/currency/polymer_vanuatu_2454_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_vanuatu_2454.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "polymer_papua-new-guinea_1915",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "PNG 2 Kina",
+      "country": "Papua New Guinea",
+      "continent": "Oceania",
+      "year": null,
+      "denomination": "2 Kina",
+      "material": "Polymer",
+      "description": "Papua New Guinea (PNG) is a culturally and biologically diverse nation in Oceania, north of Australia, occupying the eastern half of New Guinea Island. With over 800 languages, 11.78 million people, and a capital in Port Moresby, it is a rugged land of mountains, volcanoes, and rainforests that achieved independence from Australia in 1975",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "nature-theme",
+        "papua-new-guinea",
+        "oceania"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_papua-new-guinea_1915.jpg",
+      "images": [
+        "assets/images/currency/polymer_papua-new-guinea_1915.jpg",
+        "assets/images/currency/polymer_papua-new-guinea_1915_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_papua-new-guinea_1915.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_cayman-island_1360",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Cayman Island 1  Dollar",
+      "country": "Cayman Island",
+      "continent": "North America",
+      "year": null,
+      "denomination": "1  Dollar",
+      "material": "Paper",
+      "description": "The Cayman Islands is a premier British Overseas Territory in the western Caribbean, comprising Grand Cayman, Cayman Brac, and Little Cayman. Known for its high-end tourism, tax-neutral status, and major financial sector, the islands feature top-tier attractions like Seven Mile Beach, Stingray City, and world-class diving",
+      "tags": [
+        "paper-currency",
+        "aquatic-theme",
+        "building-theme",
+        "person-theme",
+        "cayman-island",
+        "north-america",
+        "queennote"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_cayman-island_1360.jpg",
+      "images": [
+        "assets/images/currency/note_cayman-island_1360.jpg",
+        "assets/images/currency/note_cayman-island_1360_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_cayman-island_1360.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_state-of-jersey_6968",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "State of Jersey 1 Pound",
+      "country": "State of Jersey",
+      "continent": "Europe",
+      "year": null,
+      "denomination": "1  Pound",
+      "material": "Paper",
+      "description": "New Jersey is a Mid-Atlantic U.S. state known as the \"Garden State,\" bordered by New York, the Atlantic Ocean, Delaware, and Pennsylvania. As the most densely populated state and 11th-most populous, it features the capital city of Trenton and major city Newark. It was the third state to ratify the U.S. Constitution",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "state-of-jersey",
+        "europe",
+        "queennote"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_state-of-jersey_6968.jpg",
+      "images": [
+        "assets/images/currency/note_state-of-jersey_6968.jpg",
+        "assets/images/currency/note_state-of-jersey_6968_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_state-of-jersey_6968.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "polymer_australia_2020",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Australia",
+      "country": "Australia",
+      "continent": "Oceania",
+      "year": 2020,
+      "denomination": "1  Dollar",
+      "material": "Polymer",
+      "description": "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania and numerous smaller islands. It has a land area of 7,688,287 km², making it the sixth-largest country in the world",
+      "tags": [
+        "polymer-currency",
+        "person-theme",
+        "australia",
+        "oceania"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_australia_2020.jpg",
+      "images": [
+        "assets/images/currency/polymer_australia_2020.jpg",
+        "assets/images/currency/polymer_australia_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_australia_2020.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_tonga_4614",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Tonga",
+      "country": "Tonga",
+      "continent": "Oceania",
+      "year": null,
+      "denomination": "1  Dollar",
+      "material": "Paper",
+      "description": "Tonga, officially the Kingdom of Tonga, is a Polynesian archipelago nation in the South Pacific with a population of approximately 104,000–109,000. Its capital is Nuku'alofa, located on the main island of Tongatapu, which houses roughly 70% of the population. The culture is deeply Christian and rooted in traditional values of respect, community, and humility, with a constitutional monarchy over 1,000 years old. The currency is the Tongan paʻanga (TOP)",
+      "tags": [
+        "paper-currency",
+        "aquatic-theme",
+        "person-theme",
+        "tonga",
+        "oceania"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_tonga_4614.jpg",
+      "images": [
+        "assets/images/currency/note_tonga_4614.jpg",
+        "assets/images/currency/note_tonga_4614_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_tonga_4614.jpg",
+      "addedOn": "2026-04-23"
+    },
+    {
+      "id": "note_abkhazia_2024",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Abkhazia 10 Apsar",
+      "country": "Abkhazia",
+      "continent": "Asia",
+      "year": 2024,
+      "material": "Cotton Paper",
+      "description": "Abkhazia, officially the Republic of Abkhazia, is a partially recognised state in the South Caucasus. It sits on the eastern coast of the Black Sea, at the intersection of Eastern Europe and West Asia. It covers 8,665 square kilometres and has a population of around 245,000. Its capital and largest city is Sukhumi",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "abkhazia",
+        "asia",
+        "tiger"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_abkhazia_2024.jpg",
+      "images": [
+        "assets/images/currency/note_abkhazia_2024.jpg",
+        "assets/images/currency/note_abkhazia_2024_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_abkhazia_2024.jpg",
+      "addedOn": "2026-04-23"
     }
   ]
 }
