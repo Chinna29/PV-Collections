@@ -208,6 +208,8 @@
   color: var(--text-muted);
   transition: background var(--t-fast), color var(--t-fast);
   user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 .filter-checkbox:hover {
   background: var(--surface-2);
@@ -325,10 +327,12 @@
   background: rgba(4,6,16,0.7);
   backdrop-filter: blur(4px);
   opacity: 0;
+  pointer-events: none;
   transition: opacity var(--t-base);
 }
 .filter-overlay.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* ── Responsive Filter Panel ───────────────────────────────── */

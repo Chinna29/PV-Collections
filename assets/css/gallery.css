@@ -57,6 +57,8 @@
   border: 1px solid var(--border-subtle);
   overflow: hidden;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition:
     transform   var(--t-base),
     box-shadow  var(--t-base),
@@ -648,6 +650,7 @@
     grid-template-columns: 1fr;
     max-height: 90vh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .lightbox__image-panel {
     min-height: 240px;
@@ -656,6 +659,10 @@
   .lightbox__img { max-height: 34vh; }
   .lightbox__info-panel { padding: 20px 18px; }
   .lightbox__title { font-size: 1.1rem; }
+
+  /* Larger touch targets for mobile (min 44px recommended) */
+  .lightbox__close { width: 44px; height: 44px; font-size: 1.2rem; }
+  .lb-nav-btn { width: 44px; height: 44px; font-size: 1.4rem; }
 
   .lb-magnifier { width: 120px; height: 120px; }
   .lb-thumb { width: 56px; }
