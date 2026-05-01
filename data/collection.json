@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-04-23",
+    "lastUpdated": "2026-05-01",
     "version": "1.0.0"
   },
   "items": [
@@ -927,6 +927,332 @@
       ],
       "thumbnail": "assets/images/coins/coin_iceland_1995.jpg",
       "addedOn": "2026-04-23"
+    },
+    {
+      "id": "polymer_fiji_2023",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Fiji 5 Dollar 2025",
+      "country": "Fiji",
+      "continent": "Oceania",
+      "year": 2023,
+      "denomination": "5 Dollar",
+      "material": "Polymer",
+      "description": "Fiji, a country in the South Pacific, is an archipelago of more than 300 islands. It's famed for rugged landscapes, palm-lined beaches and coral reefs with clear lagoons. Its major islands, Viti Levu and Vanua Levu, contain most of the population. Viti Levu is home to the capital, Suva, a port city with British colonial architecture",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "aquatic-theme",
+        "fiji",
+        "oceania",
+        "parrot",
+        "turtle"
+      ],
+      "theme": [
+        "bird-theme",
+        "aquatic-theme"
+      ],
+      "image": "assets/images/currency/polymer_fiji_2023.jpg",
+      "images": [
+        "assets/images/currency/polymer_fiji_2023.jpg",
+        "assets/images/currency/polymer_fiji_2023_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_fiji_2023.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "polymer_samoa_8917",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Samoa 5 Tala",
+      "country": "Samoa",
+      "continent": "Oceania",
+      "year": null,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the South Pacific Ocean. It consists of two main islands, two smaller, inhabited islands, and several smaller, uninhabited islands, including the Aleipata Islands.",
+      "tags": [
+        "polymer-currency",
+        "nature-theme",
+        "samoa",
+        "oceania"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_samoa_8917.jpg",
+      "images": [
+        "assets/images/currency/polymer_samoa_8917.jpg",
+        "assets/images/currency/polymer_samoa_8917_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_samoa_8917.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "note_netherlands-indies_1944",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "NETHERLANDS INDIES (Imperial Japanese Government)",
+      "country": "NETHERLANDS INDIES (NIPPON)",
+      "continent": "Asia",
+      "year": 1944,
+      "denomination": "10 ROEPIAH",
+      "material": "Paper",
+      "description": "The Netherlands Indies (or Dutch East Indies) was a Dutch colony consisting of present-day Indonesia, established in 1800 following the nationalization of the Dutch East India Company (VOC) and lasting until 1949. The capital was Batavia (now Jakarta). It was known for intense spice trade, significant agricultural exploitation, and Japanese occupation during World War II.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "netherlands-indies-(nippon)",
+        "asia",
+        "netherlands-indies",
+        "javanese-dancer",
+        "buddha-statues",
+        "nippon"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_netherlands-indies_1944.jpg",
+      "images": [
+        "assets/images/currency/note_netherlands-indies_1944.jpg",
+        "assets/images/currency/note_netherlands-indies_1944_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_netherlands-indies_1944.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "note_burma-japanese-occupation_1944",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Japanese occupation of Burma 10 Rupees",
+      "country": "Burma (Japanese occupation)",
+      "continent": "Asia",
+      "year": 1944,
+      "denomination": "10 Rupees",
+      "description": "The Japanese occupation of Burma was the period between 1942 and 1945 during World War II, when Burma was occupied by the Empire of Japan. The Japanese had assisted formation of the Burma Independence Army, and trained the Thirty Comrades, who were the founders of the modern Armed Forces.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "burma-(japanese-occupation)",
+        "asia",
+        "nippon"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_burma-japanese-occupation_1944.jpg",
+      "images": [
+        "assets/images/currency/note_burma-japanese-occupation_1944.jpg",
+        "assets/images/currency/note_burma-japanese-occupation_1944_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_burma-japanese-occupation_1944.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "note_aruba_2019",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Aruba 10 Florin",
+      "country": "Aruba",
+      "continent": "South America",
+      "year": 2019,
+      "denomination": "10 Florin",
+      "material": "Cotton Paper",
+      "description": "Aruba, officially the Country of Aruba, is a constituent island country within the Kingdom of the Netherlands, in the southern Caribbean Sea 29 kilometres north of the Venezuelan peninsula of Paraguaná and 80 kilometres northwest of Curaçao",
+      "tags": [
+        "paper-currency",
+        "aquatic-theme",
+        "building-theme",
+        "aruba",
+        "south-america"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_aruba_2019.jpg",
+      "images": [
+        "assets/images/currency/note_aruba_2019.jpg",
+        "assets/images/currency/note_aruba_2019_back.jpg",
+        "assets/images/currency/note_aruba_2019_3.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_aruba_2019.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "note_gibraltar_2018",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Gibraltar 10 Shillings",
+      "country": "Gibraltar",
+      "continent": "Europe",
+      "year": 2018,
+      "denomination": "10",
+      "material": "Cotton Paper",
+      "description": "Gibraltar is a British Overseas Territory located at the southern tip of the Iberian Peninsula, guarding the entrance to the Mediterranean Sea. Spanning \\(6.8 \\text{ km}^2\\), it is famous for the 426m-high Rock of Gibraltar, a dense town, and its wild Barbary Macaques. It is a strategic, self-governing territory with a, economy driven by tourism and finance.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "gibraltar",
+        "europe"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_gibraltar_2018.jpg",
+      "images": [
+        "assets/images/currency/note_gibraltar_2018.jpg",
+        "assets/images/currency/note_gibraltar_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_gibraltar_2018.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "note_czechoslovakia_1985",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Czechoslovakia 10 Korun",
+      "country": "Czechoslovakia",
+      "continent": "Europe",
+      "year": 1985,
+      "denomination": "10 Korun",
+      "material": "Paper",
+      "description": "Czechoslovakia was a Central European country formed in 1918 from the Austro-Hungarian Empire, comprising modern-day Czech Republic and Slovakia. It existed as a democratic republic (1918–1938), was occupied by Nazi Germany during WWII, and was later under Soviet communist rule (1948–1989). The nation split peacefully into the Czech Republic and Slovakia on January 1, 1993, a separation known as the \"Velvet Divorce\"",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "czechoslovakia",
+        "europe",
+        "czech-republic",
+        "slovakia"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_czechoslovakia_1985.jpg",
+      "images": [
+        "assets/images/currency/note_czechoslovakia_1985.jpg",
+        "assets/images/currency/note_czechoslovakia_1985_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_czechoslovakia_1985.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "note_ussr_1991",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "USSR - Soviet Union 5 Rubles",
+      "country": "USSR",
+      "continent": "Asia",
+      "year": 1991,
+      "denomination": "5 Runles",
+      "material": "Cotton Paper",
+      "description": "The Union of Soviet Socialist Republics (USSR or Soviet Union) was a transcontinental socialist state in Eurasia that existed from 1922 to 1991, functioning as the world's first communist nation. It was a union of 15 republics led by the Communist Party, acting as a major global superpower and the primary rival to the U.S. during the Cold War.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "ussr",
+        "asia",
+        "soviet",
+        "russia"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_ussr_1991.jpg",
+      "images": [
+        "assets/images/currency/note_ussr_1991.jpg",
+        "assets/images/currency/note_ussr_1991_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_ussr_1991.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "coin_panama_2018",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Panama 1 Balbao",
+      "country": "Panama",
+      "continent": "North America",
+      "year": 2018,
+      "denomination": "1 Balbao",
+      "material": "Bimetal",
+      "tags": [
+        "coin",
+        "building-theme",
+        "history-theme",
+        "panama",
+        "north-america",
+        "bimetal"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/coins/coin_panama_2018.jpg",
+      "images": [
+        "assets/images/coins/coin_panama_2018.jpg",
+        "assets/images/coins/coin_panama_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_panama_2018.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "coin_croatia_2003",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Croatia 2 Kune",
+      "country": "Croatia",
+      "continent": "Europe",
+      "year": 2003,
+      "denomination": "2 Kune",
+      "material": "Metal",
+      "tags": [
+        "coin",
+        "aquatic-theme",
+        "croatia",
+        "europe"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/coins/coin_croatia_2003.jpg",
+      "images": [
+        "assets/images/coins/coin_croatia_2003.jpg",
+        "assets/images/coins/coin_croatia_2003_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_croatia_2003.jpg",
+      "addedOn": "2026-05-01"
+    },
+    {
+      "id": "coin_greece_1912",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Greece 10 Aenta Coin [hole-coin]",
+      "country": "Greece",
+      "continent": "Europe",
+      "year": 1912,
+      "denomination": "10 Aenta",
+      "material": "Metal",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "greece",
+        "europe",
+        "owl"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/coins/coin_greece_1912.jpg",
+      "images": [
+        "assets/images/coins/coin_greece_1912.jpg",
+        "assets/images/coins/coin_greece_1912_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_greece_1912.jpg",
+      "addedOn": "2026-05-01"
     }
   ]
 }
