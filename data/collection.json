@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-05-01",
+    "lastUpdated": "2026-05-02",
     "version": "1.0.0"
   },
   "items": [
@@ -642,7 +642,8 @@
         "person-theme",
         "flora-theme",
         "new-zealand",
-        "oceania"
+        "oceania",
+        "ibns"
       ],
       "theme": [
         "animal-theme",
@@ -657,7 +658,7 @@
         "assets/images/currency/polymer_new-zealand_4670_back.jpg"
       ],
       "thumbnail": "assets/images/currency/polymer_new-zealand_4670.jpg",
-      "addedOn": "2026-04-23"
+      "addedOn": "2026-05-02"
     },
     {
       "id": "polymer_vanuatu_2454",
@@ -1253,6 +1254,39 @@
       ],
       "thumbnail": "assets/images/coins/coin_greece_1912.jpg",
       "addedOn": "2026-05-01"
+    },
+    {
+      "id": "polymer_pitcairn-island_5126",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Pitcairn Island Fantasy 20Dollar",
+      "country": "Pitcairn Island",
+      "continent": "Antarctica",
+      "year": null,
+      "denomination": "20 Dollar",
+      "material": "Plastic",
+      "description": "Pitcairn Island is a remote British Overseas Territory in the South Pacific, famous as the refuge for the 1790 Bounty mutineers and their Tahitian companions. With a population of under 50, it is the only inhabited island in a four-island group, relying on subsistence farming, fishing, and tourism. The capital is Adamstown.",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "person-theme",
+        "pitcairn-island",
+        "antarctica",
+        "fantasy",
+        "queen",
+        "plastic"
+      ],
+      "theme": [
+        "animal-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_pitcairn-island_5126.jpg",
+      "images": [
+        "assets/images/currency/polymer_pitcairn-island_5126.jpg",
+        "assets/images/currency/polymer_pitcairn-island_5126_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_pitcairn-island_5126.jpg",
+      "addedOn": "2026-05-02"
     }
   ]
 }
