@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-05-02",
+    "lastUpdated": "2026-05-03",
     "version": "1.0.0"
   },
   "items": [
@@ -1287,6 +1287,705 @@
       ],
       "thumbnail": "assets/images/currency/polymer_pitcairn-island_5126.jpg",
       "addedOn": "2026-05-02"
+    },
+    {
+      "id": "polymer_albania_2017",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Albania 200 Leke",
+      "country": "Albania",
+      "continent": "Europe",
+      "year": 2017,
+      "denomination": "200 Leke",
+      "material": "Polymer",
+      "description": "Albania, on Southeastern Europe’s Balkan Peninsula, is a small country with Adriatic and Ionian coastlines and an interior crossed by the Albanian Alps. The country has many castles and archaeological sites. Capital Tirana centers on sprawling Skanderbeg Square, site of the National History Museum, with exhibits spanning antiquity to post-communism, and frescoed Et’hem Bey Mosque.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "albania",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_albania_2017.jpg",
+      "images": [
+        "assets/images/currency/polymer_albania_2017.jpg",
+        "assets/images/currency/polymer_albania_2017_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_albania_2017.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_austria_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Austria 2 Kronen [Uni Face]",
+      "country": "Austria",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "2 Kronen",
+      "description": "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps. It is a federation of nine states, of which the capital Vienna is the most populous city and statev",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "austria",
+        "europe",
+        "uni-face"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_austria_1992.jpg",
+      "thumbnail": "assets/images/currency/note_austria_1992.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_bosnia-and-herzegovina_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bosnia and Herzegovina 50 Dinara",
+      "country": "Bosnia and Herzegovina",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "50 Dinara",
+      "material": "Cotton Paper",
+      "description": "Bosnia and Herzegovina is a country on the Balkan Peninsula in southeastern Europe. Its countryside is home to medieval villages, rivers and lakes, plus the craggy Dinaric Alps. National capital Sarajevo has a well preserved old quarter, Baščaršija, with landmarks like 16th-century Gazi Husrev-bey Mosque. Ottoman-era Latin Bridge is the site of the assassination of Archduke Franz Ferdinand, which ignited World War I",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "history-theme",
+        "bosnia-and-herzegovina",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_bosnia-and-herzegovina_1992.jpg",
+      "images": [
+        "assets/images/currency/note_bosnia-and-herzegovina_1992.jpg",
+        "assets/images/currency/note_bosnia-and-herzegovina_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_bosnia-and-herzegovina_1992.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_bulgaria_1991",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bulgaria 20 Leva : P-100",
+      "country": "Bulgaria",
+      "continent": "Europe",
+      "year": 1991,
+      "denomination": "20 Leva",
+      "material": "Cotton Paper",
+      "description": "Bulgaria is a Balkan nation with diverse terrain encompassing Black Sea coastline, a mountainous interior and rivers, including the Danube. A cultural melting pot with Greek, Slavic, Ottoman, and Persian influences, it has a rich heritage of traditional dance, music, costumes, and crafts. At the foot of domed Vitosha mountain is its capital city, Sofia, dating to the 5th century B.C.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "bulgaria",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_bulgaria_1991.jpg",
+      "images": [
+        "assets/images/currency/note_bulgaria_1991.jpg",
+        "assets/images/currency/note_bulgaria_1991_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_bulgaria_1991.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_croatia_1991",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Croatia 1 Hrvatski Dinar : P-16",
+      "country": "Croatia",
+      "continent": "Europe",
+      "year": 1991,
+      "denomination": "1 Hrvatski Dinar",
+      "material": "Cotton Paper",
+      "description": "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of the Adriatic Sea. It borders Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina and Montenegro to the southeast, and shares a maritime border with Italy to the west.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "croatia",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_croatia_1991.jpg",
+      "images": [
+        "assets/images/currency/note_croatia_1991.jpg",
+        "assets/images/currency/note_croatia_1991_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_croatia_1991.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_cyprus_2004",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Cyprus 1 Pound : 60d(1)",
+      "country": "Cyprus",
+      "continent": "Europe",
+      "year": 2004,
+      "denomination": "1 Pound",
+      "description": "Cyprus is the third-largest Mediterranean island, strategically located near Turkey, Syria, and Egypt. It is divided into the internationally recognized Republic of Cyprus (EU member) in the south and the Turkish Republic of Northern Cyprus in the north. Nicosia is the capital, while Paphos and Ayia Napa are major tourist spots.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "cyprus",
+        "europe"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_cyprus_2004.jpg",
+      "images": [
+        "assets/images/currency/note_cyprus_2004.jpg",
+        "assets/images/currency/note_cyprus_2004_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_cyprus_2004.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_czechia_2018",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Czechia 100 Korun P18",
+      "country": "Czechia",
+      "continent": "Europe",
+      "year": 2018,
+      "denomination": "100 Korun",
+      "description": "The Czech Republic, also known as Czechia and historically known as Bohemia, is a landlocked country in Central Europe. The country is bordered by Austria to the south, Germany to the west, Poland to the northeast, and Slovakia to the southeast.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "czechia",
+        "europe"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_czechia_2018.jpg",
+      "images": [
+        "assets/images/currency/note_czechia_2018.jpg",
+        "assets/images/currency/note_czechia_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_czechia_2018.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_czechoslovakia_1986",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Czechoslovakia 10Korun P94a",
+      "country": "Czechoslovakia",
+      "continent": "Europe",
+      "year": 1986,
+      "denomination": "10 Korun",
+      "material": "Cotton Paper",
+      "description": "Czechoslovakia was a central European country formed in 1918 following World War I from the breakup of the Austro-Hungarian Empire. It was known as a prosperous industrial democracy before WWII and later fell under Soviet communist rule until the 1989 Velvet Revolution. The state peacefully dissolved on January 1, 1993, dividing into the Czech Republic and Slovakia",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "czechoslovakia",
+        "europe",
+        "orava/arwa-mountains",
+        "pavol-országh-hviezdoslav"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_czechoslovakia_1986.jpg",
+      "images": [
+        "assets/images/currency/note_czechoslovakia_1986.jpg",
+        "assets/images/currency/note_czechoslovakia_1986_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_czechoslovakia_1986.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_denmark_2016",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Denmark 50 Kroner P 65h(2)",
+      "country": "Denmark",
+      "continent": "Europe",
+      "year": 2016,
+      "denomination": "50 Kroner",
+      "material": "Paper",
+      "description": "Denmark is a Scandinavian country comprising the Jutland Peninsula and numerous islands. It's linked to nearby Sweden via the Öresund bridge. Copenhagen, its capital, is home to royal palaces and colorful Nyhavn harbor, plus the Tivoli amusement park and the iconic “Little Mermaid” statue. Odense is writer Hans Christian Andersen’s hometown, with a medieval core of cobbled streets and half-timbered houses.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "history-theme",
+        "denmark",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_denmark_2016.jpg",
+      "images": [
+        "assets/images/currency/note_denmark_2016.jpg",
+        "assets/images/currency/note_denmark_2016_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_denmark_2016.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_estonia_2007",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Estonia  2 Krooni P85b",
+      "country": "Estonia",
+      "continent": "Europe",
+      "year": 2007,
+      "denomination": "2 Krooni",
+      "material": "Cotton Paper",
+      "description": "Estonia, a country in Northern Europe, borders the Baltic Sea and Gulf of Finland. Including more than 1,500 islands, its diverse terrain spans rocky beaches, old-growth forest and many lakes. Formerly part of the Soviet Union, it's dotted with castles, churches and hilltop fortresses. The capital, Tallinn, is known for its preserved Old Town, museums and the 314m-high Tallinn TV Tower, which has an observation deck",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "estonia",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_estonia_2007.jpg",
+      "images": [
+        "assets/images/currency/note_estonia_2007.jpg",
+        "assets/images/currency/note_estonia_2007_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_estonia_2007.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_finland_1963",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Finland 1 Markka 98a(30)",
+      "country": "Finland",
+      "continent": "Europe",
+      "year": 1963,
+      "denomination": "1 Markka",
+      "description": "Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "history-theme",
+        "finland",
+        "europe",
+        "wheat",
+        "arms"
+      ],
+      "theme": [
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_finland_1963.jpg",
+      "images": [
+        "assets/images/currency/note_finland_1963.jpg",
+        "assets/images/currency/note_finland_1963_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_finland_1963.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_france_1988",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "France 20 Francs P-151d",
+      "country": "France",
+      "continent": "Europe",
+      "year": 1988,
+      "denomination": "20 Francs",
+      "material": "Cotton Paper",
+      "description": "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "france",
+        "europe",
+        "claude-debussy-lake-scene",
+        "opera-\"la-mer\"-(the-sea)"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_france_1988.jpg",
+      "images": [
+        "assets/images/currency/note_france_1988.jpg",
+        "assets/images/currency/note_france_1988_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_france_1988.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_gibraltar_2016",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Gibraltar \t10 Shillings P-W41",
+      "country": "Gibraltar",
+      "continent": "Europe",
+      "year": 2016,
+      "denomination": "10 Shillings",
+      "material": "Paper",
+      "description": "Gibraltar is a British Overseas Territory located at the southern tip of Spain, known for its strategic location at the Mediterranean entrance, the iconic 426m-high Rock of Gibraltar, and free-roaming Barbary macaques. It offers a unique mix of British culture—including red phone boxes and English language—with Mediterranean sunshine and Spanish influence.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "history-theme",
+        "gibraltar",
+        "europe",
+        "rock-of-gibraltar",
+        "arms"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_gibraltar_2016.jpg",
+      "images": [
+        "assets/images/currency/note_gibraltar_2016.jpg",
+        "assets/images/currency/note_gibraltar_2016_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_gibraltar_2016.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "polymer_england_2015",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "England [Great Britain] 5 Pound P-394",
+      "country": "England",
+      "continent": "Europe",
+      "year": 2015,
+      "denomination": "5 Pound",
+      "material": "Polymer",
+      "description": "England is a country that is part of the United Kingdom. It is located on the island of Great Britain, of which it covers about 62%, and more than 100 smaller adjacent islands.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "england",
+        "europe",
+        "elizabeth-ii",
+        "bank-of-england-building",
+        "sir-winston-churchill",
+        "westminster-palace"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_england_2015.jpg",
+      "images": [
+        "assets/images/currency/polymer_england_2015.jpg",
+        "assets/images/currency/polymer_england_2015_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_england_2015.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_greece_1940",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Greece 10 Drachmai P-314",
+      "country": "Greece",
+      "continent": "Europe",
+      "year": 1940,
+      "denomination": "10 Drachmai",
+      "material": "Paper",
+      "description": "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "greece",
+        "europe",
+        "demetria",
+        "university-of-athens",
+        "god"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_greece_1940.jpg",
+      "images": [
+        "assets/images/currency/note_greece_1940.jpg",
+        "assets/images/currency/note_greece_1940_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_greece_1940.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_greece_1941",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Greece 2 Drachmai P-318",
+      "country": "Greece",
+      "continent": "Europe",
+      "year": 1941,
+      "denomination": "2 Drachmai",
+      "material": "Paper",
+      "description": "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "greece",
+        "europe",
+        "alexander-the-great",
+        "ancient-coin"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_greece_1941.jpg",
+      "images": [
+        "assets/images/currency/note_greece_1941.jpg",
+        "assets/images/currency/note_greece_1941_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_greece_1941.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_hungary_2022",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Hungary 500 Forint P-W202",
+      "country": "Hungary",
+      "continent": "Europe",
+      "year": 2022,
+      "denomination": "500 Forint",
+      "material": "Paper",
+      "description": "Hungary is a landlocked country in Central Europe. Its capital, Budapest, is bisected by the Danube River. Its cityscape is studded with architectural landmarks from Buda’s medieval Castle Hill and grand neoclassical buildings along Pest’s Andrássy Avenue to the 19th-century Chain Bridge. Turkish and Roman influence on Hungarian culture includes the popularity of mineral spas, including at thermal Lake Hévíz.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "hungary",
+        "europe",
+        "sárospatak-castle",
+        "prince-rákóczi-ferenc-ii"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_hungary_2022.jpg",
+      "images": [
+        "assets/images/currency/note_hungary_2022.jpg",
+        "assets/images/currency/note_hungary_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_hungary_2022.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_iceland_1961",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Iceland 10 Krónur 48a(2)",
+      "country": "Iceland",
+      "continent": "Europe",
+      "year": 1961,
+      "denomination": "10 Krónur",
+      "material": "Paper",
+      "description": "Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, which runs on geothermal power and is home to the National and Saga museums, tracing Iceland’s Viking history.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "iceland",
+        "europe",
+        "arngrímur-jónssonv",
+        "old-icelandic-household"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_iceland_1961.jpg",
+      "images": [
+        "assets/images/currency/note_iceland_1961.jpg",
+        "assets/images/currency/note_iceland_1961_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_iceland_1961.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_italy_1990",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Italy 1000 Lire P-114b",
+      "country": "Italy",
+      "continent": "Europe",
+      "year": 1990,
+      "denomination": "1000 Lire",
+      "material": "Paper",
+      "description": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s \"David\" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "italy",
+        "europe",
+        "maria-montessori",
+        "montessori-school",
+        "montessori",
+        "school"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_italy_1990.jpg",
+      "images": [
+        "assets/images/currency/note_italy_1990.jpg",
+        "assets/images/currency/note_italy_1990_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_italy_1990.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_lithuania_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Lithuania 1 Talonas P-39",
+      "country": "Lithuania",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "1 Talonas",
+      "material": "Paper",
+      "description": "Lithuania is a democratic Baltic state in Northern Europe with a population of roughly 2.9 million. Its capital is Vilnius. A member of the EU, NATO, and the Eurozone, Lithuania features a high-income economy. Known for its forests, 6,000 lakes, and Baltic coastline, it has a deep history as a former 15th-century superpower and was the first Soviet republic to declare independence in 1990.",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "lithuania",
+        "europe",
+        "eurasian-lapwings",
+        "clover",
+        "arms"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/currency/note_lithuania_1992.jpg",
+      "images": [
+        "assets/images/currency/note_lithuania_1992.jpg",
+        "assets/images/currency/note_lithuania_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_lithuania_1992.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_latvia_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Latvia 1 Latvijas Rublis P-35",
+      "country": "Latvia",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "1 Latvijas Rublis",
+      "material": "Paper",
+      "description": "Latvia is a Baltic nation in Northern Europe, bordered by Estonia, Lithuania, Russia, Belarus, and the Baltic Sea. With a population of 1.83 million and its capital in Riga, this EU and NATO member is known for its temperate climate, extensive forests, and a mix of medieval and Art Nouveau architecture. The country offers a high quality of life, using the Euro and featuring a vibrant culture with strong roots in song and dance traditions.",
+      "tags": [
+        "paper-currency",
+        "latvia",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_latvia_1992.jpg",
+      "images": [
+        "assets/images/currency/note_latvia_1992.jpg",
+        "assets/images/currency/note_latvia_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_latvia_1992.jpg",
+      "addedOn": "2026-05-03"
+    },
+    {
+      "id": "note_luxembourg_1993",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Luxembourg 100 Francs P58b",
+      "country": "Luxembourg",
+      "continent": "Europe",
+      "year": 1993,
+      "denomination": "100 Francs",
+      "material": "Paper",
+      "description": "Luxembourg is a small, landlocked parliamentary constitutional monarchy in Western Europe, bordered by Belgium, France, and Germany. It is known as one of the world's wealthiest nations, with the highest GDP per capita in the EU. The country is trilingual (French, German, Luxembourgish) and is a major, central hub for European institutions.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "luxembourg",
+        "europe",
+        "grand-duke-jean"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_luxembourg_1993.jpg",
+      "images": [
+        "assets/images/currency/note_luxembourg_1993.jpg",
+        "assets/images/currency/note_luxembourg_1993_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_luxembourg_1993.jpg",
+      "addedOn": "2026-05-03"
     }
   ]
 }
