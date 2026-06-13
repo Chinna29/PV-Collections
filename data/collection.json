@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-05-03",
+    "lastUpdated": "2026-06-13",
     "version": "1.0.0"
   },
   "items": [
@@ -2613,6 +2613,583 @@
       ],
       "thumbnail": "assets/images/currency/note_europe-union_2002.jpg",
       "addedOn": "2026-05-03"
+    },
+    {
+      "id": "polymer_canada_2013",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Canada 5 Dollar 106[F]",
+      "country": "Canada",
+      "continent": "North America",
+      "year": 2013,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the second-largest country by total area, with the longest coastline of any country.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "space-theme",
+        "canada",
+        "north-america"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "space-theme"
+      ],
+      "image": "assets/images/currency/polymer_canada_2013.jpg",
+      "images": [
+        "assets/images/currency/polymer_canada_2013.jpg",
+        "assets/images/currency/polymer_canada_2013_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_canada_2013.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_canada_2018",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Canada 10 Dollar W 113[3] IBNS",
+      "country": "Canada",
+      "continent": "North America",
+      "year": 2018,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the second-largest country by total area, with the longest coastline of any country.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "canada",
+        "north-america",
+        "ibns"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_canada_2018.jpg",
+      "images": [
+        "assets/images/currency/polymer_canada_2018.jpg",
+        "assets/images/currency/polymer_canada_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_canada_2018.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_switzerland_2017",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Switzerland 10 Francs P-75 [3] IBNS",
+      "country": "Switzerland",
+      "continent": "Europe",
+      "year": 2017,
+      "denomination": "10",
+      "material": "Hybrid",
+      "description": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "history-theme",
+        "switzerland",
+        "europe",
+        "ibns"
+      ],
+      "theme": [
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_switzerland_2017.jpg",
+      "images": [
+        "assets/images/currency/note_switzerland_2017.jpg",
+        "assets/images/currency/note_switzerland_2017_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_switzerland_2017.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_switzerland_2003",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Switzerland 10 Francs",
+      "country": "Switzerland",
+      "continent": "Europe",
+      "year": 2003,
+      "denomination": "10",
+      "material": "Hybrid",
+      "description": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "history-theme",
+        "switzerland",
+        "europe"
+      ],
+      "theme": [
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_switzerland_2003.jpg",
+      "images": [
+        "assets/images/currency/note_switzerland_2003.jpg",
+        "assets/images/currency/note_switzerland_2003_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_switzerland_2003.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_falkland-islands_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Falkland Islands 5 Pound P-W20",
+      "country": "Falkland Islands",
+      "continent": "South America",
+      "year": 2025,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "The Falkland Islands are a self-governing British Overseas Territory in the South Atlantic Ocean, located about 300 miles (480 km) east of the southern tip of South America. Consisting of two main islands and hundreds of smaller isles, the remote archipelago is renowned for its sub-Antarctic wildlife and rugged natural landscapes.",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme",
+        "flora-theme",
+        "falkland-islands",
+        "south-america",
+        "black-browed-albatrosses-charles-iii-arms",
+        "pale-maiden-flower-(olsynium-filifolium)"
+      ],
+      "theme": [
+        "bird-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/polymer_falkland-islands_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_falkland-islands_2025.jpg",
+        "assets/images/currency/polymer_falkland-islands_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_falkland-islands_2025.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_zambia_2009",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Zambia 500 Kwacha P-43g",
+      "country": "Zambia",
+      "continent": "Africa",
+      "year": 2009,
+      "denomination": "500",
+      "material": "Polymer",
+      "description": "Zambia, in southern Africa, is a landlocked country of rugged terrain and diverse wildlife, with many parks and safari areas. On its border with Zimbabwe is famed Victoria Falls – indigenously called Mosi-oa-Tunya, or \"Smoke That Thunders” – plunging a misty 108m into narrow Batoka Gorge. Spanning the Zambezi River just below the falls is Victoria Falls Bridge, a spectacular viewpoint.",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "bird-theme",
+        "nature-theme",
+        "zambia",
+        "africa",
+        "eagle",
+        "elephant"
+      ],
+      "theme": [
+        "animal-theme",
+        "bird-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_zambia_2009.jpg",
+      "images": [
+        "assets/images/currency/polymer_zambia_2009.jpg",
+        "assets/images/currency/polymer_zambia_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_zambia_2009.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_el-salvador_1982",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "El Salvador 1 Colon P-133A Rare",
+      "country": "El Salvador",
+      "continent": "North America",
+      "year": 1982,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "El Salvador, officially the Republic of El Salvador, is a country in Central America. It is bordered on the northeast by Honduras, on the northwest by Guatemala, and on the south by the Pacific Ocean. El Salvador's capital and largest city is San Salvador.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "el-salvador",
+        "north-america",
+        "rare",
+        "\"cerron-grande\"-hydroelectric-dam",
+        "christopher-columbus"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_el-salvador_1982.jpg",
+      "images": [
+        "assets/images/currency/note_el-salvador_1982.jpg",
+        "assets/images/currency/note_el-salvador_1982_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_el-salvador_1982.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_oman_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Oman 1 Riyal P-W56",
+      "country": "Oman",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "1",
+      "material": "Polymer",
+      "description": "Oman, officially the Sultanate of Oman, is a country in the southeastern Arabian Peninsula in West Asia. It shares land borders with Saudi Arabia, the United Arab Emirates, and Yemen. Oman's coastline faces the Arabian Sea to the southeast and the Gulf of Oman on the northeast.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "oman",
+        "asia",
+        "oman-botanic-garden",
+        "sultan-haitham",
+        "duqm-port-and-refinery",
+        "taymur-cultural-complex"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_oman_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_oman_2025.jpg",
+        "assets/images/currency/polymer_oman_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_oman_2025.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_bhutan_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Bhutan 100 Ngultrum P-W43",
+      "country": "Bhutan",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "100",
+      "material": "Polymer",
+      "description": "Bhutan, officially the Kingdom of Bhutan, is a landlocked South Asian country in the Eastern Himalayas, famous for its majestic mountain landscapes, monasteries, and deep cultural heritage. It is governed as a constitutional monarchy and famously prioritizes Gross National Happiness (GNH) over traditional economic metrics",
+      "tags": [
+        "polymer-currency",
+        "bhutan",
+        "asia",
+        "tashichho-dzong",
+        "king-jigme-khesar-namgyel-wangchuk"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/polymer_bhutan_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_bhutan_2025.jpg",
+        "assets/images/currency/polymer_bhutan_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_bhutan_2025.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_bangladesh_2026",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bangladesh 5 Taka P-W75",
+      "country": "Bangladesh",
+      "continent": "Asia",
+      "year": 2026,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush greenery and many waterways. Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, and travel by boat is common. On the southern coast, the Sundarbans, an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "bangladesh",
+        "asia",
+        "star-mosque-(dhaka/dacca)-water-lily"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_bangladesh_2026.jpg",
+      "images": [
+        "assets/images/currency/note_bangladesh_2026.jpg",
+        "assets/images/currency/note_bangladesh_2026_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_bangladesh_2026.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_bangladesh_2000",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Bangladesh 10 Taka P-35",
+      "country": "Bangladesh",
+      "continent": "Asia",
+      "year": 2000,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush greenery and many waterways. Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, and travel by boat is common. On the southern coast, the Sundarbans, an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "history-theme",
+        "bangladesh",
+        "asia",
+        "sheikh-mujibur-rahman;-baitul-mokarram-mosque-(dhaka/dacca)",
+        "jatiya-sangsad-bhaban-(national-parliament-house)-dhaka/dacca-betbunia-satellite-center"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_bangladesh_2000.jpg",
+      "images": [
+        "assets/images/currency/polymer_bangladesh_2000.jpg",
+        "assets/images/currency/polymer_bangladesh_2000_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_bangladesh_2000.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_indonesia_1999",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 10000 Rupiah P-137b",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": 1999,
+      "denomination": "10000",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "indonesia",
+        "asia",
+        "tjut-njak-dhien",
+        "segara-anak-volcanic-lake"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_1999.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_1999.jpg",
+        "assets/images/currency/note_indonesia_1999_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_1999.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_indonesia_2003",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 20000 Rupiah P-138f",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": 2003,
+      "denomination": "20000",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "indonesia",
+        "asia",
+        "ki-hadjar-dewantara",
+        "classroom",
+        "ganesha"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_2003.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_2003.jpg",
+        "assets/images/currency/note_indonesia_2003_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_2003.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_angola_2020",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Angola 200 Kwanzas W-160",
+      "country": "Angola",
+      "continent": "Africa",
+      "year": 2020,
+      "denomination": "200",
+      "material": "Polymer",
+      "description": "Angola is a Southern African nation whose varied terrain encompasses tropical Atlantic beaches, a labyrinthine system of rivers and Sub-Saharan desert that extends across the border into Namibia. The country's colonial history is reflected in its Portuguese-influenced cuisine and its landmarks including Fortaleza de São Miguel, a fortress built by the Portuguese in 1576 to defend the capital, Luanda.",
+      "tags": [
+        "polymer-currency",
+        "nature-theme",
+        "person-theme",
+        "angola",
+        "africa",
+        "dr.-antónio-agostinho-neto",
+        "piedras-negras-de-punduandongo-malanje"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_angola_2020.jpg",
+      "images": [
+        "assets/images/currency/polymer_angola_2020.jpg",
+        "assets/images/currency/polymer_angola_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_angola_2020.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "polymer_nepal_2005",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Nepal 10 Rupees",
+      "country": "Nepal",
+      "continent": "Asia",
+      "year": 2005,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Nepal, officially the Federal Democratic Republic of Nepal, is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain.",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "nature-theme",
+        "person-theme",
+        "nepal",
+        "asia",
+        "king-gyanendra-bir-bikram",
+        "changunarayan-(a-form-of-appearance-of-vishnu)-on-garuda",
+        "antelopes"
+      ],
+      "theme": [
+        "animal-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_nepal_2005.jpg",
+      "images": [
+        "assets/images/currency/polymer_nepal_2005.jpg",
+        "assets/images/currency/polymer_nepal_2005_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_nepal_2005.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_eritrea_1997",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Eritrea 5 Nakfa P-2",
+      "country": "Eritrea",
+      "continent": "Africa",
+      "year": 1997,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "Eritrea, located in the Horn of Africa, is bordered by the Red Sea to the east, Sudan to the west, Ethiopia to the south, and Djibouti to the southeast. Its capital and largest city is Asmara. The country has a population of roughly 6 million people.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "eritrea",
+        "africa",
+        "jacaranda-tree"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_eritrea_1997.jpg",
+      "images": [
+        "assets/images/currency/note_eritrea_1997.jpg",
+        "assets/images/currency/note_eritrea_1997_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_eritrea_1997.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_eritrea_1997",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Eritrea 1 Nakfa P-1",
+      "country": "Eritrea",
+      "continent": "Africa",
+      "year": 1997,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Eritrea, located in the Horn of Africa, is bordered by the Red Sea to the east, Sudan to the west, Ethiopia to the south, and Djibouti to the southeast. Its capital and largest city is Asmara. The country has a population of roughly 6 million people.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "eritrea",
+        "africa",
+        "bush-school"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_eritrea_1997.jpg",
+      "images": [
+        "assets/images/currency/note_eritrea_1997.jpg",
+        "assets/images/currency/note_eritrea_1997_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_eritrea_1997.jpg",
+      "addedOn": "2026-06-13"
+    },
+    {
+      "id": "note_iran_2022",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Iran 10000 Rials P-W160",
+      "country": "Iran",
+      "continent": "Asia",
+      "year": 2022,
+      "denomination": "10000",
+      "material": "Paper",
+      "description": "Iran, officially the Islamic Republic of Iran, historically known as Persia, is a country in West Asia.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "iran",
+        "asia",
+        "khomeini",
+        "tomb-of-ibn-sina-(avicenna)-hamedan"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_iran_2022.jpg",
+      "images": [
+        "assets/images/currency/note_iran_2022.jpg",
+        "assets/images/currency/note_iran_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_iran_2022.jpg",
+      "addedOn": "2026-06-13"
     }
   ]
 }
