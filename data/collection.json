@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-06-13",
+    "lastUpdated": "2026-06-14",
     "version": "1.0.0"
   },
   "items": [
@@ -3190,6 +3190,618 @@
       ],
       "thumbnail": "assets/images/currency/note_iran_2022.jpg",
       "addedOn": "2026-06-13"
+    },
+    {
+      "id": "coin_algeria_2018",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Algeria 50 Dinars Bimetallic",
+      "country": "Algeria",
+      "continent": "Africa",
+      "year": 2018,
+      "denomination": "50",
+      "material": "Bimetal",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "algeria",
+        "africa"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/coins/coin_algeria_2018.jpg",
+      "images": [
+        "assets/images/coins/coin_algeria_2018.jpg",
+        "assets/images/coins/coin_algeria_2018_back.jpg",
+        "assets/images/coins/coin_algeria_2018_3.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_algeria_2018.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "polymer_mexico_2023",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Mexico 50 Peso   W133 2-2023(5) IBNS",
+      "country": "Mexico",
+      "continent": "North America",
+      "year": 2023,
+      "denomination": "50",
+      "material": "Polymer",
+      "description": "Mexico, officially the United Mexican States, is a country in North America. It is the northernmost country in Latin America and borders the United States of America to the north, and Guatemala and Belize",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "bird-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "mexico",
+        "north-america",
+        "axolotl",
+        "eagle-with-cactus"
+      ],
+      "theme": [
+        "animal-theme",
+        "bird-theme",
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_mexico_2023.jpg",
+      "images": [
+        "assets/images/currency/polymer_mexico_2023.jpg",
+        "assets/images/currency/polymer_mexico_2023_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_mexico_2023.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "polymer_mexico_2021",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Mexico 20 Peso W132 1-2021(1)",
+      "country": "Mexico",
+      "continent": "North America",
+      "year": 2021,
+      "material": "Polymer",
+      "description": "Mexico, officially the United Mexican States, is a country in North America. It is the northernmost country in Latin America and borders the United States of America to the north, and Guatemala and Belize",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "history-theme",
+        "mexico",
+        "north-america",
+        "ecosystem-of-the-mangroves-mexican-crocodile",
+        "army-of-the-three-garanties"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_mexico_2021.jpg",
+      "images": [
+        "assets/images/currency/polymer_mexico_2021.jpg",
+        "assets/images/currency/polymer_mexico_2021_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_mexico_2021.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_netherland_1973",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Netherland 5 Gulden P-95a",
+      "country": "Netherland",
+      "continent": "Europe",
+      "year": 1973,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "The Netherlands is a highly engineered, low-lying country in Northwestern Europe, famous for its progressive culture, tulip fields, and cycling infrastructure. Amsterdam serves as the capital, while The Hague acts as the seat of government.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "netherland",
+        "europe",
+        "joost-van-den-vondel",
+        "stylized-amsterdam-play-house"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_netherland_1973.jpg",
+      "images": [
+        "assets/images/currency/note_netherland_1973.jpg",
+        "assets/images/currency/note_netherland_1973_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_netherland_1973.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "polymer_morocco_2019",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Morocco 20 Dirhams P-W78",
+      "country": "Morocco",
+      "continent": "Africa",
+      "year": 2019,
+      "denomination": "20",
+      "material": "Polymer",
+      "description": "Morocco is a vibrant North African country located at the crossroads of Europe, the Middle East, and Sub-Saharan Africa. Known for its rich blend of Arab, Berber, and French influences, it features a diverse landscape that spans from the Atlantic Ocean and Mediterranean Sea to the sweeping sands of the Sahara.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "morocco",
+        "africa",
+        "king-mohammed-vi",
+        "crossing-bou-regreg-river"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_morocco_2019.jpg",
+      "images": [
+        "assets/images/currency/polymer_morocco_2019.jpg",
+        "assets/images/currency/polymer_morocco_2019_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_morocco_2019.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "polymer_tonga_2023",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Tonga 5 Pa'anga P-W51",
+      "country": "Tonga",
+      "continent": "Oceania",
+      "year": 2023,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Tonga is a Polynesian kingdom of more than 170 South Pacific islands, many uninhabited, most lined in white beaches and coral reefs and covered with tropical rainforest. The main island, Tongatapu, is protected by lagoons and limestone cliffs. It’s home to the rural capital of Nuku'alofa, as well as beach resorts, plantations and the Ha'amonga ʻa Maui, a monumental coral gate from the 1200s.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "tonga",
+        "oceania",
+        "king-tupou-vi",
+        "arms",
+        "ha’amonga-‘a-maui-trilithon"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_tonga_2023.jpg",
+      "images": [
+        "assets/images/currency/polymer_tonga_2023.jpg",
+        "assets/images/currency/polymer_tonga_2023_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_tonga_2023.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_tonga_2009",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Tonga 1 Pa'anga P-37(2)",
+      "country": "Tonga",
+      "continent": "Oceania",
+      "year": 2009,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Tonga is a Polynesian kingdom of more than 170 South Pacific islands, many uninhabited, most lined in white beaches and coral reefs and covered with tropical rainforest. The main island, Tongatapu, is protected by lagoons and limestone cliffs. It’s home to the rural capital of Nuku'alofa, as well as beach resorts, plantations and the Ha'amonga ʻa Maui, a monumental coral gate from the 1200s.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "person-theme",
+        "tonga",
+        "oceania",
+        "king-siaosi-(george)-v-tupou",
+        "whale"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_tonga_2009.jpg",
+      "images": [
+        "assets/images/currency/note_tonga_2009.jpg",
+        "assets/images/currency/note_tonga_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_tonga_2009.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_taiwan_1984",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Taiwan 10 Yuan P-1984",
+      "country": "Taiwan",
+      "continent": "Asia",
+      "year": 1984,
+      "denomination": "10",
+      "material": "Paper",
+      "description": "Taiwan, officially the Republic of China, is a country in East Asia. The main island of Taiwan, also known as Formosa, lies between the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China to the northwest, Japan to the northeast, and the Philippines to the south.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "taiwan",
+        "asia",
+        "dr.-sun-yat-sen",
+        "presidential-palace-taipeh"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_taiwan_1984.jpg",
+      "images": [
+        "assets/images/currency/note_taiwan_1984.jpg",
+        "assets/images/currency/note_taiwan_1984_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_taiwan_1984.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_china_2019",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "China 1 Yuan P-W912",
+      "country": "China",
+      "continent": "Asia",
+      "year": 2019,
+      "denomination": "1",
+      "description": "China, officially the People's Republic of China, is a country in East Asia. It is the second-most populous country after India, with a population exceeding 1.4 billion, across an area of 9.6 million square kilometers, making it the third-largest country by area.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "china",
+        "asia",
+        "mao-tse-tung",
+        "\"three-ponds-reflecting-the-moon\"-western-lake-huangzhou"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_china_2019.jpg",
+      "images": [
+        "assets/images/currency/note_china_2019.jpg",
+        "assets/images/currency/note_china_2019_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_china_2019.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_china_2020",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "China 5 Yuan P-W913",
+      "country": "China",
+      "continent": "Asia",
+      "year": 2020,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "China, officially the People's Republic of China, is a country in East Asia. It is the second-most populous country after India, with a population exceeding 1.4 billion, across an area of 9.6 million square kilometers, making it the third-largest country by area.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "china",
+        "asia",
+        "mountains",
+        "mao-tse-tung"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_china_2020.jpg",
+      "images": [
+        "assets/images/currency/note_china_2020.jpg",
+        "assets/images/currency/note_china_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_china_2020.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_china_1980",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "China 2 Jiao P-882",
+      "country": "China",
+      "continent": "Asia",
+      "year": 1980,
+      "denomination": "2",
+      "material": "Paper",
+      "description": "China, officially the People's Republic of China, is a country in East Asia. It is the second-most populous country after India, with a population exceeding 1.4 billion, across an area of 9.6 million square kilometers, making it the third-largest country by area.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "china",
+        "asia",
+        "buyi-and-korean-ethnic-group-members",
+        "arms"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_china_1980.jpg",
+      "images": [
+        "assets/images/currency/note_china_1980.jpg",
+        "assets/images/currency/note_china_1980_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_china_1980.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_china_1980",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "China 5 Jiao P-883b",
+      "country": "China",
+      "continent": "Asia",
+      "year": 1980,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "China, officially the People's Republic of China, is a country in East Asia. It is the second-most populous country after India, with a population exceeding 1.4 billion, across an area of 9.6 million square kilometers, making it the third-largest country by area.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "china",
+        "asia",
+        "buyi-and-korean-ethnic-group-members",
+        "arms"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_china_1980.jpg",
+      "images": [
+        "assets/images/currency/note_china_1980.jpg",
+        "assets/images/currency/note_china_1980_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_china_1980.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_cambodia_2014",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Cambodia 100Riels P-65",
+      "country": "Cambodia",
+      "continent": "Asia",
+      "year": 2014,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Cambodia is a Southeast Asian nation renowned for its rich history, tropical climate, and the magnificent Angkor Wat temple complex. Centered around the capital city of Phnom Penh and the bustling tourist hub of Siem Reap, it offers a vibrant blend of French colonial architecture, traditional Khmer culture, and idyllic island getaways.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "cambodia",
+        "asia",
+        "naga-(mythical-snake)-head",
+        "buddha"
+      ],
+      "theme": [
+        "animal-theme",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_cambodia_2014.jpg",
+      "images": [
+        "assets/images/currency/note_cambodia_2014.jpg",
+        "assets/images/currency/note_cambodia_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_cambodia_2014.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_suriname_1988",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Suriname 100 Gulden P-133",
+      "country": "Suriname",
+      "continent": "South America",
+      "year": 1988,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Suriname, the smallest sovereign state in South America, is located on the continent's northeastern coast. It is known for its remarkable biodiversity, unique Dutch-Caribbean cultural heritage, and pristine Amazonian rainforest, which covers over 90% of the country's landmass.",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "nature-theme",
+        "person-theme",
+        "suriname",
+        "south-america",
+        "toucan",
+        "anton-de-kom"
+      ],
+      "theme": [
+        "bird-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_suriname_1988.jpg",
+      "images": [
+        "assets/images/currency/note_suriname_1988.jpg",
+        "assets/images/currency/note_suriname_1988_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_suriname_1988.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_suriname_1988",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Suriname 250 Gulden P-134",
+      "country": "Suriname",
+      "continent": "South America",
+      "year": 1988,
+      "denomination": "250",
+      "material": "Paper",
+      "description": "Suriname, the smallest sovereign state in South America, is located on the continent's northeastern coast. It is known for its remarkable biodiversity, unique Dutch-Caribbean cultural heritage, and pristine Amazonian rainforest, which covers over 90% of the country's landmass.",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "nature-theme",
+        "person-theme",
+        "suriname",
+        "south-america",
+        "toucan",
+        "anton-de-kom"
+      ],
+      "theme": [
+        "bird-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_suriname_1988.jpg",
+      "images": [
+        "assets/images/currency/note_suriname_1988.jpg",
+        "assets/images/currency/note_suriname_1988_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_suriname_1988.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "note_suriname_2009",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Suriname 5 Dollar P-157a",
+      "country": "Suriname",
+      "continent": "South America",
+      "year": 2009,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "Suriname, the smallest sovereign state in South America, is located on the continent's northeastern coast. It is known for its remarkable biodiversity, unique Dutch-Caribbean cultural heritage, and pristine Amazonian rainforest, which covers over 90% of the country's landmass.",
+      "tags": [
+        "paper-currency",
+        "aquatic-theme",
+        "building-theme",
+        "nature-theme",
+        "suriname",
+        "south-america"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "building-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_suriname_2009.jpg",
+      "images": [
+        "assets/images/currency/note_suriname_2009.jpg",
+        "assets/images/currency/note_suriname_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_suriname_2009.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "coin_greece_2002",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Greece 1 Euro - Anthens Owl",
+      "country": "Greece",
+      "continent": "Europe",
+      "year": 2002,
+      "denomination": "1",
+      "material": "Bimetal",
+      "description": "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "greece",
+        "europe",
+        "owl"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/coins/coin_greece_2002.jpg",
+      "images": [
+        "assets/images/coins/coin_greece_2002.jpg",
+        "assets/images/coins/coin_greece_2002_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_greece_2002.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "coin_bahamas_2015",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Bahamas 1 Cent - Star Fish",
+      "country": "Bahamas",
+      "continent": "North America",
+      "year": 2015,
+      "tags": [
+        "coin",
+        "aquatic-theme",
+        "nature-theme",
+        "bahamas",
+        "north-america"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/coins/coin_bahamas_2015.jpg",
+      "images": [
+        "assets/images/coins/coin_bahamas_2015.jpg",
+        "assets/images/coins/coin_bahamas_2015_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_bahamas_2015.jpg",
+      "addedOn": "2026-06-14"
+    },
+    {
+      "id": "coin_tokelau-island_2017",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Tokelau Island 10 Cents - Butterfly",
+      "country": "Tokelau Island",
+      "continent": "Oceania",
+      "year": 2017,
+      "denomination": "10",
+      "material": "Bronze",
+      "description": "Tokelau is a remote South Pacific territory of New Zealand, located approximately 500 km north of Samoa. It consists of three tiny coral atolls—Atafu, Nukunonu, and Fakaofo—with a total population of roughly 1,600 people. The islands have no airport and are powered by 100% solar energy.",
+      "tags": [
+        "coin",
+        "tokelau-island",
+        "oceania",
+        "butterfly",
+        "queen"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_tokelau-island_2017.jpg",
+      "images": [
+        "assets/images/coins/coin_tokelau-island_2017.jpg",
+        "assets/images/coins/coin_tokelau-island_2017_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_tokelau-island_2017.jpg",
+      "addedOn": "2026-06-14"
     }
   ]
 }
