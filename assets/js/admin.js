@@ -965,6 +965,18 @@
     renderAdminStats();
     renderCollectionTable(_collection);
     showOutput(entry, imgDir, imgSlug, uploads);
+
+    // Clear upload/edit state so the next entry starts fresh.
+    // Without this, _imageFiles carries the previous item's blobs;
+    // dropping a new image appends instead of replacing, and the
+    // next entry silently reuses the old images at its (new) path
+    // — so both entries render identical pictures.
+    _editingId  = null;
+    _imageFiles = [];
+    _existingImages = { image: '', images: [], thumbnail: '' };
+    renderImagePreviews();
+    const genBtn = document.getElementById('btn-generate');
+    if (genBtn) genBtn.textContent = '✨ Generate Entry';
   }
 
   function showOutput(entry, imgDir, imgSlug, uploads) {
@@ -1195,7 +1207,17 @@
     const prefix  = type === 'coin' ? 'coin' : (type === 'polymer' ? 'polymer' : 'note');
     const slug    = country.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'');
     const ts      = Date.now().toString().slice(-4);
-    return `${prefix}_${slug}_${year || ts}`;
+    const base    = `${prefix}_${slug}_${year || ts}`;
+
+    // Disambiguate on collision: a second India-1975 coin becomes
+    // `coin_india_1975_2`, third `_3`, etc. Without this, the id —
+    // and therefore the image filename derived from it — would
+    // alias an earlier entry and its uploaded image would overwrite
+    // the previous one on disk / in the local image store.
+    if (!_collection.some(i => i.id === base)) return base;
+    let n = 2;
+    while (_collection.some(i => i.id === `${base}_${n}`)) n++;
+    return `${base}_${n}`;
   }
 
   // ── Boot ─────────────────────────────────────────────────────

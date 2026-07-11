@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-06-14",
+    "lastUpdated": "2026-07-11",
     "version": "1.0.0"
   },
   "items": [
@@ -3802,6 +3802,842 @@
       ],
       "thumbnail": "assets/images/coins/coin_tokelau-island_2017.jpg",
       "addedOn": "2026-06-14"
+    },
+    {
+      "id": "coin_curaco--sint-marten_2025",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Curaco & Sint Marten 50 Cents 2025 Set of 2 Color Coins",
+      "country": "Curaco & Sint Marten",
+      "continent": "South America",
+      "year": 2025,
+      "denomination": "50",
+      "material": "Nickel",
+      "description": "Curaçao and Sint Maarten are autonomous countries within the Kingdom of the Netherlands. Both are premier Caribbean destinations, but they offer distinct experiences. While Curaçao boasts secluded bays and world-class diving, Sint Maarten is renowned for its high-rise resorts and vibrant entertainment.",
+      "tags": [
+        "coin",
+        "nature-theme",
+        "flora-theme",
+        "curaco-&-sint-marten",
+        "south-america",
+        "color-coin"
+      ],
+      "theme": [
+        "nature-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/coins/coin_curaco--sint-marten_2025.jpg",
+      "thumbnail": "assets/images/coins/coin_curaco--sint-marten_2025.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_dominican-republic_2009",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Dominican Republic 20 Peso P-182",
+      "country": "Dominican Republic",
+      "continent": "North America",
+      "year": 2009,
+      "denomination": "20",
+      "material": "Polymer",
+      "description": "The Dominican Republic is a Caribbean nation that shares the island of Hispaniola with Haiti to the west. It's known for its beaches, resorts and golfing. Its terrain comprises rainforest, savannah and highlands, including Pico Duarte, the Caribbean’s tallest mountain. Capital city Santo Domingo has Spanish landmarks like the Gothic Catedral Primada de America dating back 5 centuries in its Zona Colonial district.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "dominican-republic",
+        "north-america",
+        "gregorio-lúperon",
+        "national-pantheon"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_dominican-republic_2009.jpg",
+      "images": [
+        "assets/images/currency/polymer_dominican-republic_2009.jpg",
+        "assets/images/currency/polymer_dominican-republic_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_dominican-republic_2009.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_dominican-republic_2023",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Dominican Republic 50 Peso P-189i",
+      "country": "Dominican Republic",
+      "continent": "North America",
+      "year": 2023,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "The Dominican Republic is a Caribbean nation that shares the island of Hispaniola with Haiti to the west. It's known for its beaches, resorts and golfing. Its terrain comprises rainforest, savannah and highlands, including Pico Duarte, the Caribbean’s tallest mountain. Capital city Santo Domingo has Spanish landmarks like the Gothic Catedral Primada de America dating back 5 centuries in its Zona Colonial district.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "dominican-republic",
+        "north-america",
+        "basilica-nuestra-señora-de-la-altagracia",
+        "santa-maria-la-menor-cathedral"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_dominican-republic_2023.jpg",
+      "images": [
+        "assets/images/currency/note_dominican-republic_2023.jpg",
+        "assets/images/currency/note_dominican-republic_2023_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_dominican-republic_2023.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_eastern-caribbean-states_2023",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Eastern Caribbean States 2 Dollar P-W61 [Commemorative Issue]",
+      "country": "Eastern Caribbean States",
+      "continent": "North America",
+      "year": 2023,
+      "denomination": "2",
+      "material": "Polymer",
+      "description": "The Organisation of Eastern Caribbean States (OECS) is an intergovernmental organization promoting regional integration, economic harmonization, and free movement of people across the Eastern Caribbean. Established via the Treaty of Basseterre, the bloc unites 11 island nations and territories. Seven independent nations and territories benefit from the full Economic Union, including unrestricted travel and work opportunities:Antigua and BarbudaCommonwealth of DominicaGrenadaMontserrat (British Overseas Territory)Saint Kitts and NevisSaint LuciaSaint Vincent and the Grenadines. 40th Anniversary of Eastern Caribbean Central Bank (1983-2023)",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme",
+        "eastern-caribbean-states",
+        "north-america",
+        "fish",
+        "coral",
+        "turtles",
+        "map-of-the-lesser-antilles",
+        "sir-isaac-vivian-\"viv\"-alexander-richards-(\"the-master-blaster\")"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_eastern-caribbean-states_2023.jpg",
+      "images": [
+        "assets/images/currency/note_eastern-caribbean-states_2023.jpg",
+        "assets/images/currency/note_eastern-caribbean-states_2023_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_eastern-caribbean-states_2023.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_eastern-caribbean-states_2021",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Eastern Caribbean States 5 Dollar P-W56",
+      "country": "Eastern Caribbean States",
+      "continent": "North America",
+      "year": 2021,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "The Organisation of Eastern Caribbean States (OECS) is an intergovernmental organization promoting regional integration, economic harmonization, and free movement of people across the Eastern Caribbean. Established via the Treaty of Basseterre, the bloc unites 11 island nations and territories. Seven independent nations and territories benefit from the full Economic Union, including unrestricted travel and work opportunities:Antigua and BarbudaCommonwealth of DominicaGrenadaMontserrat (British Overseas Territory)Saint Kitts and NevisSaint LuciaSaint Vincent and the Grenadines.",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "eastern-caribbean-states",
+        "north-america",
+        "elizabeth-ii",
+        "hummingbird",
+        "trafalgar-falls"
+      ],
+      "theme": [
+        "bird-theme",
+        "building-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_eastern-caribbean-states_2021.jpg",
+      "images": [
+        "assets/images/currency/polymer_eastern-caribbean-states_2021.jpg",
+        "assets/images/currency/polymer_eastern-caribbean-states_2021_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_eastern-caribbean-states_2021.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_eastern-caribbean-states_2019",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Eastern Caribbean States 10 Dollar P-W57",
+      "country": "Eastern Caribbean States",
+      "continent": "North America",
+      "year": 2019,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "The Organisation of Eastern Caribbean States (OECS) is an intergovernmental organization promoting regional integration, economic harmonization, and free movement of people across the Eastern Caribbean. Established via the Treaty of Basseterre, the bloc unites 11 island nations and territories. Seven independent nations and territories benefit from the full Economic Union, including unrestricted travel and work opportunities:Antigua and BarbudaCommonwealth of DominicaGrenadaMontserrat (British Overseas Territory)Saint Kitts and NevisSaint LuciaSaint Vincent and the Grenadines.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "eastern-caribbean-states",
+        "north-america",
+        "elizabeth-ii"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_eastern-caribbean-states_2019.jpg",
+      "images": [
+        "assets/images/currency/polymer_eastern-caribbean-states_2019.jpg",
+        "assets/images/currency/polymer_eastern-caribbean-states_2019_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_eastern-caribbean-states_2019.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_eastern-caribbean-states_2019_2",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Eastern Caribbean States 20 Dollar P-W58",
+      "country": "Eastern Caribbean States",
+      "continent": "North America",
+      "year": 2019,
+      "denomination": "20",
+      "material": "Polymer",
+      "description": "The Organisation of Eastern Caribbean States (OECS) is an intergovernmental organization promoting regional integration, economic harmonization, and free movement of people across the Eastern Caribbean. Established via the Treaty of Basseterre, the bloc unites 11 island nations and territories. Seven independent nations and territories benefit from the full Economic Union, including unrestricted travel and work opportunities:Antigua and BarbudaCommonwealth of DominicaGrenadaMontserrat (British Overseas Territory)Saint Kitts and NevisSaint LuciaSaint Vincent and the Grenadines.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "eastern-caribbean-states",
+        "north-america",
+        "elizabeth-ii"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_eastern-caribbean-states_2019_2.jpg",
+      "images": [
+        "assets/images/currency/polymer_eastern-caribbean-states_2019_2.jpg",
+        "assets/images/currency/polymer_eastern-caribbean-states_2019_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_eastern-caribbean-states_2019_2.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_haiti_2013",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Haiti 10 Gourdes P-279",
+      "country": "Haiti",
+      "continent": "North America",
+      "year": 2013,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Haiti is a Caribbean country that shares the island of Hispaniola with the Dominican Republic to its east. Though it’s still recovering from a 2010 earthquake, many of Haiti's landmarks dating to the early 19th century remain intact. These include Citadelle la Ferrière, a mountaintop fortress, and the nearby ruins of Sans-Souci Palace, the baroque former royal home of King Henry I.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "haiti",
+        "north-america",
+        "sanité-belair",
+        "fort-cap-rouge"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_haiti_2013.jpg",
+      "images": [
+        "assets/images/currency/polymer_haiti_2013.jpg",
+        "assets/images/currency/polymer_haiti_2013_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_haiti_2013.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_haiti_2021",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Haiti 10 Gourdes P-272",
+      "country": "Haiti",
+      "continent": "North America",
+      "year": 2021,
+      "denomination": "10",
+      "material": "Paper",
+      "description": "Haiti is a Caribbean country that shares the island of Hispaniola with the Dominican Republic to its east. Though it’s still recovering from a 2010 earthquake, many of Haiti's landmarks dating to the early 19th century remain intact. These include Citadelle la Ferrière, a mountaintop fortress, and the nearby ruins of Sans-Souci Palace, the baroque former royal home of King Henry I.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "haiti",
+        "north-america"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_haiti_2021.jpg",
+      "images": [
+        "assets/images/currency/note_haiti_2021.jpg",
+        "assets/images/currency/note_haiti_2021_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_haiti_2021.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_haiti_2014",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Haiti 25 Gourdes P-266",
+      "country": "Haiti",
+      "continent": "North America",
+      "year": 2014,
+      "denomination": "25",
+      "material": "Paper",
+      "description": "Haiti is a Caribbean country that shares the island of Hispaniola with the Dominican Republic to its east. Though it’s still recovering from a 2010 earthquake, many of Haiti's landmarks dating to the early 19th century remain intact. These include Citadelle la Ferrière, a mountaintop fortress, and the nearby ruins of Sans-Souci Palace, the baroque former royal home of King Henry I.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "history-theme",
+        "haiti",
+        "north-america",
+        "palace-of-justice",
+        "arms"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_haiti_2014.jpg",
+      "images": [
+        "assets/images/currency/note_haiti_2014.jpg",
+        "assets/images/currency/note_haiti_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_haiti_2014.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_paraguay_2017",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Paraguay 5000 Guaraníes P-234c",
+      "country": "Paraguay",
+      "continent": "South America",
+      "year": 2017,
+      "denomination": "5000",
+      "material": "Polymer",
+      "description": "Paraguay is a landlocked country between Argentina, Brazil and Bolivia, home to large swaths of swampland, subtropical forest and chaco, wildernesses comprising savanna and scrubland. The capital, Asunción, on the banks of the Paraguay River, is home to the grand Government Palace and the Museo del Barro, displaying pre-Columbian ceramics and ñandutí lacework, the latter available in many shops.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "paraguay",
+        "south-america",
+        "don-carlos-antonio-lópez"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_paraguay_2017.jpg",
+      "images": [
+        "assets/images/currency/polymer_paraguay_2017.jpg",
+        "assets/images/currency/polymer_paraguay_2017_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_paraguay_2017.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_paraguay_2017_2",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Paraguay 2000 Guaraníes P-228d",
+      "country": "Paraguay",
+      "continent": "South America",
+      "year": 2017,
+      "denomination": "2000",
+      "material": "Polymer",
+      "description": "Paraguay is a landlocked country between Argentina, Brazil and Bolivia, home to large swaths of swampland, subtropical forest and chaco, wildernesses comprising savanna and scrubland. The capital, Asunción, on the banks of the Paraguay River, is home to the grand Government Palace and the Museo del Barro, displaying pre-Columbian ceramics and ñandutí lacework, the latter available in many shops.",
+      "tags": [
+        "polymer-currency",
+        "sports-theme",
+        "person-theme",
+        "history-theme",
+        "paraguay",
+        "south-america",
+        "adela-and-celsa-speratti",
+        "parade-with-flags"
+      ],
+      "theme": [
+        "sports-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_paraguay_2017_2.jpg",
+      "images": [
+        "assets/images/currency/polymer_paraguay_2017_2.jpg",
+        "assets/images/currency/polymer_paraguay_2017_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_paraguay_2017_2.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_uruguay_2020",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Uruguay 20 Pesos Uruguayos P-W101",
+      "country": "Uruguay",
+      "continent": "South America",
+      "year": 2020,
+      "denomination": "20",
+      "material": "Polymer",
+      "description": "Uruguay is a South American country known for its verdant interior and beach-lined coast. The capital, Montevideo, revolves around Plaza Independencia, once home to a Spanish citadel. It leads to Ciudad Vieja (Old City), with art deco buildings, colonial homes and Mercado del Puerto, an old port market with many steakhouses. La Rambla, a waterfront promenade, passes fish stalls, piers and parks.",
+      "tags": [
+        "polymer-currency",
+        "person-theme",
+        "history-theme",
+        "uruguay",
+        "south-america",
+        "juan-zorilla-de-san-martín",
+        "allegory-\"legend-of-the-fatherland\""
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_uruguay_2020.jpg",
+      "images": [
+        "assets/images/currency/polymer_uruguay_2020.jpg",
+        "assets/images/currency/polymer_uruguay_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_uruguay_2020.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_trinidad-and-tobago_2020",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Trinidad and Tobago 1 Dollar P-W60",
+      "country": "Trinidad and Tobago",
+      "continent": "South America",
+      "year": 2020,
+      "denomination": "1",
+      "description": "Trinidad and Tobago is a dual-island Caribbean nation near Venezuela, with distinctive Creole traditions and cuisines. Trinidad’s capital, Port of Spain, hosts a boisterous carnival featuring calypso and soca music. Numerous bird species inhabit sanctuaries such as the Asa Wright Nature Centre. The smaller island of Tobago is known for its beaches and the Tobago Main Ridge Forest Reserve, which shelters hummingbirds.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "trinidad-and-tobago",
+        "south-america",
+        "scarlet-ibis",
+        "arms",
+        "flag",
+        "port-of-spain"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/polymer_trinidad-and-tobago_2020.jpg",
+      "images": [
+        "assets/images/currency/polymer_trinidad-and-tobago_2020.jpg",
+        "assets/images/currency/polymer_trinidad-and-tobago_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_trinidad-and-tobago_2020.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_trinidad-and-tobago_2020_2",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Trinidad and Tobago 5 Dollar P-W61",
+      "country": "Trinidad and Tobago",
+      "continent": "South America",
+      "year": 2020,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Trinidad and Tobago is a dual-island Caribbean nation near Venezuela, with distinctive Creole traditions and cuisines. Trinidad’s capital, Port of Spain, hosts a boisterous carnival featuring calypso and soca music. Numerous bird species inhabit sanctuaries such as the Asa Wright Nature Centre. The smaller island of Tobago is known for its beaches and the Tobago Main Ridge Forest Reserve, which shelters hummingbirds.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "trinidad-and-tobago",
+        "south-america",
+        "arms",
+        "flag",
+        "blue-crowned-motmot",
+        "eric-williams-financial-complex"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_trinidad-and-tobago_2020_2.jpg",
+      "images": [
+        "assets/images/currency/polymer_trinidad-and-tobago_2020_2.jpg",
+        "assets/images/currency/polymer_trinidad-and-tobago_2020_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_trinidad-and-tobago_2020_2.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_trinidad-and-tobago_2020_3",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Trinidad and Tobago 10 Dollar P-W62",
+      "country": "Trinidad and Tobago",
+      "continent": "South America",
+      "year": 2020,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Trinidad and Tobago is a dual-island Caribbean nation near Venezuela, with distinctive Creole traditions and cuisines. Trinidad’s capital, Port of Spain, hosts a boisterous carnival featuring calypso and soca music. Numerous bird species inhabit sanctuaries such as the Asa Wright Nature Centre. The smaller island of Tobago is known for its beaches and the Tobago Main Ridge Forest Reserve, which shelters hummingbirds.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "trinidad-and-tobago",
+        "south-america",
+        "arms",
+        "flag",
+        "eric-williams-financial-complex",
+        "cocrico"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_trinidad-and-tobago_2020_3.jpg",
+      "images": [
+        "assets/images/currency/polymer_trinidad-and-tobago_2020_3.jpg",
+        "assets/images/currency/polymer_trinidad-and-tobago_2020_3_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_trinidad-and-tobago_2020_3.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_trinidad-and-tobago_2006",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Trinidad and Tobago 1 Dollar P-46A(2)",
+      "country": "Trinidad and Tobago",
+      "continent": "South America",
+      "year": 2006,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Trinidad and Tobago is a dual-island Caribbean nation near Venezuela, with distinctive Creole traditions and cuisines. Trinidad’s capital, Port of Spain, hosts a boisterous carnival featuring calypso and soca music. Numerous bird species inhabit sanctuaries such as the Asa Wright Nature Centre. The smaller island of Tobago is known for its beaches and the Tobago Main Ridge Forest Reserve, which shelters hummingbirds.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "trinidad-and-tobago",
+        "south-america",
+        "arms",
+        "flag",
+        "eric-williams-financial-complex"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_trinidad-and-tobago_2006.jpg",
+      "images": [
+        "assets/images/currency/note_trinidad-and-tobago_2006.jpg",
+        "assets/images/currency/note_trinidad-and-tobago_2006_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_trinidad-and-tobago_2006.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_peru_1987",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Peru 50 Intis P131b",
+      "country": "Peru",
+      "continent": "South America",
+      "year": 1987,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites. On Peru’s arid Pacific coast is Lima, the capital, with a preserved colonial center and important collections of pre-Columbian art.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "peru",
+        "south-america",
+        "nicolas-de-piérola",
+        "drilling-rig"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_peru_1987.jpg",
+      "images": [
+        "assets/images/currency/note_peru_1987.jpg",
+        "assets/images/currency/note_peru_1987_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_peru_1987.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_peru_1987_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Peru 500 Intis P134b",
+      "country": "Peru",
+      "continent": "South America",
+      "year": 1987,
+      "denomination": "500",
+      "material": "Paper",
+      "description": "Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites. On Peru’s arid Pacific coast is Lima, the capital, with a preserved colonial center and important collections of pre-Columbian art.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "peru",
+        "south-america",
+        "tupac-amaru-ii",
+        "huascarán-mountain"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_peru_1987_2.jpg",
+      "images": [
+        "assets/images/currency/note_peru_1987_2.jpg",
+        "assets/images/currency/note_peru_1987_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_peru_1987_2.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_nicaragua_2022",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Nicaragua 10 Córdobas P-209a",
+      "country": "Nicaragua",
+      "continent": "North America",
+      "year": 2022,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "Nicaragua, set between the Pacific Ocean and the Caribbean Sea, is a Central American nation known for its dramatic terrain of lakes, volcanoes and beaches. Vast Lake Managua and the iconic stratovolcano Momotombo sit north of the capital Managua. To its south is Granada, noted for its Spanish colonial architecture and an archipelago of navigable islets rich in tropical bird life.",
+      "tags": [
+        "polymer-currency",
+        "nature-theme",
+        "history-theme",
+        "nicaragua",
+        "north-america",
+        "la-vaquita",
+        "puerto-salvador-allende-managua"
+      ],
+      "theme": [
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_nicaragua_2022.jpg",
+      "images": [
+        "assets/images/currency/polymer_nicaragua_2022.jpg",
+        "assets/images/currency/polymer_nicaragua_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_nicaragua_2022.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_nicaragua_2014",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Nicaragua 20 Córdobas P-210a",
+      "country": "Nicaragua",
+      "continent": "North America",
+      "year": 2014,
+      "denomination": "20",
+      "material": "Polymer",
+      "description": "Nicaragua, set between the Pacific Ocean and the Caribbean Sea, is a Central American nation known for its dramatic terrain of lakes, volcanoes and beaches. Vast Lake Managua and the iconic stratovolcano Momotombo sit north of the capital Managua. To its south is Granada, noted for its Spanish colonial architecture and an archipelago of navigable islets rich in tropical bird life.",
+      "tags": [
+        "polymer-currency",
+        "nature-theme",
+        "history-theme",
+        "nicaragua",
+        "north-america",
+        "mayo-ya-festival",
+        "turtle",
+        "moravian-church-laguna-de-perlas"
+      ],
+      "theme": [
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_nicaragua_2014.jpg",
+      "images": [
+        "assets/images/currency/polymer_nicaragua_2014.jpg",
+        "assets/images/currency/polymer_nicaragua_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_nicaragua_2014.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_philippines_2024",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Philippines 100 Piso P-W238",
+      "country": "Philippines",
+      "continent": "Asia",
+      "year": 2024,
+      "denomination": "100",
+      "material": "Polymer",
+      "description": "The Philippines, officially the Republic of the Philippines, is an archipelagic country in Southeast Asia.",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "philippines",
+        "asia",
+        "palawan-peacock-pheasant",
+        "mayon-vulcano",
+        "whale-shark"
+      ],
+      "theme": [
+        "bird-theme",
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_philippines_2024.jpg",
+      "images": [
+        "assets/images/currency/polymer_philippines_2024.jpg",
+        "assets/images/currency/polymer_philippines_2024_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_philippines_2024.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "polymer_philippines_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Philippines 50 Piso P-W237a",
+      "country": "Philippines",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "50",
+      "material": "Polymer",
+      "description": "The Philippines, officially the Republic of the Philippines, is an archipelagic country in Southeast Asia.",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "philippines",
+        "asia",
+        "visayan-leopard-cat",
+        "taal-lake",
+        "giant-trevally"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/polymer_philippines_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_philippines_2025.jpg",
+        "assets/images/currency/polymer_philippines_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_philippines_2025.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_armenia_1998",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Armenia 50 Dram P-41",
+      "country": "Armenia",
+      "continent": "Asia",
+      "year": 1998,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia. It is a part of the Caucasus region and is bordered by Turkey to the west, Georgia to the north, Azerbaijan to the east, and Iran and the Azerbaijani exclave of Nakhchivan to the south.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "armenia",
+        "asia",
+        "abre-dance-from-khachathurian's-ballett",
+        "aram-khachathurian",
+        "operahouse",
+        "mount-ararat"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_armenia_1998.jpg",
+      "images": [
+        "assets/images/currency/note_armenia_1998.jpg",
+        "assets/images/currency/note_armenia_1998_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_armenia_1998.jpg",
+      "addedOn": "2026-07-11"
+    },
+    {
+      "id": "note_armenia_2022",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Armenia 1000 Dram P-61a",
+      "country": "Armenia",
+      "continent": "Asia",
+      "year": 2022,
+      "denomination": "1000",
+      "material": "Paper",
+      "description": "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia. It is a part of the Caucasus region and is bordered by Turkey to the west, Georgia to the north, Azerbaijan to the east, and Iran and the Azerbaijani exclave of Nakhchivan to the south.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "art-theme",
+        "armenia",
+        "asia",
+        "paruyr-sevak",
+        "poems",
+        "paryur-sevak-house",
+        "zangakatun",
+        "statue-of-sevak"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "art-theme"
+      ],
+      "image": "assets/images/currency/note_armenia_2022.jpg",
+      "images": [
+        "assets/images/currency/note_armenia_2022.jpg",
+        "assets/images/currency/note_armenia_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_armenia_2022.jpg",
+      "addedOn": "2026-07-11"
     }
   ]
 }
