@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-07-11",
+    "lastUpdated": "2026-07-19",
     "version": "1.0.0"
   },
   "items": [
@@ -4638,6 +4638,385 @@
       ],
       "thumbnail": "assets/images/currency/note_armenia_2022.jpg",
       "addedOn": "2026-07-11"
+    },
+    {
+      "id": "coin_thailand_2017",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Thailand 50 Satang",
+      "country": "Thailand",
+      "continent": "Asia",
+      "year": 2017,
+      "denomination": "50 Satang",
+      "material": "Steel-Copper",
+      "description": "Rama lX portrait",
+      "tags": [
+        "coin",
+        "building-theme",
+        "thailand",
+        "asia",
+        "rama-lx-portrait"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/coins/coin_thailand_2017.jpg",
+      "thumbnail": "assets/images/coins/coin_thailand_2017.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_hungary_2019",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Hungary 5 Forint",
+      "country": "Hungary",
+      "continent": "Europe",
+      "year": 2019,
+      "denomination": "5 Forint",
+      "material": "Copper-Zinc-Nickle",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "hungary",
+        "europe",
+        "great-egret",
+        "white-heron"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/coins/coin_hungary_2019.jpg",
+      "thumbnail": "assets/images/coins/coin_hungary_2019.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_nagorno-karabakh_2004",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Nagorno-Karabakh 50 Luma 🐎",
+      "country": "Nagorno-Karabakh",
+      "continent": "Asia",
+      "year": 2004,
+      "denomination": "50 Luma",
+      "material": "Aluminum",
+      "description": "Nagorno-Karabakh is a mountainous region in the South Caucasus that is internationally recognized as part of Azerbaijan but was historically populated and governed by ethnic Armenians. Following a lightning military offensive by Azerbaijan and a mass exodus of roughly 100,000 Armenians in September 2023, the self-proclaimed Republic of Artsakh was officially dissolved, and the region was fully integrated under Azerbaijani control.",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "nagorno-karabakh",
+        "asia",
+        "horse"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/coins/coin_nagorno-karabakh_2004.jpg",
+      "thumbnail": "assets/images/coins/coin_nagorno-karabakh_2004.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_argentina_1974",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Argentina 1 Centavo",
+      "country": "Argentina",
+      "continent": "South America",
+      "year": 1974,
+      "denomination": "1 Centavo",
+      "material": "Aluminum",
+      "description": "The Argentina 1 Centavo coin from the 1970–1975 series (featuring the 1974 date in the image you are viewing) has a 100% Aluminum composition.Because it is made entirely of aluminum, it is exceptionally lightweight, weighing just 0.62 grams. The person depicted on the coin is Libertad (the personification of Liberty), featuring a design modeled after the work of the French engraver Eugène-André Oudine. She is shown in profile facing left, wearing a Phrygian cap, which is a classic symbol of freedom and liberty.",
+      "tags": [
+        "coin",
+        "person-theme",
+        "argentina",
+        "south-america",
+        "eugène-andré-oudine",
+        "phrygian-cap"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/coins/coin_argentina_1974.jpg",
+      "thumbnail": "assets/images/coins/coin_argentina_1974.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_botswana_1998",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Botswana 5 Thebe",
+      "country": "Botswana",
+      "continent": "South America",
+      "year": 1998,
+      "denomination": "5 Thebe",
+      "material": "Copper-Steel",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "botswana",
+        "south-america",
+        "red-billed-hornbill",
+        "hexagon-coin"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/coins/coin_botswana_1998.jpg",
+      "thumbnail": "assets/images/coins/coin_botswana_1998.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_south-africa_2024",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "South Africa 10 Cents",
+      "country": "South Africa",
+      "continent": "Africa",
+      "year": 2024,
+      "denomination": "10 Cents",
+      "material": "Copper-Steel",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "nature-theme",
+        "south-africa",
+        "africa",
+        "cape-honey-bee"
+      ],
+      "theme": [
+        "bird-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/coins/coin_south-africa_2024.jpg",
+      "thumbnail": "assets/images/coins/coin_south-africa_2024.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_nepal_1990",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Nepl 25 Pisa",
+      "country": "Nepal",
+      "continent": "Asia",
+      "year": 1990,
+      "denomination": "25 Pisa",
+      "material": "Aluminium",
+      "description": "The Nepal 25 Paisa coin from the 1982–1993 series (Vikram Samvat years 2039–2050, as seen on the coin date २०५० in your image) has a 100% Aluminum composition.Because of this, the large-type version of the coin is notably light, weighing only 1.8 grams.",
+      "tags": [
+        "coin",
+        "nepal",
+        "asia"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_nepal_1990.jpg",
+      "thumbnail": "assets/images/coins/coin_nepal_1990.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_brazil_2024",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Brazil 1 Real",
+      "country": "Brazil",
+      "continent": "South America",
+      "year": 2024,
+      "denomination": "1 Real",
+      "material": "Bronze-Steel",
+      "description": "Bi-Metal commemorative coin. The person depicted on the coin is the Effigy of the Republic (Efígie da República), a woman wearing a laurel wreath which serves as the national personification of Brazil.",
+      "tags": [
+        "coin",
+        "person-theme",
+        "brazil",
+        "south-america",
+        "bi-metal"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/coins/coin_brazil_2024.jpg",
+      "thumbnail": "assets/images/coins/coin_brazil_2024.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_paraguay_1950",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Paraguay 1 Centimo",
+      "country": "Paraguay",
+      "continent": "South America",
+      "year": 1950,
+      "denomination": "1 Centimo",
+      "material": "Copper-Aluminium",
+      "description": "Psidium guajava flower",
+      "tags": [
+        "coin",
+        "flora-theme",
+        "paraguay",
+        "south-america",
+        "psidium-guajava-flower"
+      ],
+      "theme": [
+        "flora-theme"
+      ],
+      "image": "assets/images/coins/coin_paraguay_1950.jpg",
+      "thumbnail": "assets/images/coins/coin_paraguay_1950.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_costa-rica_2023",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Costa Rica 50 Colones",
+      "country": "Costa Rica",
+      "continent": "North America",
+      "year": 2023,
+      "denomination": "50 Colones",
+      "material": "Nickel-Brass",
+      "tags": [
+        "coin",
+        "aquatic-theme",
+        "nature-theme",
+        "costa-rica",
+        "north-america",
+        "crab"
+      ],
+      "theme": [
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/coins/coin_costa-rica_2023.jpg",
+      "thumbnail": "assets/images/coins/coin_costa-rica_2023.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_egypt_1975",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Egypt 5 Milliemes",
+      "country": "Egypt",
+      "continent": "Asia",
+      "year": 1975,
+      "denomination": "5 Milliemes",
+      "material": "Aluminium-Brass",
+      "description": "The Egypt 5 Milliemes coin from the 1975 commemorative issue celebrating International Women's Year (featuring the bust of Queen Nefertiti) has an Aluminium-bronze composition.",
+      "tags": [
+        "coin",
+        "person-theme",
+        "egypt",
+        "asia",
+        "queen-nefertiti"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/coins/coin_egypt_1975.jpg",
+      "thumbnail": "assets/images/coins/coin_egypt_1975.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_malawi_2018",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Malawi 10 Kwacha",
+      "country": "Malawi",
+      "continent": "Africa",
+      "year": 2018,
+      "denomination": "10 Kwacha",
+      "material": "Steel-Iron",
+      "description": "The Malawi 10 Kwacha coin from the 2018 issue (featuring the elephant and calf) has a Stainless steel clad iron composition.",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "malawi",
+        "africa",
+        "elephant",
+        "calf"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/coins/coin_malawi_2018.jpg",
+      "thumbnail": "assets/images/coins/coin_malawi_2018.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_north-macedonia_1995",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "North Macedonia 2 & 5 Dinar",
+      "country": "North Macedonia",
+      "continent": "Europe",
+      "year": 1995,
+      "denomination": "2 & 5 Dinar",
+      "material": "Brass-Nickel",
+      "description": "These 1995 North Macedonia FAO commemorative coins were struck in two different metal compositions: Standard Brass (consisting primarily of copper and zinc)Nickel brass (composed of 70% Copper, 12% Nickel, and 18% Zinc)",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "aquatic-theme",
+        "north-macedonia",
+        "europe",
+        "fish",
+        "cat"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme"
+      ],
+      "image": "assets/images/coins/coin_north-macedonia_1995.jpg",
+      "thumbnail": "assets/images/coins/coin_north-macedonia_1995.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_zambia_2024",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Zambia 50 Ngwee",
+      "country": "Zambia",
+      "continent": "Africa",
+      "year": 2024,
+      "denomination": "50 Ngwee",
+      "material": "Bronze-Steel",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "zambia",
+        "africa",
+        "elephant"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/coins/coin_zambia_2024.jpg",
+      "thumbnail": "assets/images/coins/coin_zambia_2024.jpg",
+      "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_bulgaria_7951",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Bulgaria 1, 2, 5 and 10 Stotinki",
+      "country": "Bulgaria",
+      "continent": "Europe",
+      "year": null,
+      "denomination": "1, 2, 5 and 10 Stotinki",
+      "material": "Bronze-Nickel",
+      "description": "These Bulgarian coins from the set shown in the image have different compositions depending on their specific denomination and year of issue:1, 2, and 5 Stotinki (2000): Made of Bronze-plated steel (consisting of a steel core coated with bronze).10 Stotinki (1999): Made of Nickel brass (a copper-nickel-zinc alloy, specifically composed of 70% Copper, 18% Zinc, and 12% Nickel).",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "history-theme",
+        "bulgaria",
+        "europe",
+        "horse"
+      ],
+      "theme": [
+        "animal-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/coins/coin_bulgaria_7951.jpg",
+      "thumbnail": "assets/images/coins/coin_bulgaria_7951.jpg",
+      "addedOn": "2026-07-19"
     }
   ]
 }
