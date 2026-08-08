@@ -756,41 +756,6 @@
       "addedOn": "2026-04-23"
     },
     {
-      "id": "note_state-of-jersey_6968",
-      "type": "currency",
-      "subtype": "paper",
-      "title": "State of Jersey 1 Pound",
-      "country": "State of Jersey",
-      "continent": "Europe",
-      "year": null,
-      "denomination": "1  Pound",
-      "material": "Paper",
-      "description": "New Jersey is a Mid-Atlantic U.S. state known as the \"Garden State,\" bordered by New York, the Atlantic Ocean, Delaware, and Pennsylvania. As the most densely populated state and 11th-most populous, it features the capital city of Trenton and major city Newark. It was the third state to ratify the U.S. Constitution",
-      "tags": [
-        "paper-currency",
-        "building-theme",
-        "nature-theme",
-        "person-theme",
-        "history-theme",
-        "state-of-jersey",
-        "europe",
-        "queennote"
-      ],
-      "theme": [
-        "building-theme",
-        "nature-theme",
-        "person-theme",
-        "history-theme"
-      ],
-      "image": "assets/images/currency/note_state-of-jersey_6968.jpg",
-      "images": [
-        "assets/images/currency/note_state-of-jersey_6968.jpg",
-        "assets/images/currency/note_state-of-jersey_6968_back.jpg"
-      ],
-      "thumbnail": "assets/images/currency/note_state-of-jersey_6968.jpg",
-      "addedOn": "2026-04-23"
-    },
-    {
       "id": "polymer_australia_2020",
       "type": "currency",
       "subtype": "polymer",
@@ -1081,66 +1046,6 @@
       "addedOn": "2026-05-01"
     },
     {
-      "id": "note_gibraltar_2018",
-      "type": "currency",
-      "subtype": "paper",
-      "title": "Gibraltar 10 Shillings",
-      "country": "Gibraltar",
-      "continent": "Europe",
-      "year": 2018,
-      "denomination": "10",
-      "material": "Cotton Paper",
-      "description": "Gibraltar is a British Overseas Territory located at the southern tip of the Iberian Peninsula, guarding the entrance to the Mediterranean Sea. Spanning \\(6.8 \\text{ km}^2\\), it is famous for the 426m-high Rock of Gibraltar, a dense town, and its wild Barbary Macaques. It is a strategic, self-governing territory with a, economy driven by tourism and finance.",
-      "tags": [
-        "paper-currency",
-        "building-theme",
-        "gibraltar",
-        "europe"
-      ],
-      "theme": [
-        "building-theme"
-      ],
-      "image": "assets/images/currency/note_gibraltar_2018.jpg",
-      "images": [
-        "assets/images/currency/note_gibraltar_2018.jpg",
-        "assets/images/currency/note_gibraltar_2018_back.jpg"
-      ],
-      "thumbnail": "assets/images/currency/note_gibraltar_2018.jpg",
-      "addedOn": "2026-05-01"
-    },
-    {
-      "id": "note_czechoslovakia_1985",
-      "type": "currency",
-      "subtype": "paper",
-      "title": "Czechoslovakia 10 Korun",
-      "country": "Czechoslovakia",
-      "continent": "Europe",
-      "year": 1985,
-      "denomination": "10 Korun",
-      "material": "Paper",
-      "description": "Czechoslovakia was a Central European country formed in 1918 from the Austro-Hungarian Empire, comprising modern-day Czech Republic and Slovakia. It existed as a democratic republic (1918–1938), was occupied by Nazi Germany during WWII, and was later under Soviet communist rule (1948–1989). The nation split peacefully into the Czech Republic and Slovakia on January 1, 1993, a separation known as the \"Velvet Divorce\"",
-      "tags": [
-        "paper-currency",
-        "nature-theme",
-        "person-theme",
-        "czechoslovakia",
-        "europe",
-        "czech-republic",
-        "slovakia"
-      ],
-      "theme": [
-        "nature-theme",
-        "person-theme"
-      ],
-      "image": "assets/images/currency/note_czechoslovakia_1985.jpg",
-      "images": [
-        "assets/images/currency/note_czechoslovakia_1985.jpg",
-        "assets/images/currency/note_czechoslovakia_1985_back.jpg"
-      ],
-      "thumbnail": "assets/images/currency/note_czechoslovakia_1985.jpg",
-      "addedOn": "2026-05-01"
-    },
-    {
       "id": "note_ussr_1991",
       "type": "currency",
       "subtype": "paper",
@@ -1287,62 +1192,6 @@
       ],
       "thumbnail": "assets/images/currency/polymer_pitcairn-island_5126.jpg",
       "addedOn": "2026-05-02"
-    },
-    {
-      "id": "polymer_albania_2017",
-      "type": "currency",
-      "subtype": "polymer",
-      "title": "Albania 200 Leke",
-      "country": "Albania",
-      "continent": "Europe",
-      "year": 2017,
-      "denomination": "200 Leke",
-      "material": "Polymer",
-      "description": "Albania, on Southeastern Europe’s Balkan Peninsula, is a small country with Adriatic and Ionian coastlines and an interior crossed by the Albanian Alps. The country has many castles and archaeological sites. Capital Tirana centers on sprawling Skanderbeg Square, site of the National History Museum, with exhibits spanning antiquity to post-communism, and frescoed Et’hem Bey Mosque.",
-      "tags": [
-        "polymer-currency",
-        "building-theme",
-        "person-theme",
-        "albania",
-        "europe"
-      ],
-      "theme": [
-        "building-theme",
-        "person-theme"
-      ],
-      "image": "assets/images/currency/polymer_albania_2017.jpg",
-      "images": [
-        "assets/images/currency/polymer_albania_2017.jpg",
-        "assets/images/currency/polymer_albania_2017_back.jpg"
-      ],
-      "thumbnail": "assets/images/currency/polymer_albania_2017.jpg",
-      "addedOn": "2026-05-03"
-    },
-    {
-      "id": "note_austria_1992",
-      "type": "currency",
-      "subtype": "paper",
-      "title": "Austria 2 Kronen [Uni Face]",
-      "country": "Austria",
-      "continent": "Europe",
-      "year": 1992,
-      "denomination": "2 Kronen",
-      "description": "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps. It is a federation of nine states, of which the capital Vienna is the most populous city and statev",
-      "tags": [
-        "paper-currency",
-        "person-theme",
-        "history-theme",
-        "austria",
-        "europe",
-        "uni-face"
-      ],
-      "theme": [
-        "person-theme",
-        "history-theme"
-      ],
-      "image": "assets/images/currency/note_austria_1992.jpg",
-      "thumbnail": "assets/images/currency/note_austria_1992.jpg",
-      "addedOn": "2026-05-03"
     },
     {
       "id": "note_bosnia-and-herzegovina_1992",
@@ -1897,37 +1746,6 @@
       "addedOn": "2026-05-03"
     },
     {
-      "id": "note_lithuania_1992",
-      "type": "currency",
-      "subtype": "paper",
-      "title": "Lithuania 1 Talonas P-39",
-      "country": "Lithuania",
-      "continent": "Europe",
-      "year": 1992,
-      "denomination": "1 Talonas",
-      "material": "Paper",
-      "description": "Lithuania is a democratic Baltic state in Northern Europe with a population of roughly 2.9 million. Its capital is Vilnius. A member of the EU, NATO, and the Eurozone, Lithuania features a high-income economy. Known for its forests, 6,000 lakes, and Baltic coastline, it has a deep history as a former 15th-century superpower and was the first Soviet republic to declare independence in 1990.",
-      "tags": [
-        "paper-currency",
-        "bird-theme",
-        "lithuania",
-        "europe",
-        "eurasian-lapwings",
-        "clover",
-        "arms"
-      ],
-      "theme": [
-        "bird-theme"
-      ],
-      "image": "assets/images/currency/note_lithuania_1992.jpg",
-      "images": [
-        "assets/images/currency/note_lithuania_1992.jpg",
-        "assets/images/currency/note_lithuania_1992_back.jpg"
-      ],
-      "thumbnail": "assets/images/currency/note_lithuania_1992.jpg",
-      "addedOn": "2026-05-03"
-    },
-    {
       "id": "note_latvia_1992",
       "type": "currency",
       "subtype": "paper",
@@ -2340,7 +2158,7 @@
         "assets/images/currency/note_serbia_2006_back.jpg"
       ],
       "thumbnail": "assets/images/currency/note_serbia_2006.jpg",
-      "addedOn": "2026-05-03"
+      "addedOn": "2026-08-08"
     },
     {
       "id": "note_serbia_2006",
@@ -5477,6 +5295,1692 @@
         "assets/images/currency/polymer_israel_2014_back.jpg"
       ],
       "thumbnail": "assets/images/currency/polymer_israel_2014.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_indonesia_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 5000 Rupiah P-130i",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": 1992,
+      "denomination": "5000",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "indonesia",
+        "asia",
+        "kelimutu-(tri-color-lake)",
+        "sasando",
+        "tapestry"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_1992.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_1992.jpg",
+        "assets/images/currency/note_indonesia_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_1992.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_indonesia_2016",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 5000 Rupiah P-156a",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": 2016,
+      "denomination": "5000",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "indonesia",
+        "asia",
+        "dr.-k.-h.-idham-chalid",
+        "gunung-bromo-(java)",
+        "tari-gambyong-dancer"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_2016.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_2016.jpg",
+        "assets/images/currency/note_indonesia_2016_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_2016.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_indonesia_2016_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 10000 Rupiah P-157-2018(2)",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": 2016,
+      "denomination": "10000",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "indonesia",
+        "asia",
+        "frans-kaisiepo",
+        "wakatobi-national-park",
+        "tari-pakarena-dancer"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_2016_2.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_2016_2.jpg",
+        "assets/images/currency/note_indonesia_2016_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_2016_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_indonesia_5750",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 10000 Rupiah P-137e",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": null,
+      "denomination": "10000",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "indonesia",
+        "asia",
+        "tjut-njak-dhien",
+        "segara-anak-volcanic-lake"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_5750.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_5750.jpg",
+        "assets/images/currency/note_indonesia_5750_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_5750.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_indonesia_1995",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Indonesia 500 Rupiah P-128d",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "year": 1995,
+      "denomination": "500",
+      "material": "Paper",
+      "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "nature-theme",
+        "indonesia",
+        "asia",
+        "orang-utan",
+        "house"
+      ],
+      "theme": [
+        "animal-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_indonesia_1995.jpg",
+      "images": [
+        "assets/images/currency/note_indonesia_1995.jpg",
+        "assets/images/currency/note_indonesia_1995_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_indonesia_1995.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_azerbaijan_2020",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Azerbaijan 1 Manat W-38",
+      "country": "Azerbaijan",
+      "continent": "Asia",
+      "year": 2020,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Azerbaijan, the nation and former Soviet republic, is bounded by the Caspian Sea and Caucasus Mountains, which span Asia and Europe. Its capital, Baku, is famed for its medieval walled Inner City. Within the Inner City lies the Palace of the Shirvanshahs, a royal retreat dating to the 15th century, and the centuries-old stone Maiden Tower, which dominates the city skyline.",
+      "tags": [
+        "paper-currency",
+        "azerbaijan",
+        "asia",
+        "musical-instruments-and-chord",
+        "map-of-azerbaijan",
+        "windows"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_azerbaijan_2020.jpg",
+      "images": [
+        "assets/images/currency/note_azerbaijan_2020.jpg",
+        "assets/images/currency/note_azerbaijan_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_azerbaijan_2020.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_nagorno-karabakh_2996",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Nagorno-Karabakh 10 Dram",
+      "country": "Nagorno-Karabakh",
+      "continent": "Asia",
+      "year": null,
+      "denomination": "10",
+      "material": "Paper",
+      "description": "Nagorno-Karabakh is a mountainous region in southwestern Azerbaijan. Internationally recognized as part of Azerbaijan, it was governed by ethnic Armenian separatists as the self-declared Republic of Artsakh from 1992 until an Azerbaijani military offensive in September 2023 led to the region's dissolution and the displacement of over 100,000 ethnic Armenians.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "nagorno-karabakh",
+        "asia"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_nagorno-karabakh_2996.jpg",
+      "thumbnail": "assets/images/currency/note_nagorno-karabakh_2996.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_timor_1963",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Timor 100 Escudos P-100 Escudos",
+      "country": "Timor",
+      "continent": "Asia",
+      "year": 1963,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Timor is an island in Maritime Southeast Asia located at the eastern end of the Lesser Sunda Islands, north of the Timor Sea and less than 500 km from Australia. It is politically divided between West Timor (part of Indonesia) and the independent nation of Timor-Leste (East Timor).",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "timor",
+        "asia",
+        "régulo-d.-aleixo",
+        "arms"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_timor_1963.jpg",
+      "images": [
+        "assets/images/currency/note_timor_1963.jpg",
+        "assets/images/currency/note_timor_1963_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_timor_1963.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_sri-lanka_1979",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Sri Lanka 2 Rupees P-83a",
+      "country": "Sri Lanka",
+      "continent": "Asia",
+      "year": 1979,
+      "denomination": "2",
+      "material": "Paper",
+      "description": "Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, formerly known as Ceylon, is an island country in South Asia. It is located in the Indian Ocean, southwest of the Bay of Bengal, and is separated from India by the Gulf of Mannar and the Palk Strait",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme",
+        "sri-lanka",
+        "asia",
+        "fish",
+        "lizard",
+        "ceylon-lacewing-butterfly",
+        "plant"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_sri-lanka_1979.jpg",
+      "images": [
+        "assets/images/currency/note_sri-lanka_1979.jpg",
+        "assets/images/currency/note_sri-lanka_1979_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_sri-lanka_1979.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_sri-lanka_2021",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Sri Lanka 20 Rupees P-123h",
+      "country": "Sri Lanka",
+      "continent": "Asia",
+      "year": 2021,
+      "denomination": "20",
+      "material": "Paper",
+      "description": "Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, formerly known as Ceylon, is an island country in South Asia. It is located in the Indian Ocean, southwest of the Bay of Bengal, and is separated from India by the Gulf of Mannar and the Palk Strait",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "building-theme",
+        "history-theme",
+        "transport-theme",
+        "flora-theme",
+        "sri-lanka",
+        "asia",
+        "sri-lanka-serendib-scops-owl",
+        "owls",
+        "port-of-colombo",
+        "ves-dancer-and-geta-bera-drummer",
+        "guard-stone-with-a-punkalasa",
+        "baronet-butterfly"
+      ],
+      "theme": [
+        "bird-theme",
+        "building-theme",
+        "history-theme",
+        "transport-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/note_sri-lanka_2021.jpg",
+      "images": [
+        "assets/images/currency/note_sri-lanka_2021.jpg",
+        "assets/images/currency/note_sri-lanka_2021_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_sri-lanka_2021.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_sri-lanka_2019",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Sri Lanka 50 Rupees P-124f",
+      "country": "Sri Lanka",
+      "continent": "Asia",
+      "year": 2019,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, formerly known as Ceylon, is an island country in South Asia. It is located in the Indian Ocean, southwest of the Bay of Bengal, and is separated from India by the Gulf of Mannar and the Palk Strait",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "building-theme",
+        "transport-theme",
+        "flora-theme",
+        "sri-lanka",
+        "asia",
+        "sri-lanka-dull-blue-flycatcher",
+        "blue-oakleaf-butterfly",
+        "patuna-dancer-and-yak-bera-drummer"
+      ],
+      "theme": [
+        "bird-theme",
+        "building-theme",
+        "transport-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/note_sri-lanka_2019.jpg",
+      "images": [
+        "assets/images/currency/note_sri-lanka_2019.jpg",
+        "assets/images/currency/note_sri-lanka_2019_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_sri-lanka_2019.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_sri-lanka_2022",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Sri Lanka 100 Rupees P-125k",
+      "country": "Sri Lanka",
+      "continent": "Asia",
+      "year": 2022,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, formerly known as Ceylon, is an island country in South Asia. It is located in the Indian Ocean, southwest of the Bay of Bengal, and is separated from India by the Gulf of Mannar and the Palk Strait",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "building-theme",
+        "history-theme",
+        "flora-theme",
+        "sri-lanka",
+        "asia",
+        "bharatanatyam-dancer-and-mridangam-drummer",
+        "autumn-leaf-butterfly",
+        "ri-lanka-orange-billed-babbler",
+        "coal-power-plant"
+      ],
+      "theme": [
+        "bird-theme",
+        "building-theme",
+        "history-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/note_sri-lanka_2022.jpg",
+      "images": [
+        "assets/images/currency/note_sri-lanka_2022.jpg",
+        "assets/images/currency/note_sri-lanka_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_sri-lanka_2022.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_turkmenistan_2012",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Turkmenistan 1 Manat P-29a",
+      "country": "Turkmenistan",
+      "continent": "Asia",
+      "year": 2012,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Turkmenistan is a landlocked country in Central Asia with a population of over 7 million. Bordered by the Caspian Sea, Iran, Afghanistan, Uzbekistan, and Kazakhstan, its capital and largest city is Ashgabat, famous for its white marble buildings",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "turkmenistan",
+        "asia",
+        "togrul-beg-türkmen"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_turkmenistan_2012.jpg",
+      "images": [
+        "assets/images/currency/note_turkmenistan_2012.jpg",
+        "assets/images/currency/note_turkmenistan_2012_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_turkmenistan_2012.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "polymer_thailand_2022",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Thailand \t20 Baht P-W145(3)",
+      "country": "Thailand",
+      "continent": "Asia",
+      "year": 2022,
+      "denomination": "20",
+      "description": "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.",
+      "tags": [
+        "polymer-currency",
+        "person-theme",
+        "thailand",
+        "asia",
+        "king-rama-x-maha-vajiralongkorn-bodindradebayavarangkun"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_thailand_2022.jpg",
+      "images": [
+        "assets/images/currency/polymer_thailand_2022.jpg",
+        "assets/images/currency/polymer_thailand_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_thailand_2022.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_yeman_2025",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Yeman 200 Rials P-W43",
+      "country": "Yeman",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "200",
+      "material": "Paper",
+      "description": "Yemen, officially the Republic of Yemen, is a country in West Asia. Located in southern Arabia, the country includes the Socotra Archipelago and borders Saudi Arabia to the north, Oman to the northeast, the Arabian Sea to the east, the Gulf of Aden to the south, and the Red Sea to the west.",
+      "tags": [
+        "paper-currency",
+        "yeman",
+        "asia",
+        "taiz",
+        "al-janad-mosque",
+        "port-of-aden"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_yeman_2025.jpg",
+      "images": [
+        "assets/images/currency/note_yeman_2025.jpg",
+        "assets/images/currency/note_yeman_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_yeman_2025.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_tajikistan_1994",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Tajikistan 100 Rubl P-6",
+      "country": "Tajikistan",
+      "continent": "Asia",
+      "year": 1994,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Tajikistan, officially the Republic of Tajikistan, is a landlocked country in Central Asia with a population of over 11 million. Its capital and largest city is Dushanbe. Bordered by Afghanistan, China, Kyrgyzstan, and Uzbekistan, over 90% of its rugged landscape is covered by the Pamir and Fan mountains",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "tajikistan",
+        "asia",
+        "parliament-building",
+        "arms"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_tajikistan_1994.jpg",
+      "images": [
+        "assets/images/currency/note_tajikistan_1994.jpg",
+        "assets/images/currency/note_tajikistan_1994_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_tajikistan_1994.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_tajikistan_1999",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Tajikistan 5 Rubl P-11a(2)",
+      "country": "Tajikistan",
+      "continent": "Asia",
+      "year": 1999,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "Tajikistan, officially the Republic of Tajikistan, is a landlocked country in Central Asia with a population of over 11 million. Its capital and largest city is Dushanbe. Bordered by Afghanistan, China, Kyrgyzstan, and Uzbekistan, over 90% of its rugged landscape is covered by the Pamir and Fan mountains",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "tajikistan",
+        "asia",
+        "arbob-culture-palace"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_tajikistan_1999.jpg",
+      "images": [
+        "assets/images/currency/note_tajikistan_1999.jpg",
+        "assets/images/currency/note_tajikistan_1999_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_tajikistan_1999.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_tajikistan_1994_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Tajikistan 1 Rubl P-1",
+      "country": "Tajikistan",
+      "continent": "Asia",
+      "year": 1994,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Tajikistan, officially the Republic of Tajikistan, is a landlocked country in Central Asia with a population of over 11 million. Its capital and largest city is Dushanbe. Bordered by Afghanistan, China, Kyrgyzstan, and Uzbekistan, over 90% of its rugged landscape is covered by the Pamir and Fan mountains",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "tajikistan",
+        "asia",
+        "arms",
+        "parliament-building"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_tajikistan_1994_2.jpg",
+      "images": [
+        "assets/images/currency/note_tajikistan_1994_2.jpg",
+        "assets/images/currency/note_tajikistan_1994_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_tajikistan_1994_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_turkey_2009",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Turkey 5 Türk Lirası P-222f",
+      "country": "Turkey",
+      "continent": "Asia",
+      "year": 2009,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "turkey",
+        "asia",
+        "president-mustafa-kemal-atatürk",
+        "prof-dr.-aydın-sayılı"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_turkey_2009.jpg",
+      "images": [
+        "assets/images/currency/note_turkey_2009.jpg",
+        "assets/images/currency/note_turkey_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_turkey_2009.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_turkey_2009_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Turkey 20 Türk Lirası P-224g",
+      "country": "Turkey",
+      "continent": "Asia",
+      "year": 2009,
+      "denomination": "20",
+      "material": "Paper",
+      "description": "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "turkey",
+        "asia",
+        "mımar-kemaleddin",
+        "president-mustafa-kemal-atatürk"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_turkey_2009_2.jpg",
+      "images": [
+        "assets/images/currency/note_turkey_2009_2.jpg",
+        "assets/images/currency/note_turkey_2009_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_turkey_2009_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "polymer_vietnam_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Vietnam 10000 Ðồng P-119q",
+      "country": "Vietnam",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "10000",
+      "material": "Polymer",
+      "description": "Vietnam is a vibrant Southeast Asian country bordered by China, Laos, and Cambodia. Its capital is Hanoi, and its largest city is Ho Chi Minh City. Known for its rich history, stunning landscapes like Ha Long Bay, and world-famous cuisine, it has a population of over 102 million people.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "vietnam",
+        "asia",
+        "ho-chi-minh",
+        "oil-rigs"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_vietnam_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_vietnam_2025.jpg",
+        "assets/images/currency/polymer_vietnam_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_vietnam_2025.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_vietnam_1988",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Vietnam 500 Ðồng",
+      "country": "Vietnam",
+      "continent": "Asia",
+      "year": 1988,
+      "denomination": "500",
+      "material": "Paper",
+      "description": "cis a vibrant Southeast Asian country bordered by China, Laos, and Cambodia. Its capital is Hanoi, and its largest city is Ho Chi Minh City. Known for its rich history, stunning landscapes like Ha Long Bay, and world-famous cuisine, it has a population of over 102 million people.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "vietnam",
+        "asia",
+        "ho-chi-minh",
+        "trawlers-in-port"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_vietnam_1988.jpg",
+      "images": [
+        "assets/images/currency/note_vietnam_1988.jpg",
+        "assets/images/currency/note_vietnam_1988_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_vietnam_1988.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_vietnam_1988_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Vietnam 1000 Ðồng P-106a(2)",
+      "country": "Vietnam",
+      "continent": "Asia",
+      "year": 1988,
+      "denomination": "1000",
+      "material": "Paper",
+      "description": "cis a vibrant Southeast Asian country bordered by China, Laos, and Cambodia. Its capital is Hanoi, and its largest city is Ho Chi Minh City. Known for its rich history, stunning landscapes like Ha Long Bay, and world-famous cuisine, it has a population of over 102 million people.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "vietnam",
+        "asia",
+        "ho-chi-minh",
+        "elephant-logging"
+      ],
+      "theme": [
+        "animal-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_vietnam_1988_2.jpg",
+      "images": [
+        "assets/images/currency/note_vietnam_1988_2.jpg",
+        "assets/images/currency/note_vietnam_1988_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_vietnam_1988_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_vietnam_1988_3",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Vietnam 2000 Ðồng P-107a(2)",
+      "country": "Vietnam",
+      "continent": "Asia",
+      "year": 1988,
+      "denomination": "2000",
+      "material": "Paper",
+      "description": "cis a vibrant Southeast Asian country bordered by China, Laos, and Cambodia. Its capital is Hanoi, and its largest city is Ho Chi Minh City. Known for its rich history, stunning landscapes like Ha Long Bay, and world-famous cuisine, it has a population of over 102 million people.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "vietnam",
+        "asia",
+        "ho-chi-minh",
+        "spinning-mill"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_vietnam_1988_3.jpg",
+      "images": [
+        "assets/images/currency/note_vietnam_1988_3.jpg",
+        "assets/images/currency/note_vietnam_1988_3_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_vietnam_1988_3.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_latvia_1992_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Latvia 2 Latvijas Rubļi P-36",
+      "country": "Latvia",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "2",
+      "material": "Paper",
+      "description": "Latvia is a country in northeastern Europe, bordered by the Baltic Sea, Estonia, Russia, Belarus, and Lithuania. Its capital and largest city is Riga. Latvia covers 64,559 square kilometers, has a population of about 1.85 million, uses the Euro, and is a member of the EU and NATO",
+      "tags": [
+        "paper-currency",
+        "latvia",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_latvia_1992_2.jpg",
+      "images": [
+        "assets/images/currency/note_latvia_1992_2.jpg",
+        "assets/images/currency/note_latvia_1992_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_latvia_1992_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_cyprus_1981",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Cyprus 500 Mils P-45",
+      "country": "Cyprus",
+      "continent": "Europe",
+      "year": 1981,
+      "denomination": "500",
+      "material": "Paper",
+      "description": "Cyprus is the third-largest island in the eastern Mediterranean Sea. Its capital and largest city is Nicosia. The island is politically divided between the internationally recognized Republic of Cyprus in the south and the Turkish Republic of Northern Cyprus in the north.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "cyprus",
+        "europe",
+        "woman",
+        "yermasoyia-dam"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_cyprus_1981.jpg",
+      "images": [
+        "assets/images/currency/note_cyprus_1981.jpg",
+        "assets/images/currency/note_cyprus_1981_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_cyprus_1981.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_bosnia-and-herzegovina_1993",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bosnia and Herzegovina 100000 [Hyperinflation]",
+      "country": "Bosnia and Herzegovina",
+      "continent": "Europe",
+      "year": 1993,
+      "denomination": "100000",
+      "material": "Paper",
+      "description": "Bosnia and Herzegovina is a country on the Balkan Peninsula in southeastern Europe. Its countryside is home to medieval villages, rivers and lakes, plus the craggy Dinaric Alps. National capital Sarajevo has a well preserved old quarter, Baščaršija, with landmarks like 16th-century Gazi Husrev-bey Mosque. Ottoman-era Latin Bridge is the site of the assassination of Archduke Franz Ferdinand, which ignited World War I.",
+      "tags": [
+        "paper-currency",
+        "bosnia-and-herzegovina",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_bosnia-and-herzegovina_1993.jpg",
+      "thumbnail": "assets/images/currency/note_bosnia-and-herzegovina_1993.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_lithuania_1993",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Lithuania 500 Talonų P-46",
+      "country": "Lithuania",
+      "continent": "Europe",
+      "year": 1993,
+      "denomination": "500",
+      "description": "Lithuania, officially the Republic of Lithuania, is a country in the Baltic region of Europe. It is one of three Baltic states and lies on the eastern shore of the Baltic Sea, bordered by Latvia to the north, Belarus to the east and south, Poland to the south, and the Russian semi-exclave of Kaliningrad Oblast to the southwest, with a maritime border with Sweden to the west.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "lithuania",
+        "europe",
+        "arms",
+        "wolves"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_lithuania_1993.jpg",
+      "images": [
+        "assets/images/currency/note_lithuania_1993.jpg",
+        "assets/images/currency/note_lithuania_1993_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_lithuania_1993.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_lithuania_1992_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Lithuania 100 Talonų P-39",
+      "country": "Lithuania",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "1",
+      "description": "Lithuania, officially the Republic of Lithuania, is a country in the Baltic region of Europe. It is one of three Baltic states and lies on the eastern shore of the Baltic Sea, bordered by Latvia to the north, Belarus to the east and south, Poland to the south, and the Russian semi-exclave of Kaliningrad Oblast to the southwest, with a maritime border with Sweden to the west.",
+      "tags": [
+        "paper-currency",
+        "bird-theme",
+        "lithuania",
+        "europe",
+        "arms",
+        "eurasian-lapwings"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/currency/note_lithuania_1992_2.jpg",
+      "images": [
+        "assets/images/currency/note_lithuania_1992_2.jpg",
+        "assets/images/currency/note_lithuania_1992_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_lithuania_1992_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "polymer_albania_2017_2",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Albania 200 Albania P-W76",
+      "country": "Albania",
+      "continent": "Europe",
+      "year": 2017,
+      "denomination": "200",
+      "material": "Polymer",
+      "description": "Albania, on Southeastern Europe’s Balkan Peninsula, is a small country with Adriatic and Ionian coastlines and an interior crossed by the Albanian Alps. The country has many castles and archaeological sites. Capital Tirana centers on sprawling Skanderbeg Square, site of the National History Museum, with exhibits spanning antiquity to post-communism, and frescoed Et’hem Bey Mosque.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "albania",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_albania_2017_2.jpg",
+      "images": [
+        "assets/images/currency/polymer_albania_2017_2.jpg",
+        "assets/images/currency/polymer_albania_2017_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_albania_2017_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_austria_1922",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Austria 2 Kronen P-74",
+      "country": "Austria",
+      "continent": "Europe",
+      "year": 1922,
+      "denomination": "2",
+      "material": "Paper",
+      "description": "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps. It is a federation of nine states, of which the capital Vienna is the most populous city and state.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "austria",
+        "europe",
+        "woman",
+        "uniface"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_austria_1922.jpg",
+      "thumbnail": "assets/images/currency/note_austria_1922.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_2019",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 10 Rublëy P-38a",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 2019,
+      "denomination": "10",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "belarus",
+        "europe",
+        "spaso-preobrazhenskaja-church"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_2019.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_2019.jpg",
+        "assets/images/currency/note_belarus_2019_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_2019.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_2000",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 20 Rublëy P-CS1",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 2000,
+      "denomination": "20",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "belarus",
+        "europe",
+        "minsk",
+        "interior-of-national-bank-building",
+        "national-bank-building"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_2000.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_2000.jpg",
+        "assets/images/currency/note_belarus_2000_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_2000.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_2000_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 50 Rublëy P-CS1",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 2000,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "belarus",
+        "europe",
+        "holmsky-gate",
+        "brest-tower",
+        "war-memorial"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_2000_2.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_2000_2.jpg",
+        "assets/images/currency/note_belarus_2000_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_2000_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_2000_3",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 100 Rublëy P-CS1",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 2000,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "belarus",
+        "europe",
+        "pestry",
+        "opera-and-ballet-theatre",
+        "minsk",
+        "ballet-scene"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_2000_3.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_2000_3.jpg",
+        "assets/images/currency/note_belarus_2000_3_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_2000_3.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_2000_4",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 10 Rublëy P-23",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 2000,
+      "denomination": "10",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "belarus",
+        "europe",
+        "minsk",
+        "national-library"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_2000_4.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_2000_4.jpg",
+        "assets/images/currency/note_belarus_2000_4_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_2000_4.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 50 Kapeek (½ Ruble) P-1(2-1)",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "belarus",
+        "europe",
+        "squirrel",
+        "arms"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_1992.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_1992.jpg",
+        "assets/images/currency/note_belarus_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_1992.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_1992_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus \t 25 Rublëy P-6(3)",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "25",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "belarus",
+        "europe",
+        "arms",
+        "moose"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_1992_2.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_1992_2.jpg",
+        "assets/images/currency/note_belarus_1992_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_1992_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_1992_3",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 50 Rublëy P-7(2-1)",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "belarus",
+        "europe",
+        "arms",
+        "bear"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_1992_3.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_1992_3.jpg",
+        "assets/images/currency/note_belarus_1992_3_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_1992_3.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belarus_1992_4",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 100 Rublëy P-8(2)",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "100",
+      "material": "Paper",
+      "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Belarus spans an area of 207,600 square kilometres with a population of 9.1 million.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "belarus",
+        "europe",
+        "arms",
+        "bear"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_1992_4.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_1992_4.jpg",
+        "assets/images/currency/note_belarus_1992_4_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_1992_4.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_belgium_1964",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belgium 20 Francs P-138(1)",
+      "country": "Belgium",
+      "continent": "Europe",
+      "year": 1964,
+      "denomination": "20",
+      "material": "Paper",
+      "description": "Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east. The bilingual capital, Brussels, has ornate guildhalls at Grand-Place and elegant art-nouveau buildings.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "science-theme",
+        "belgium",
+        "europe",
+        "baudouin",
+        "atomium",
+        "brussels"
+      ],
+      "theme": [
+        "person-theme",
+        "science-theme"
+      ],
+      "image": "assets/images/currency/note_belgium_1964.jpg",
+      "images": [
+        "assets/images/currency/note_belgium_1964.jpg",
+        "assets/images/currency/note_belgium_1964_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belgium_1964.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_bulgaria_1992_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bulgaria 50 Leva P-101a",
+      "country": "Bulgaria",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Bulgaria is a Balkan nation with diverse terrain encompassing Black Sea coastline, a mountainous interior and rivers, including the Danube. A cultural melting pot with Greek, Slavic, Ottoman, and Persian influences, it has a rich heritage of traditional dance, music, costumes, and crafts. At the foot of domed Vitosha mountain is its capital city, Sofia, dating to the 5th century B.C.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "bulgaria",
+        "europe",
+        "khristo-g.-danov",
+        "printing-press"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_bulgaria_1992_2.jpg",
+      "images": [
+        "assets/images/currency/note_bulgaria_1992_2.jpg",
+        "assets/images/currency/note_bulgaria_1992_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_bulgaria_1992_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_croatia_1993",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Croatia 50000 Hrvatskih Dinara P-26",
+      "country": "Croatia",
+      "continent": "Europe",
+      "year": 1993,
+      "denomination": "50000",
+      "material": "Paper",
+      "description": "Croatia, officially the Republic of Croatia, is a country in Central and Southeastern Europe, on the coast of the Adriatic Sea",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "croatia",
+        "europe",
+        "geometrical-drawings"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_croatia_1993.jpg",
+      "images": [
+        "assets/images/currency/note_croatia_1993.jpg",
+        "assets/images/currency/note_croatia_1993_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_croatia_1993.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_faroe-islands_2011",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Faroe Islands 50 Krónur P-29",
+      "country": "Faroe Islands",
+      "continent": "Europe",
+      "year": 2011,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "The Faroe Islands are a self-governing archipelago of 18 volcanic islands in the North Atlantic Ocean located between Iceland and Norway, operating as an autonomous territory within the Kingdom of Denmark. With a population of about 55,000, the capital and largest city is Tórshavn.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "faroe-islands",
+        "europe",
+        "ram's-horn",
+        "sumba-cliffs-on-suðuroy"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_faroe-islands_2011.jpg",
+      "images": [
+        "assets/images/currency/note_faroe-islands_2011.jpg",
+        "assets/images/currency/note_faroe-islands_2011_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_faroe-islands_2011.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_germany_1992",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Germany 1000 Mark P-76c(2)",
+      "country": "Germany",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "1000",
+      "material": "Paper",
+      "description": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
+      "tags": [
+        "paper-currency",
+        "germany",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_germany_1992.jpg",
+      "images": [
+        "assets/images/currency/note_germany_1992.jpg",
+        "assets/images/currency/note_germany_1992_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_germany_1992.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_germany_1920",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Germany 1 Mark P-58",
+      "country": "Germany",
+      "continent": "Europe",
+      "year": 1920,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
+      "tags": [
+        "paper-currency",
+        "germany",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/note_germany_1920.jpg",
+      "images": [
+        "assets/images/currency/note_germany_1920.jpg",
+        "assets/images/currency/note_germany_1920_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_germany_1920.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "polymer_england_2014",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "England [GREAT BRITAIN] 10 Pound P-395(2)",
+      "country": "England",
+      "continent": "Europe",
+      "year": 2014,
+      "denomination": "10",
+      "material": "Polymer",
+      "description": "England is a country that is part of the United Kingdom. It is located on the island of Great Britain, of which it covers about 62%, and more than 100 smaller adjacent islands.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "england",
+        "europe",
+        "jane-austen",
+        "elizabeth-ii",
+        "bank-of-england-building"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_england_2014.jpg",
+      "images": [
+        "assets/images/currency/polymer_england_2014.jpg",
+        "assets/images/currency/polymer_england_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_england_2014.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_greece_1939",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Greece 500 Drachmai P109a",
+      "country": "Greece",
+      "continent": "Europe",
+      "year": 1939,
+      "denomination": "500",
+      "material": "Paper",
+      "description": "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "greece",
+        "europe",
+        "port-of-poros"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_greece_1939.jpg",
+      "images": [
+        "assets/images/currency/note_greece_1939.jpg",
+        "assets/images/currency/note_greece_1939_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_greece_1939.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_isle-of-man_2009",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Isle Of man 1 Pound P-40c",
+      "country": "Isle Of man",
+      "continent": "Europe",
+      "year": 2009,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "The Isle of Man is a self-governing British Crown Dependency in the Irish Sea between Great Britain and Ireland. Its capital is Douglas, its population is around 84,000, and King Charles III is the head of state, holding the title Lord of Mann",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "person-theme",
+        "isle-of-man",
+        "europe",
+        "elizabeth-ii",
+        "queen",
+        "tynwald-hill"
+      ],
+      "theme": [
+        "nature-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_isle-of-man_2009.jpg",
+      "images": [
+        "assets/images/currency/note_isle-of-man_2009.jpg",
+        "assets/images/currency/note_isle-of-man_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_isle-of-man_2009.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_jersey_2018",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Jersey 1 Pound P-35b",
+      "country": "Jersey",
+      "continent": "Europe",
+      "year": 2018,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Jersey is the largest of the Channel Islands, between England and France. A self-governing dependency of the United Kingdom, with a mix of British and French cultures, it’s known for its beaches, cliffside walking trails, inland valleys and historic castles. The Jersey War Tunnels complex, in a former hospital excavated by slave labor, documents the island’s 5-year German occupation during WWII.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "jersey",
+        "europe",
+        "elizabeth-ii",
+        "queen"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_jersey_2018.jpg",
+      "images": [
+        "assets/images/currency/note_jersey_2018.jpg",
+        "assets/images/currency/note_jersey_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_jersey_2018.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_malta_1967",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Malta 5 Liri P-42",
+      "country": "Malta",
+      "continent": "Europe",
+      "year": 1967,
+      "denomination": "5",
+      "material": "Paper",
+      "description": "Malta is an archipelago in the central Mediterranean between Sicily and the North African coast. It's a nation known for historic sites related to a succession of rulers including the Romans, Moors, Knights of Saint John, French and British. It has numerous fortresses, megalithic temples and the Ħal Saflieni Hypogeum, a subterranean complex of halls and burial chambers dating to circa 4000 B.C.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "malta",
+        "europe"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_malta_1967.jpg",
+      "images": [
+        "assets/images/currency/note_malta_1967.jpg",
+        "assets/images/currency/note_malta_1967_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_malta_1967.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "polymer_romania_2017",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Romania \t5 Lei P-118h",
+      "country": "Romania",
+      "continent": "Europe",
+      "year": 2017,
+      "denomination": "5",
+      "material": "Polymer",
+      "description": "Romania is a southeastern European country known for the forested region of Transylvania, ringed by the Carpathian Mountains. Its preserved medieval towns include Sighişoara, and there are many fortified churches and castles, notably clifftop Bran Castle, long associated with the Dracula legend. Bucharest, the country’s capital, is the site of the gigantic, Communist-era Palatul Parlamentului government building.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "flora-theme",
+        "romania",
+        "europe",
+        "george-enescu",
+        "rose",
+        "athenaeum-in-bucharest",
+        "grand-piano"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "flora-theme"
+      ],
+      "image": "assets/images/currency/polymer_romania_2017.jpg",
+      "images": [
+        "assets/images/currency/polymer_romania_2017.jpg",
+        "assets/images/currency/polymer_romania_2017_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_romania_2017.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_slovenia_1992_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Slovenia 20 Tolarjev P-12",
+      "country": "Slovenia",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "20",
+      "material": "Paper",
+      "description": "Slovenia is a country in Central Europe with about 2.1 million people. Its capital is Ljubljana. It borders Italy, Austria, Hungary, and Croatia, and has a short coast on the Adriatic Sea. The official language is Slovene, and the currency is the euro",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "slovenia",
+        "europe",
+        "janez-vajkard-valvasor"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_slovenia_1992_2.jpg",
+      "images": [
+        "assets/images/currency/note_slovenia_1992_2.jpg",
+        "assets/images/currency/note_slovenia_1992_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_slovenia_1992_2.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_ukraine_2018",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Ukraine 20 Hriven P-A126",
+      "country": "Ukraine",
+      "continent": "Europe",
+      "year": 2018,
+      "material": "Paper",
+      "description": "Ukraine is a country in Eastern Europe. It is the second-largest country in Europe after Russia, which borders it to the east and northeast.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "ukraine",
+        "europe",
+        "ivan-franko",
+        "opera-and-ballet-theatre"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_ukraine_2018.jpg",
+      "images": [
+        "assets/images/currency/note_ukraine_2018.jpg",
+        "assets/images/currency/note_ukraine_2018_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_ukraine_2018.jpg",
       "addedOn": "2026-08-08"
     }
   ]
