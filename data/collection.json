@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-07-19",
+    "lastUpdated": "2026-08-08",
     "version": "1.0.0"
   },
   "items": [
@@ -5017,6 +5017,467 @@
       "image": "assets/images/coins/coin_bulgaria_7951.jpg",
       "thumbnail": "assets/images/coins/coin_bulgaria_7951.jpg",
       "addedOn": "2026-07-19"
+    },
+    {
+      "id": "coin_ukraine_2023",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Ukraine 10 Hryvnia",
+      "country": "Ukraine",
+      "continent": "Europe",
+      "year": 2023,
+      "denomination": "10",
+      "material": "Nickel-Zinc",
+      "tags": [
+        "coin",
+        "ukraine",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_ukraine_2023.jpg",
+      "thumbnail": "assets/images/coins/coin_ukraine_2023.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_chile-2510-set-centesimos_1970",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Chile Set Centesimos",
+      "country": "Chile 2,5,10 Set Centesimos",
+      "continent": "South America",
+      "year": 1970,
+      "denomination": "2,5,10 Set",
+      "material": "Aluminium-Bronze",
+      "tags": [
+        "coin",
+        "chile-2,5,10-set-centesimos",
+        "south-america"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_chile-2510-set-centesimos_1970.jpg",
+      "thumbnail": "assets/images/coins/coin_chile-2510-set-centesimos_1970.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_cayman-island_2008",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Cayman Island Set 1,5,10,25",
+      "country": "Cayman Island",
+      "continent": "North America",
+      "year": 2008,
+      "denomination": "1,5,10,25 Set",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "bird-theme",
+        "aquatic-theme",
+        "person-theme",
+        "cayman-island",
+        "north-america"
+      ],
+      "theme": [
+        "animal-theme",
+        "bird-theme",
+        "aquatic-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/coins/coin_cayman-island_2008.jpg",
+      "thumbnail": "assets/images/coins/coin_cayman-island_2008.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_canada_2014",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Canada 25 Cent",
+      "country": "Canada",
+      "continent": "North America",
+      "year": 2014,
+      "denomination": "25",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "aquatic-theme",
+        "person-theme",
+        "canada",
+        "north-america"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/coins/coin_canada_2014.jpg",
+      "thumbnail": "assets/images/coins/coin_canada_2014.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_nicaragua_1995",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Nicaragua 5 Cent",
+      "country": "Nicaragua",
+      "continent": "North America",
+      "year": 1995,
+      "denomination": "5",
+      "material": "Copper",
+      "tags": [
+        "coin",
+        "nicaragua",
+        "north-america"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_nicaragua_1995.jpg",
+      "thumbnail": "assets/images/coins/coin_nicaragua_1995.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_uzbekistan_2022",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Uzbekistan 1000 Som",
+      "country": "Uzbekistan",
+      "continent": "Asia",
+      "year": 2022,
+      "denomination": "1000",
+      "material": "Brass-Nimetal",
+      "tags": [
+        "coin",
+        "building-theme",
+        "history-theme",
+        "uzbekistan",
+        "asia"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/coins/coin_uzbekistan_2022.jpg",
+      "thumbnail": "assets/images/coins/coin_uzbekistan_2022.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_uae_1989",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "UAE 5 Fils",
+      "country": "UAE",
+      "continent": "Asia",
+      "year": 1989,
+      "denomination": "5",
+      "material": "Bronze",
+      "tags": [
+        "coin",
+        "aquatic-theme",
+        "uae",
+        "asia"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/coins/coin_uae_1989.jpg",
+      "thumbnail": "assets/images/coins/coin_uae_1989.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_lebanon_2006",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Lebanon 150 Livres",
+      "country": "Lebanon",
+      "continent": "Asia",
+      "year": 2006,
+      "denomination": "150",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "aquatic-theme",
+        "lebanon",
+        "asia"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/coins/coin_lebanon_2006.jpg",
+      "thumbnail": "assets/images/coins/coin_lebanon_2006.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_argentina_1985",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Argentina 1 Centovo",
+      "country": "Argentina",
+      "continent": "South America",
+      "year": 1985,
+      "denomination": "1",
+      "material": "Brass",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "argentina",
+        "south-america"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/coins/coin_argentina_1985.jpg",
+      "thumbnail": "assets/images/coins/coin_argentina_1985.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_armenia_2023",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Armenia 10 Dram",
+      "country": "Armenia",
+      "continent": "Asia",
+      "year": 2023,
+      "denomination": "10",
+      "material": "Nickel-Zinc",
+      "tags": [
+        "coin",
+        "armenia",
+        "asia"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_armenia_2023.jpg",
+      "thumbnail": "assets/images/coins/coin_armenia_2023.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_kiribati_1979",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Kiribati 5 Cent",
+      "country": "Kiribati",
+      "continent": "Oceania",
+      "year": 1979,
+      "denomination": "5",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "kiribati",
+        "oceania"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_kiribati_1979.jpg",
+      "images": [
+        "assets/images/coins/coin_kiribati_1979.jpg",
+        "assets/images/coins/coin_kiribati_1979_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_kiribati_1979.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_papua-new-guinea_2008",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Papua New Guinea 2 Kina",
+      "country": "Papua New Guinea",
+      "continent": "Oceania",
+      "year": 2008,
+      "denomination": "2",
+      "material": "Bimetal",
+      "tags": [
+        "coin",
+        "papua-new-guinea",
+        "oceania"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_papua-new-guinea_2008.jpg",
+      "images": [
+        "assets/images/coins/coin_papua-new-guinea_2008.jpg",
+        "assets/images/coins/coin_papua-new-guinea_2008_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_papua-new-guinea_2008.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_cyprus_1953",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "British Cyprus – 5 Mils",
+      "country": "Cyprus",
+      "continent": "Europe",
+      "year": 1953,
+      "denomination": "5",
+      "material": "Copper",
+      "tags": [
+        "coin",
+        "cyprus",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_cyprus_1953.jpg",
+      "images": [
+        "assets/images/coins/coin_cyprus_1953.jpg",
+        "assets/images/coins/coin_cyprus_1953_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_cyprus_1953.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_czech-republic_2014",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Czech Republic. 20 Korun",
+      "country": "Czech Republic",
+      "continent": "Europe",
+      "year": 2014,
+      "denomination": "20",
+      "material": "Brass",
+      "tags": [
+        "coin",
+        "history-theme",
+        "czech-republic",
+        "europe"
+      ],
+      "theme": [
+        "history-theme"
+      ],
+      "image": "assets/images/coins/coin_czech-republic_2014.jpg",
+      "images": [
+        "assets/images/coins/coin_czech-republic_2014.jpg",
+        "assets/images/coins/coin_czech-republic_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_czech-republic_2014.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_germany_7180",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Germany – set of 5 coins Pfennig",
+      "country": "Germany",
+      "continent": "Europe",
+      "year": null,
+      "denomination": "Set",
+      "material": "Brass",
+      "tags": [
+        "coin",
+        "nature-theme",
+        "germany",
+        "europe"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/coins/coin_germany_7180.jpg",
+      "images": [
+        "assets/images/coins/coin_germany_7180.jpg",
+        "assets/images/coins/coin_germany_7180_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_germany_7180.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_cook-islands_2010",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Cook Islands 20 Cents",
+      "country": "Cook Islands",
+      "continent": "Oceania",
+      "year": 2010,
+      "denomination": "20",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "cook-islands",
+        "oceania"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_cook-islands_2010.jpg",
+      "images": [
+        "assets/images/coins/coin_cook-islands_2010.jpg",
+        "assets/images/coins/coin_cook-islands_2010_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_cook-islands_2010.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "coin_israel_3303",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Israel – Set of 6 coins Agorot",
+      "country": "Israel",
+      "continent": "Asia",
+      "year": null,
+      "denomination": "set",
+      "material": "Brass",
+      "tags": [
+        "coin",
+        "israel",
+        "asia"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_israel_3303.jpg",
+      "images": [
+        "assets/images/coins/coin_israel_3303.jpg",
+        "assets/images/coins/coin_israel_3303_back.jpg"
+      ],
+      "thumbnail": "assets/images/coins/coin_israel_3303.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_liechtenstein_1920",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Liechtenstein 20 Heller",
+      "country": "Liechtenstein",
+      "continent": "Europe",
+      "year": 1920,
+      "denomination": "20",
+      "material": "Cotton Paper",
+      "description": "Liechtenstein, officially the Principality of Liechtenstein, is a tiny, doubly landlocked microstate in Central Europe nestled between Switzerland and Austria. It has a population of roughly 41,000, covers 62 square miles, uses the Swiss Franc, and has Vaduz as its capital.",
+      "tags": [
+        "paper-currency",
+        "nature-theme",
+        "liechtenstein",
+        "europe",
+        "vaduz-castle",
+        "arms"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_liechtenstein_1920.jpg",
+      "images": [
+        "assets/images/currency/note_liechtenstein_1920.jpg",
+        "assets/images/currency/note_liechtenstein_1920_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_liechtenstein_1920.jpg",
+      "addedOn": "2026-08-08"
+    },
+    {
+      "id": "polymer_israel_2014",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Israel 20 New Sheqalim P-59d",
+      "country": "Israel",
+      "continent": "Asia",
+      "year": 2014,
+      "denomination": "20",
+      "material": "Polymer",
+      "description": "Israel, officially the State of Israel, is a country in the Southern Levant region of West Asia. It is bordered by Lebanon to the north, Syria to the northeast, Jordan to the east, and Egypt to the southwest.",
+      "tags": [
+        "polymer-currency",
+        "israel",
+        "asia",
+        "jewish-brigade",
+        "moshe-sharett"
+      ],
+      "theme": [],
+      "image": "assets/images/currency/polymer_israel_2014.jpg",
+      "images": [
+        "assets/images/currency/polymer_israel_2014.jpg",
+        "assets/images/currency/polymer_israel_2014_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_israel_2014.jpg",
+      "addedOn": "2026-08-08"
     }
   ]
 }
