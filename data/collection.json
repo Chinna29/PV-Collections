@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-08-08",
+    "lastUpdated": "2026-08-23",
     "version": "1.0.0"
   },
   "items": [
@@ -6982,6 +6982,405 @@
       ],
       "thumbnail": "assets/images/currency/note_ukraine_2018.jpg",
       "addedOn": "2026-08-08"
+    },
+    {
+      "id": "note_norway_2017",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Norway 50 Kroner P-53",
+      "country": "Norway",
+      "continent": "Europe",
+      "year": 2017,
+      "denomination": "50",
+      "material": "Paper",
+      "description": "Norway is a long and narrow country in Northern Europe. Its capital city is Oslo. About 5.6 million people live there. The land is famous for big mountains and deep water bays called fjords.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "norway",
+        "europe",
+        "utvær-lighthouse",
+        "stylized-sweep-of-a-light"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_norway_2017.jpg",
+      "images": [
+        "assets/images/currency/note_norway_2017.jpg",
+        "assets/images/currency/note_norway_2017_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_norway_2017.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_guernsey_2013",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Guernsey 1 Pound P-62",
+      "country": "Guernsey",
+      "continent": "Europe",
+      "year": 2013,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "Guernsey is a self-governing British Crown Dependency in the English Channel near the coast of Normandy, France. It is the second-largest of the Channel Islands with an area of 24 square miles (62 sq km) and a population of roughly 66,000. Its capital is Saint Peter Port.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "person-theme",
+        "history-theme",
+        "guernsey",
+        "europe",
+        "market-square",
+        "thomas-de-la-rue"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_guernsey_2013.jpg",
+      "images": [
+        "assets/images/currency/note_guernsey_2013.jpg",
+        "assets/images/currency/note_guernsey_2013_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_guernsey_2013.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_belarus_1992_5",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Belarus 10 Rublëy P-5",
+      "country": "Belarus",
+      "continent": "Europe",
+      "year": 1992,
+      "denomination": "10",
+      "material": "Paper",
+      "description": "Belarus is a landlocked country in Eastern Europe with a population of about 9.1 million. It is bordered by Russia, Ukraine, Poland, Lithuania, and Latvia. The capital and largest city is Minsk. The official currency is the Belarusian ruble (BYN).",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "belarus",
+        "europe",
+        "lynx-with-kitten",
+        "arms"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/currency/note_belarus_1992_5.jpg",
+      "images": [
+        "assets/images/currency/note_belarus_1992_5.jpg",
+        "assets/images/currency/note_belarus_1992_5_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_belarus_1992_5.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_the-isle-of-man_2009",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "The Isle of Man 1 Pound P-40c",
+      "country": "The Isle of Man",
+      "continent": "Europe",
+      "year": 2009,
+      "denomination": "1",
+      "material": "Paper",
+      "description": "The Isle of Man is a self-governing British Crown Dependency located in the Irish Sea between Great Britain and Ireland. Measuring roughly 33 miles long and 13 miles wide, it is famous for its annual Isle of Man TT motorcycle race, Celtic-Viking heritage, and independent parliament, Tynwald.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme",
+        "the-isle-of-man",
+        "europe",
+        "elizabeth-ii",
+        "tynwald-hill"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_the-isle-of-man_2009.jpg",
+      "images": [
+        "assets/images/currency/note_the-isle-of-man_2009.jpg",
+        "assets/images/currency/note_the-isle-of-man_2009_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_the-isle-of-man_2009.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_somalia_2010",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Somalia 50000 Soomaali P-W43",
+      "country": "Somalia",
+      "continent": "Africa",
+      "year": 2010,
+      "denomination": "50000",
+      "material": "Paper",
+      "description": "Somalia, officially the Federal Republic of Somalia, is a country in the Horn of Africa. Its capital and largest city is Mogadishu. The nation has an estimated population of over 19 million people, a coastline along the Indian Ocean and Gulf of Aden, and official languages of Somali and Arabic.",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "history-theme",
+        "somalia",
+        "africa",
+        "masaagidka-isbaheysiga",
+        "abdul-aziz-mosque",
+        "mogadiscio"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_somalia_2010.jpg",
+      "images": [
+        "assets/images/currency/note_somalia_2010.jpg",
+        "assets/images/currency/note_somalia_2010_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_somalia_2010.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_liberia_2022",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Liberia 20 Dollars P-W39",
+      "country": "Liberia",
+      "continent": "Africa",
+      "year": 2022,
+      "denomination": "20",
+      "description": "Liberia, officially the Republic of Liberia, is a country on the West African coast bordered by Sierra Leone, Guinea, Ivory Coast, and the Atlantic Ocean. Founded in 1821 by the American Colonization Society as a home for free Black Americans, it is Africa's oldest republic, with Monrovia as its capital.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "history-theme",
+        "liberia",
+        "africa",
+        "president-william-vacanarat-shadrach-tubman",
+        "market"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/note_liberia_2022.jpg",
+      "images": [
+        "assets/images/currency/note_liberia_2022.jpg",
+        "assets/images/currency/note_liberia_2022_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_liberia_2022.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_kazakhstan_2025",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Kazakhstan 500 Tenge P-W51",
+      "country": "Kazakhstan",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "500",
+      "material": "Paper",
+      "description": "Kazakhstan is the world’s largest landlocked country and the 9th-largest nation overall, spanning 2.7 million square kilometers across Central Asia and Eastern Europe. With a population of about 20.5 million, its capital is Astana, and its largest city is Almaty.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "nature-theme",
+        "kazakhstan",
+        "asia",
+        "transcaspian-urial",
+        "stylized-ornamental-shield"
+      ],
+      "theme": [
+        "animal-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_kazakhstan_2025.jpg",
+      "images": [
+        "assets/images/currency/note_kazakhstan_2025.jpg",
+        "assets/images/currency/note_kazakhstan_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_kazakhstan_2025.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "polymer_sri-lanka_1998",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Sri Lanka 200 Rupees P-114b",
+      "country": "Sri Lanka",
+      "continent": "Asia",
+      "year": 1998,
+      "denomination": "200",
+      "description": "Sri Lanka is an island nation in the Indian Ocean south of India, with a population of 22 million. Its commercial capital is Colombo and its legislative capital is Sri Jayawardenepura Kotte. Known as the \"Pearl of the Indian Ocean,\" it is famous for its rich culture, ancient ruins, and Ceylon tea.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "history-theme",
+        "sri-lanka",
+        "asia",
+        "temple",
+        "temple-of-the-tooth-kandy"
+      ],
+      "theme": [
+        "building-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_sri-lanka_1998.jpg",
+      "images": [
+        "assets/images/currency/polymer_sri-lanka_1998.jpg",
+        "assets/images/currency/polymer_sri-lanka_1998_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_sri-lanka_1998.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "note_thailand_1987",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Thailand \t60 Baht P-93",
+      "country": "Thailand",
+      "continent": "Asia",
+      "year": 1987,
+      "denomination": "60",
+      "material": "Paper",
+      "description": "Thailand, officially the Kingdom of Thailand and formerly known as Siam, is a country in Mainland Southeast Asia with a population of nearly 66 million. Its capital and largest city is Bangkok. The official language is Thai, and the currency is the Thai Baht.",
+      "tags": [
+        "paper-currency",
+        "person-theme",
+        "thailand",
+        "asia",
+        "king-rama-ix-bhumibol-adulyadej",
+        "royal-family-with-subjects"
+      ],
+      "theme": [
+        "person-theme"
+      ],
+      "image": "assets/images/currency/note_thailand_1987.jpg",
+      "images": [
+        "assets/images/currency/note_thailand_1987.jpg",
+        "assets/images/currency/note_thailand_1987_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_thailand_1987.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "polymer_mexico_2023_2",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Mexico 100 Pesos P-W139",
+      "country": "Mexico",
+      "continent": "North America",
+      "year": 2023,
+      "denomination": "200",
+      "material": "Polymer",
+      "description": "Mexico, officially the United Mexican States, is a country in the southern part of North America. It covers 1.97 million square kilometers with a population over 133 million. Its capital and largest city is Mexico City, the official language is Spanish, and the currency is the Mexican peso.",
+      "tags": [
+        "polymer-currency",
+        "animal-theme",
+        "person-theme",
+        "mexico",
+        "north-america",
+        "monarch-butterfly",
+        "temperate-rain-forest"
+      ],
+      "theme": [
+        "animal-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_mexico_2023_2.jpg",
+      "images": [
+        "assets/images/currency/polymer_mexico_2023_2.jpg",
+        "assets/images/currency/polymer_mexico_2023_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_mexico_2023_2.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "coin_new-zealand_2018",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "NZ 50 Cent",
+      "country": "New Zealand",
+      "continent": "Oceania",
+      "year": 2018,
+      "denomination": "50",
+      "material": "Colored Coin",
+      "tags": [
+        "coin",
+        "new-zealand",
+        "oceania"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_new-zealand_2018.jpg",
+      "thumbnail": "assets/images/coins/coin_new-zealand_2018.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "coin_lithuania_2011",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Lithuania 1 Litas",
+      "country": "Lithuania",
+      "continent": "Europe",
+      "year": 2011,
+      "denomination": "1",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "lithuania",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_lithuania_2011.jpg",
+      "thumbnail": "assets/images/coins/coin_lithuania_2011.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "coin_russia_2020",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Russia 25 Roubles (25 РУБЛЕЙ)",
+      "country": "Russia",
+      "continent": "Asia",
+      "year": 2020,
+      "denomination": "25",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "russia",
+        "asia"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_russia_2020.jpg",
+      "thumbnail": "assets/images/coins/coin_russia_2020.jpg",
+      "addedOn": "2026-08-23"
+    },
+    {
+      "id": "coin_romania_2002",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Romania 1000 Lei",
+      "country": "Romania",
+      "continent": "Europe",
+      "year": 2002,
+      "denomination": "1000",
+      "material": "Nickel",
+      "tags": [
+        "coin",
+        "romania",
+        "europe"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_romania_2002.jpg",
+      "thumbnail": "assets/images/coins/coin_romania_2002.jpg",
+      "addedOn": "2026-08-23"
     }
   ]
 }
