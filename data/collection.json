@@ -2,7 +2,7 @@
   "meta": {
     "title": "PV Collection",
     "description": "A personal coin and currency collection spanning the world",
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-10-09",
     "version": "1.0.0"
   },
   "items": [
@@ -7381,6 +7381,393 @@
       "image": "assets/images/coins/coin_romania_2002.jpg",
       "thumbnail": "assets/images/coins/coin_romania_2002.jpg",
       "addedOn": "2026-08-23"
+    },
+    {
+      "id": "coin_thailand_2011",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Thailand 10 Baht [Lord Ganesha]",
+      "country": "Thailand",
+      "continent": "Asia",
+      "year": 2011,
+      "denomination": "10 bahts",
+      "material": "Bimetal",
+      "tags": [
+        "coin",
+        "thailand",
+        "asia",
+        "god",
+        "ganesha"
+      ],
+      "theme": [],
+      "image": "assets/images/coins/coin_thailand_2011.jpg",
+      "thumbnail": "assets/images/coins/coin_thailand_2011.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "coin_san-marino_1974",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "San Marino 10 Lire",
+      "country": "San Marino",
+      "continent": "Europe",
+      "year": 1974,
+      "denomination": "10 Lire",
+      "description": "Theme: FAO & Honey Bee 🐝",
+      "tags": [
+        "coin",
+        "nature-theme",
+        "san-marino",
+        "europe",
+        "honeybee"
+      ],
+      "theme": [
+        "nature-theme"
+      ],
+      "image": "assets/images/coins/coin_san-marino_1974.jpg",
+      "thumbnail": "assets/images/coins/coin_san-marino_1974.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "coin_germany_2002",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Germany 2 Euro",
+      "country": "Germany",
+      "continent": "Europe",
+      "year": 2002,
+      "denomination": "2 Euro",
+      "material": "Bimetal",
+      "tags": [
+        "coin",
+        "bird-theme",
+        "germany",
+        "europe",
+        "german",
+        "eagle"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/coins/coin_germany_2002.jpg",
+      "thumbnail": "assets/images/coins/coin_germany_2002.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "coin_uruguay_2015",
+      "type": "coin",
+      "subtype": "coin",
+      "title": "Uruguay 10 peso",
+      "country": "Uruguay",
+      "continent": "South America",
+      "year": 2015,
+      "denomination": "10 peso",
+      "material": "Bimetal",
+      "tags": [
+        "coin",
+        "animal-theme",
+        "uruguay",
+        "south-america",
+        "puma"
+      ],
+      "theme": [
+        "animal-theme"
+      ],
+      "image": "assets/images/coins/coin_uruguay_2015.jpg",
+      "thumbnail": "assets/images/coins/coin_uruguay_2015.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "note_curaao-and-sint-maarten_2021",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Curaçao and Sint Maarten 20 Gulden P-W2",
+      "country": "Curaçao and Sint Maarten",
+      "continent": "North America",
+      "year": 2021,
+      "denomination": "20 Gulden",
+      "material": "Cotton Paper",
+      "description": "Curaçao and Sint Maarten are two self-governing constituent countries within the Kingdom of the Netherlands located in the Caribbean Sea. They share a joint monetary union, history, and institutional framework, but feature distinct geographies and travel experiences.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "aquatic-theme",
+        "curaçao-and-sint-maarten",
+        "north-america",
+        "spotted-eagle-ray",
+        "simpson-bay",
+        "sint-maarten"
+      ],
+      "theme": [
+        "animal-theme",
+        "aquatic-theme"
+      ],
+      "image": "assets/images/currency/note_curaao-and-sint-maarten_2021.jpg",
+      "images": [
+        "assets/images/currency/note_curaao-and-sint-maarten_2021.jpg",
+        "assets/images/currency/note_curaao-and-sint-maarten_2021_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_curaao-and-sint-maarten_2021.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "polymer_so-tom-and-prncipe_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "São Tomé and Príncipe 50 Dobras P-W82(1)",
+      "country": "São Tomé and Príncipe",
+      "continent": "Africa",
+      "year": 2025,
+      "denomination": "50 Dobras",
+      "material": "Polymer",
+      "description": "São Tomé and Príncipe, an African island nation close to the equator, is part of a volcano chain featuring striking rock and coral formations, rainforests and beaches. On the larger island, São Tomé, is the Lagoa Azul lagoon. Ôbo Natural Park, a biodiverse jungle preserve, covers much of São Tomé and is distinguished by Pico Cão Grande, a skyscraperlike volcanic rock.",
+      "tags": [
+        "polymer-currency",
+        "bird-theme",
+        "são-tomé-and-príncipe",
+        "africa",
+        "falcon",
+        "gray-parrot",
+        "maps"
+      ],
+      "theme": [
+        "bird-theme"
+      ],
+      "image": "assets/images/currency/polymer_so-tom-and-prncipe_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_so-tom-and-prncipe_2025.jpg",
+        "assets/images/currency/polymer_so-tom-and-prncipe_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_so-tom-and-prncipe_2025.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "polymer_mauritania_2020",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Mauritania 20 Ouguiya P-WA22",
+      "country": "Mauritania",
+      "continent": "Africa",
+      "year": 2020,
+      "denomination": "20 Ouguiya",
+      "material": "Polymer",
+      "description": "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa. It is bordered by the Atlantic Ocean to the west, Western Sahara to the north and northwest, Algeria to the northeast, Mali to the east and southeast, and Senegal to the southwest.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "nature-theme",
+        "history-theme",
+        "mauritania",
+        "africa",
+        "great-mosque-of-gataga",
+        "mosque",
+        "eye-of-africa"
+      ],
+      "theme": [
+        "building-theme",
+        "nature-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_mauritania_2020.jpg",
+      "images": [
+        "assets/images/currency/polymer_mauritania_2020.jpg",
+        "assets/images/currency/polymer_mauritania_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_mauritania_2020.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "polymer_fiji_2026",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Fiji 10 Dollar P-W126",
+      "country": "Fiji",
+      "continent": "Oceania",
+      "year": 2026,
+      "denomination": "10 Dollar",
+      "material": "Polymer",
+      "description": "Fiji, a country in the South Pacific, is an archipelago of more than 300 islands. It's famed for rugged landscapes, palm-lined beaches and coral reefs with clear lagoons. Its major islands, Viti Levu and Vanua Levu, contain most of the population. Viti Levu is home to the capital, Suva, a port city with British colonial architecture. The Fiji Museum, in the Victorian-era Thurston Gardens, has ethnographic exhibits.",
+      "tags": [
+        "polymer-currency",
+        "aquatic-theme",
+        "fiji",
+        "oceania",
+        "beli-fish",
+        "mangrove-planting"
+      ],
+      "theme": [
+        "aquatic-theme"
+      ],
+      "image": "assets/images/currency/polymer_fiji_2026.jpg",
+      "images": [
+        "assets/images/currency/polymer_fiji_2026.jpg",
+        "assets/images/currency/polymer_fiji_2026_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_fiji_2026.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "note_bahrain_2006",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bahrain 1/2 Dinar P-25",
+      "country": "Bahrain",
+      "continent": "Asia",
+      "year": 2006,
+      "denomination": "1/2",
+      "description": "Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in West Asia",
+      "tags": [
+        "paper-currency",
+        "building-theme",
+        "bahrain",
+        "asia",
+        "bahrain-international-circuit",
+        "vip-tower",
+        "old-court-building",
+        "manama"
+      ],
+      "theme": [
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_bahrain_2006.jpg",
+      "images": [
+        "assets/images/currency/note_bahrain_2006.jpg",
+        "assets/images/currency/note_bahrain_2006_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_bahrain_2006.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "note_bahrain_2006_2",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Bahrain 1 Dinar",
+      "country": "Bahrain",
+      "continent": "Asia",
+      "year": 2006,
+      "denomination": "1 Dinar",
+      "material": "Paper",
+      "description": "Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in West Asia",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "building-theme",
+        "bahrain",
+        "asia",
+        "al-hedaya-al-khalifiya-school",
+        "horse",
+        "sail-and-pearl-monument"
+      ],
+      "theme": [
+        "animal-theme",
+        "building-theme"
+      ],
+      "image": "assets/images/currency/note_bahrain_2006_2.jpg",
+      "images": [
+        "assets/images/currency/note_bahrain_2006_2.jpg",
+        "assets/images/currency/note_bahrain_2006_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_bahrain_2006_2.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "note_nepal_2020",
+      "type": "currency",
+      "subtype": "paper",
+      "title": "Nepal 500 Rupees P-81(2)",
+      "country": "Nepal",
+      "continent": "Asia",
+      "year": 2020,
+      "denomination": "500 Rupees",
+      "material": "Paper",
+      "description": "Nepal, officially the Federal Democratic Republic of Nepal, is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain.",
+      "tags": [
+        "paper-currency",
+        "animal-theme",
+        "building-theme",
+        "nature-theme",
+        "nepal",
+        "asia",
+        "tiger",
+        "mount-everest",
+        "thyangboche-monastery"
+      ],
+      "theme": [
+        "animal-theme",
+        "building-theme",
+        "nature-theme"
+      ],
+      "image": "assets/images/currency/note_nepal_2020.jpg",
+      "images": [
+        "assets/images/currency/note_nepal_2020.jpg",
+        "assets/images/currency/note_nepal_2020_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/note_nepal_2020.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "polymer_turkmenistan_2025",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Turkmenistan 1 Manat P-W48",
+      "country": "Turkmenistan",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "1 Manat",
+      "material": "Polymer",
+      "description": "Turkmenistan is a country in Central Asia bordered by the Caspian Sea and largely covered by the Karakum Desert. It’s known for archaeological ruins including those at Nisa and Merv, major stops along the ancient trade route the Silk Road. Ashgabat, the capital, was rebuilt in Soviet style in the mid-20th century and is filled with grand monuments honoring former president Saparmurat Niyazov.",
+      "tags": [
+        "polymer-currency",
+        "person-theme",
+        "history-theme",
+        "turkmenistan",
+        "asia",
+        "togrul-beg-türkmen",
+        "türkmenbaşy-international-seaport"
+      ],
+      "theme": [
+        "person-theme",
+        "history-theme"
+      ],
+      "image": "assets/images/currency/polymer_turkmenistan_2025.jpg",
+      "images": [
+        "assets/images/currency/polymer_turkmenistan_2025.jpg",
+        "assets/images/currency/polymer_turkmenistan_2025_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_turkmenistan_2025.jpg",
+      "addedOn": "2026-10-09"
+    },
+    {
+      "id": "polymer_turkmenistan_2025_2",
+      "type": "currency",
+      "subtype": "polymer",
+      "title": "Turkmenistan 5 Manat P-W49",
+      "country": "Turkmenistan",
+      "continent": "Asia",
+      "year": 2025,
+      "denomination": "5 Manat",
+      "material": "Polymer",
+      "description": "Turkmenistan is a country in Central Asia bordered by the Caspian Sea and largely covered by the Karakum Desert. It’s known for archaeological ruins including those at Nisa and Merv, major stops along the ancient trade route the Silk Road. Ashgabat, the capital, was rebuilt in Soviet style in the mid-20th century and is filled with grand monuments honoring former president Saparmurat Niyazov.",
+      "tags": [
+        "polymer-currency",
+        "building-theme",
+        "person-theme",
+        "turkmenistan",
+        "asia",
+        "togrul-beg-türkmen",
+        "garaşsyzlyk-binasy"
+      ],
+      "theme": [
+        "building-theme",
+        "person-theme"
+      ],
+      "image": "assets/images/currency/polymer_turkmenistan_2025_2.jpg",
+      "images": [
+        "assets/images/currency/polymer_turkmenistan_2025_2.jpg",
+        "assets/images/currency/polymer_turkmenistan_2025_2_back.jpg"
+      ],
+      "thumbnail": "assets/images/currency/polymer_turkmenistan_2025_2.jpg",
+      "addedOn": "2026-10-09"
     }
   ]
 }
